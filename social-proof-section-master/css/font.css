@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Spartan-Black;
+    src: url("../Spartan/static/Spartan-Black.ttf");
+}
+
+@font-face {
+    font-family: Spartan-Bold;
+    src: url("../Spartan/static/Spartan-Bold.ttf");
+}
+
+@font-face {
+    font-family: Spartan-ExtraBold;
+    src: url("../Spartan/static/Spartan-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Spartan-ExtraLight;
+    src: url("../Spartan/static/Spartan-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: Spartan-Light;
+    src: url("../Spartan/static/Spartan-Light.ttf");
+}
+
+@font-face {
+    font-family: Spartan-Medium;
+    src: url("../Spartan/static/Spartan-Medium.ttf");
+}
+
+@font-face {
+    font-family: Spartan-Regular;
+    src: url("../Spartan/static/Spartan-Regular.ttf");
+}
+
+@font-face {
+    font-family: Spartan-SemiBold;
+    src: url("../Spartan/static/Spartan-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Spartan-Thin;
+    src: url("../Spartan/static/Spartan-Thin.ttf");
+}

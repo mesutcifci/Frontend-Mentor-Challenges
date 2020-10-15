@@ -1,0 +1,189 @@
+@import "font.css";
+
+/* Global */
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    font-size: 10px;
+}
+
+body {
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 14rem;
+    max-width: 111rem;
+}
+
+
+
+/* Header And Stars */
+
+#header-and-stars {
+    display: flex;
+    height: max-content;
+}
+
+header {
+  height: max-content;
+  width: 46rem;
+}
+
+h1 {
+    font-family: Spartan-Bold, sans-serif;
+    font-size: 4.5rem;
+    color: hsl(300, 43%, 22%);
+    line-height: 1.15;
+}
+
+#introduction {
+    color: hsl(303, 10%, 53%);
+    font-family: Spartan-Medium, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    width: 46rem;
+}
+
+#wrapper-stars {
+    margin-top: 1rem;
+    margin-left: auto;
+    height: max-content;
+    width: max-content;
+}
+
+.container-star {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 1rem;
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    align-items: center;
+    font-family: Spartan-Bold, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    height: 5.5rem;
+    width: 45rem;
+}
+
+
+#first-star {
+    margin-left: 3rem;
+}
+
+.star-icon {
+    margin-right: 0.5rem;
+}
+
+.stars-description {
+    margin-left: 2.5rem;
+}
+
+#reviews {
+    margin-right: 7rem;
+}
+
+#guru {
+    margin-left: 4rem;
+}
+
+#best-tech{
+    margin-left: 8rem;
+    margin-bottom: 0px;
+}
+
+
+/* Cards */
+
+#cards {
+    display: flex;
+}
+
+.container-cards {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 3%;
+    width: 29.5rem;
+    height: 18rem;
+    margin-right: 3.8rem;
+    padding: 4rem 2.5rem 3rem 2.5rem;
+}
+
+.customer-info {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+}
+
+.customer-name {
+    color: hsl(0, 0%, 100%);
+    font-family: Spartan-SemiBold;
+    align-self: center;
+    font-size: 1.35rem;
+    margin-top: 1rem;
+}
+
+.customer-image {
+    border-radius: 50%;
+    width: 4rem;
+    margin-right: 2rem;
+}
+
+.customer-status {
+    color: hsl(333, 80%, 67%);
+    font-family: Spartan-Light;
+    font-size: 1.2rem;
+}
+
+.customer-comment {
+    color: hsl(0, 0%, 100%);
+    font-family: Spartan-Medium;
+    font-size: 1.35rem;
+    line-height: 1.7;
+    margin-top: 3rem;
+}
+
+#colton {
+    
+}
+
+#irene {
+    margin-top: 2rem;
+}
+
+#anne {
+    margin-left: auto;
+    margin-top: 4rem;
+    margin-right: 0px;
+    
+}
+
+/* footer */
+
+footer {
+    background-color: hsl(300, 4%, 90%);
+    height: 2rem;
+    font-family: Spartan-Medium;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width:1275px) {}
