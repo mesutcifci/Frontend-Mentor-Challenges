@@ -77,7 +77,7 @@ h1 {
     width: 45rem;
 }
 
-#first-star {
+.first-star {
     margin-left: 3rem;
 }
 
@@ -228,7 +228,7 @@ footer {
         margin-bottom: 1.5rem;
         margin-left: 0px;
     }
-    #first-star {
+    .first-star {
         margin-left: 0;
     }
 
