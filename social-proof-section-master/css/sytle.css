@@ -25,13 +25,10 @@ a {
 main {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    min-height: 100vh;
     margin: 0 auto;
     padding-top: 14rem;
     max-width: 111rem;
 }
-
-
 
 /* Header And Stars */
 
@@ -62,8 +59,9 @@ h1 {
 }
 
 #wrapper-stars {
+    position: relative;
     margin-top: 1rem;
-    margin-left: auto;
+    padding-left: 12rem;
     height: max-content;
     width: max-content;
 }
@@ -77,10 +75,11 @@ h1 {
     font-family: Spartan-Bold, sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    position: relative;
     height: 5.5rem;
     width: 45rem;
 }
+
+
 
 
 #first-star {
@@ -104,10 +103,8 @@ h1 {
 }
 
 #best-tech{
-    margin-left: 8rem;
-    margin-bottom: 0px;
+    margin: 0 0 0 8rem;
 }
-
 
 /* Cards */
 
@@ -126,8 +123,6 @@ h1 {
 
 .customer-info {
     display: flex;
-    width: max-content;
-    height: max-content;
     align-items: center;
 }
 
@@ -159,19 +154,12 @@ h1 {
     margin-top: 3rem;
 }
 
-#colton {
-    
-}
-
 #irene {
     margin-top: 2rem;
 }
 
 #anne {
-    margin-left: auto;
-    margin-top: 4rem;
-    margin-right: 0px;
-    
+    margin: 4rem 0 0 auto;
 }
 
 /* footer */
@@ -182,8 +170,70 @@ footer {
     font-family: Spartan-Medium;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 /* Media Queries */
 
-@media (max-width:1275px) {}
+@media (max-width:1125px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header-and-stars {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #wrapper-stars {
+        padding-left: 0;
+    }
+
+    #reviews, #guru, #best-tech {
+        margin: 0 0 2rem 0;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-cards, #anne {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #header-and-stars, header, #introduction, .container-star {
+        width: auto;
+        height: auto;
+    }
+
+    .container-star {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .container-star div {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .stars-description {
+        margin-bottom: 1.5rem;
+        margin-left: 0px;
+    }
+
+    #first-star {
+        margin-left: 0;
+    }
+
+}
