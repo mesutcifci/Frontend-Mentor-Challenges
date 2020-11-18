@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* GLOBAL */
 
 :root {
     --color-pale-blue: hsl(243, 100%, 93%);
@@ -6,9 +6,6 @@
     --color-dark-blue: hsl(228, 56%, 26%);
     --color-very-dark-blue: hsl(229, 57%, 11%);
     --color-white: rgb(255, 255, 255);
-
-    --weight-normal: 400;
-    --weight-bold: 700;
 }
 
 *, ::before, ::after {
@@ -16,12 +13,102 @@
     padding: 0;
 }
 
-html, body {
-    min-height: 100vh;
+html {
     font-size: 10px;
+    min-height: 100%;
+    height: 100%;
 }
 
+body {
+    background-color: var(--color-very-dark-blue);
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    min-height: 100%;
+    min-width: 300px;
+    max-width: 1440px;
+}
 
-.test {
-    
+/* MAİN CONTENT */
+
+main {
+    background: url("../images/bg-desktop.png") no-repeat;
+    background-position: 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+/* LOGO AND ICONS */
+
+#logo-and-icons {
+    background-color: var(--color-dark-blue);
+    border-radius: 4%;
+    border-top-right-radius: 45%;
+    padding: 30px 120px 30px 30px;
+}
+
+#logo-wrapper {
+    margin-bottom: 20px;
+}
+
+.icon {
+    background-color: var(--color-very-dark-blue);
+    border-radius: 20%;
+    margin-right: 5px;
+}
+
+#file-icon {
+    padding: 10px;
+}
+
+#folder-icon {
+    padding: 12px;
+}
+
+#upload-icon {
+    padding: 14px;
+}
+
+/* PROGRESS BAR */
+
+#progress-and-description {
+    align-self: flex-end;
+    background-color: var(--color-dark-blue);
+    border-radius: 10px;
+    height: 75px;
+    margin-left: 2rem;
+    padding: 30px 120px 30px 30px;
+}
+
+#used-data {
+    color: var(--color-grayish-blue);
+    font-size: 1.5rem;
+    font-weight: 400px;
+}
+
+#used-data span {
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+#progress-bar-wrapper {
+    background-color: var(--color-very-dark-blue);
+    border-radius: 20px;
+    height: 20px;
+    width: 100%;
+}
+
+#progress-bar {
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: inherit;
+    height: 20px;
+    width: 70%;
 }
