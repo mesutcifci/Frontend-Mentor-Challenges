@@ -24,15 +24,19 @@ body {
     font-family: 'Raleway', sans-serif;
     height: 100%;
     min-height: 100%;
-    min-width: 300px;
+    min-width: 330px;
     max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* MAİN CONTENT */
 
 main {
     background: url("../images/bg-desktop.png") no-repeat;
-    background-position: 0 100%;
+    background-position: 0 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,31 +46,32 @@ main {
 
 #container {
     display: flex;
-    position: relative;
 }
 
 /* LOGO AND ICONS */
 
 #logo-and-icons {
     background-color: var(--color-dark-blue);
-    border-radius: 4%;
+    border-radius: 1rem;
     border-top-right-radius: 45%;
     padding: 30px 120px 30px 30px;
     margin-right: 30px;
+    max-width: 200px;
 }
 
 #logo-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .icon {
     background-color: var(--color-very-dark-blue);
     border-radius: 20%;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 #file-icon {
-    padding: 10px;
+    padding: 1rem;
 }
 
 #folder-icon {
@@ -82,8 +87,8 @@ main {
 #progress-and-description {
     align-self: flex-end;
     background-color: var(--color-dark-blue);
-    border-radius: 10px;
-    height: 100px;
+    border-radius: 1rem;
+    height: 110px;
     width: 500px;
     padding-left: 30px;
     padding-right: 30px;
@@ -93,14 +98,15 @@ main {
 
 #bubble {
     background-color: var(--color-white);
+    border-radius: 1rem;
     display: flex;
     height: 40px;
     width: 100px;
     margin-left: auto;
-    padding: 10px;
+    padding: 1rem;
     position: absolute;
-    bottom: 100px;
-    left:  400px;
+    bottom: 120px;
+    left: 400px;
 }
 
 #bubble span:first-child {
@@ -111,8 +117,18 @@ main {
 
 #bubble span:nth-child(2) {
     color: var(--color-grayish-blue);
+    font-size: 1.1rem;
     font-weight: 700;
     margin-top: 13px;
+}
+
+#bubble::after {
+    border-right: 25px solid var(--color-white);
+    border-bottom: 30px solid transparent;
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 0px;
 }
 
 #used-data {
@@ -139,8 +155,19 @@ main {
     background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border: 3px solid var(--color-very-dark-blue);
     border-radius: inherit;
+    display: flex;
+    justify-content: flex-end;
     height: 18px;
     width: 70%;
+}
+
+#small-circle {
+    align-self: center;
+    background-color: var(--color-pale-blue);
+    border-radius: 100%;
+    margin-right: 1px;
+    height: 10px;
+    width: 10px;
 }
 
 #labels {
@@ -148,10 +175,106 @@ main {
     font-size: 1.2rem;
     font-weight: 700;
     display: flex;
-    margin-top: 10px;
+    margin-top: 1rem;
     width: 100%;
 }
 
 #maximum-data {
     margin-left: auto;
+}
+
+/* FOOTER */
+
+footer {
+    color: var(--color-pale-blue);
+    text-align: center;
+    font-size: 2rem;
+    min-height: 30px;
+    margin-top: 5px;
+}
+
+.link {
+    color: var(--color-grayish-blue);
+    font-weight: 700;
+}
+
+.link::before {
+    content: "\00a0";
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 590px) and (max-width:940px) {
+    #container {
+        flex-direction: column;
+    }
+    #logo-and-icons {
+        border-radius: 10px;
+        display: flex;
+        padding: 30px 30px 0px 30px;
+        margin-right: 0;
+        margin-bottom: 50px;
+        max-width: unset;
+    }
+    #icons-wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    #bubble::after {
+        right: 50px;
+        transform: skew(-20deg);
+    }
+
+    footer {
+        height: auto;
+    }
+}
+
+@media (max-width:590px) {
+    main {
+        background: url("../images/bg-mobile.png") no-repeat;
+        background-position: unset;
+        background-size: cover;
+    }
+    #container {
+        flex-direction: column;
+    }
+    #logo-and-icons {
+        align-self: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #progress-and-description {
+        height: 110px;
+        width: max-content;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 22px;
+    }
+    #used-data {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #progress-bar-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 270px;
+    }
+    #bubble {
+        bottom: 0px;
+        top: 100px;
+        left: 75px;
+        height: 40px;
+        width: 130px;
+        padding: 1rem 0 1rem 3rem;
+    }
+    #bubble::after {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+    }
 }
