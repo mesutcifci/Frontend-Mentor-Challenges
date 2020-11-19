@@ -1,0 +1,36 @@
+/* GLOBAL */
+
+:root {
+    --color--dark-cyan: hsl(185, 75%, 39%);
+    --color--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --color--dark-grayish-blue: hsl(227, 10%, 46%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    min-height: 330px;
+    max-width: 1440px;
+    min-width: 330px;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--color--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    height: 100%;
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -500px -500px, 800px 300px;
+}
