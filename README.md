@@ -16,5 +16,6 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 
 :star: :star: :star: :star: :star: :star: :arrow_right: Guru
 
+* [Profile card component](https://profile-card-component-main-psi.vercel.app/) :star:
 * [Social proof section](https://social-proof-section-five-rose.vercel.app/) :star: 
 * [Fylo data storage component](https://fylo-data-storage-component-master-iota.vercel.app/) :star: :star:
