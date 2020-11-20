@@ -43,7 +43,7 @@ main {
     */
     background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
     justify-content: center;
-    height: calc(100% - 35px);
+    min-height: calc(100% - 35px);
 }
 
 #card {
