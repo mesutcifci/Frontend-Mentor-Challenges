@@ -141,7 +141,7 @@ footer {
     color: #fff;
     font-weight: 400;
     font-size: 2rem;
-    height: 30px;
+    min-height: 30px;
     line-height: 30px;
     margin-top: 5px;
     text-align: center;
