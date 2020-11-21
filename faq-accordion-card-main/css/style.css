@@ -75,19 +75,18 @@ h1 {
     font-size: 3rem;
 }
 
-/*
-.question {
+.question-answer {
     border-bottom: 2px solid var(--color-light-grayish-blue);
     color: var(--color-dark-grayish-blue);
     display: flex;
-    justify-content: center;
     font-size: 1.4rem;
-    min-height: 5rem;
-    width: 90%;
+}
+
+.question {
+    display: none;
 }
 
 .answer {
-    display: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -95,5 +94,3 @@ h1 {
 .arrow {
     align-self: flex-end;
 }
-
-*/
