@@ -49,25 +49,24 @@ main {
 /* CONTAINER */
 
 #container {
-    /*
     background: url("../images/bg-pattern-desktop.svg") no-repeat;
-    background-size: cover;
-    background-position: -250px ;
-    */
+    background-position: right 500px bottom -250px;
     background-color: #ffffff;
     border-radius: 2rem;
     display: flex;
     height: 400px;
-    width: 700px;
+    width: 900px;
 }
 
 #illusrations {
-    width: 40%;
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
 
-#question-outer-container {
+#questions-outer-container {
     border-left: 1px solid black;
-    width: 60%;
+    width: 50%;
 }
 
 h1 {
@@ -75,22 +74,31 @@ h1 {
     font-size: 3rem;
 }
 
-.question-answer {
+.question-and-answer {
+    box-sizing: border-box;
     border-bottom: 2px solid var(--color-light-grayish-blue);
     color: var(--color-dark-grayish-blue);
+    min-height: 50px;
+    padding-top: 5px;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-size: 1.4rem;
 }
 
-.question {
-    display: none;
-}
+.question {}
 
 .answer {
+    display: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.arrow {
+.arrow-icon-up {
     align-self: flex-end;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
