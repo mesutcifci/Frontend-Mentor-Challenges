@@ -50,35 +50,66 @@ main {
 
 #container {
     background: url("../images/bg-pattern-desktop.svg") no-repeat;
-    background-position: right 500px bottom -250px;
+    background-position: right 500px bottom -200px;
     background-color: #ffffff;
     border-radius: 2rem;
     display: flex;
-    height: 400px;
+    height: 450px;
     width: 900px;
 }
 
+/* ILLUSRATIONS */
+
 #illusrations {
-    display: flex;
-    align-items: center;
-    width: 50%;
+    position: relative;
+    width: 60%;
 }
 
+#illusration-box {
+    height: max-content;
+    width: max-content;
+    position: relative;
+    top: 38%;
+    right: 17%;
+    z-index: 2;
+}
+
+#illusration-box img{
+    color: #ffffaa;
+}
+
+#illusration-woman {
+    overflow: hidden;
+    width: max-content;
+    position: relative;
+    bottom: 33%;
+    z-index: 1;
+}
+
+#illusration-woman img{
+    position: relative;
+    right: 80px;
+}
+
+
+/* QUESTIONS */
+
 #questions-outer-container {
-    border-left: 1px solid black;
-    width: 50%;
+    width: 40%;
 }
 
 h1 {
     color: var(--color-very-dark-desaturated-blue);
     font-size: 3rem;
+    margin-top: 6rem;
 }
 
 .question-and-answer {
     box-sizing: border-box;
-    border-bottom: 2px solid var(--color-light-grayish-blue);
+    border-bottom: 1px solid var(--color-light-grayish-blue);
     color: var(--color-dark-grayish-blue);
     min-height: 50px;
+    max-width: 300px;
     padding-top: 5px;
     display: flex;
     justify-content: center;
@@ -86,19 +117,33 @@ h1 {
     font-size: 1.4rem;
 }
 
-.question {}
+.question {
+  display: flex;
+  align-items: center;
+}
 
-.answer {
-    display: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.question-text:hover {
+    cursor: pointer;
+    color: var(--color-soft-red);
+}
+
+.arrow-icon {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .arrow-icon-up {
-    align-self: flex-end;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.answer {
+    display: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
