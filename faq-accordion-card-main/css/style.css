@@ -28,9 +28,10 @@ a {
 html, body {
     font-size: 10px;
     height: 100%;
+    overflow: hidden;
     min-height: 330px;
     max-width: 1440px;
-    min-width: 330px;
+    min-width: 375px;
 }
 
 body {
@@ -86,9 +87,13 @@ main {
     z-index: 1;
 }
 
-#illusration-woman img{
+#illusration-woman img:nth-child(1){
     position: relative;
     right: 80px;
+}
+
+#illusration-woman img:nth-child(2){
+    display: none;
 }
 
 
@@ -96,6 +101,7 @@ main {
 
 #questions-outer-container {
     width: 40%;
+    overflow-y: auto;
 }
 
 h1 {
@@ -129,9 +135,10 @@ h1 {
 
 .arrow-icon {
     cursor: pointer;
-    padding: 10px;
+    padding: 1rem;
     margin-right: 0;
     margin-left: auto;
+    transition: transform 1s;
 }
 
 .arrow-icon-up {
@@ -146,4 +153,46 @@ h1 {
     display: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.open-answer {
+    display: inherit;
+}
+
+
+.bold {
+    color: var(--color-very-dark-desaturated-blue);
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:1010px) {
+
+    main {
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 200px;
+    }
+
+    #container {
+        box-sizing: border-box;
+        background-image: url("../images/bg-pattern-mobile.svg");
+        background-position: right 0px bottom 0px;
+        width: 330px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #illusrations {
+        display: none;
+    }
+
+    #questions-outer-container {
+        width: 100%;
+        background-color: red;
+        overflow-y: auto;
+    }
+
 }
