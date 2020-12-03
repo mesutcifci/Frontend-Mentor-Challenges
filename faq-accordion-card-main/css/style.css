@@ -169,11 +169,19 @@ h1 {
 
 @media (max-width:1010px) {
 
+    html, body {
+        overflow-y: auto;
+    }
+
     main {
-        box-sizing: border-box;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 200px;
+       
+        width: 375px;
+        min-width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: auto;
+        padding-top: 110px;
+        padding-bottom: 50px;
     }
 
     #container {
@@ -181,8 +189,20 @@ h1 {
         background-image: url("../images/bg-pattern-mobile.svg");
         background-position: right 0px bottom 0px;
         width: 330px;
-        padding-left: 15px;
-        padding-right: 15px;
+        min-height: 550px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+    }
+
+    #container::before {
+        background-image: url("../images/illustration-woman-online-mobile.svg");
+        content: "";
+        height: 196px;
+        width: 266px;
+        position: absolute;     
+        bottom: 460px;   
+        right: 47px;
     }
 
     #illusrations {
@@ -191,8 +211,14 @@ h1 {
 
     #questions-outer-container {
         width: 100%;
-        background-color: red;
         overflow-y: auto;
+    }
+
+    h1 {
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
     }
 
 }
