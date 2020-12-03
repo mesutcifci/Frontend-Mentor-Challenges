@@ -47,6 +47,16 @@ main {
     height: 100%;
 }
 
+footer {
+    color: #fff;
+    font-weight: 400;
+    font-size: 2rem;
+    min-height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
 /* CONTAINER */
 
 #container {
@@ -180,15 +190,15 @@ h1 {
         margin-left: auto;
         margin-right: auto;
         overflow-y: auto;
-        padding-top: 110px;
+        padding-top: 150px;
         padding-bottom: 50px;
     }
 
     #container {
         box-sizing: border-box;
         background-image: url("../images/bg-pattern-mobile.svg");
-        background-position: right 0px bottom 0px;
-        width: 330px;
+        background-position: right 55px top 10px;
+        width: 350px;
         min-height: 550px;
         padding-left: 30px;
         padding-right: 30px;
