@@ -33,13 +33,13 @@ body {
     background-image: linear-gradient(var(--color-soft-violet), var(--color-soft-blue));
     font-family: 'Kumbh Sans', sans-serif;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 main {
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
-    padding-top: 80px;
+    margin-top: 80px;
     width: max-content;
 }
 
@@ -182,6 +182,12 @@ footer {
 }
 
 @media (max-width:750px) {
+
+    body {
+        overflow: visible;
+        margin-top: 150px;
+    }
+
     #container {
         box-sizing: border-box;
         background-image: url("../images/bg-pattern-mobile.svg");
