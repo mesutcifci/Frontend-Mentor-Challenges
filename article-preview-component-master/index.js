@@ -9,22 +9,52 @@ let iconsOuterContainer = document.getElementById("icons-outer-container");
 let iconsInnerContainer = document.getElementById("icons-inner-container");
 let articleInfo = document.getElementById("article-info");
 
-function showOrHideIcons(status) {
+let elements = [];
+let classNames = [];
 
-    if (containerStyle.flexDirection === "row" && iconsInnerContainer.classList.contains("icons-desktop-visible")) {
-        iconsInnerContainer.classList.remove("icons-desktop-visible");
-        console.log("A");
+function addClass(elements, classNames) {
+
+    if (!(elements instanceof Array)) {
+        elements.classList.add(classNames);
         return;
     }
 
-    if (containerStyle.flexDirection === "column" && iconsOuterContainer.classList.contains("icons-visible")) {
-        iconsOuterContainer.classList.remove("icons-visible");
-        iconsInnerContainer.classList.remove("icons-mobile-visible");
-        articleInfo.classList.remove("article-info-hidden");
-        shareIcon.classList.remove("share-icon-mobile");
-        
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].classList.add(classNames[i]);
+    }
+}
+
+function removeClass(elements, classNames) {
+
+    if (!(elements instanceof Array)) {
+        elements.classList.remove(classNames);
+        return;
+    }
+
+    for (let element of elements) {
+        for (let name of classNames) {
+            element.classList.remove(name)
+        }
+    }
+}
+
+function showOrHideIcons(status) {
+
+    if (containerStyle.flexDirection === "row" && iconsInnerContainer.classList.contains("icons-desktop-visible")) {
+        removeClass(iconsInnerContainer, "icons-desktop-visible")
+        return;
+    }
+
+    if (containerStyle.flexDirection === "column"
+        && iconsOuterContainer.classList.contains("icons-visible")) {
+            
+        elements = [iconsOuterContainer, iconsInnerContainer, articleInfo, shareIcon];
+        classNames = ["icons-visible", "icons-mobile-visible", 
+                      "article-info-hidden", "share-icon-mobile"]
+        removeClass(elements, classNames);
+
         if (iconsInnerContainer.classList.contains("icons-desktop-visible")) {
-            iconsInnerContainer.classList.remove("icons-desktop-visible");
+            removeClass(iconsInnerContainer, "icons-desktop-visible");
         }
 
         console.log("B");
@@ -33,36 +63,36 @@ function showOrHideIcons(status) {
 
     if (status && containerStyle.flexDirection === "row") {
 
-        iconsInnerContainer.classList.add("icons-desktop-visible");
+        addClass(iconsInnerContainer, "icons-desktop-visible");
         console.log("C");
 
     } else if (!status && containerStyle.flexDirection === "row") {
-
-        iconsInnerContainer.classList.remove("icons-desktop-visible");
+        removeClass(iconsInnerContainer, "icons-desktop-visible")
         console.log("D");
 
     } else if (status && containerStyle.flexDirection === "column") {
 
-        iconsOuterContainer.classList.add("icons-visible");
-        iconsInnerContainer.classList.add("icons-mobile-visible");
-        articleInfo.classList.add("article-info-hidden");
-        shareIcon.classList.add("share-icon-mobile");
+        elements = [iconsOuterContainer, iconsInnerContainer, articleInfo, shareIcon];
+        classNames = ["icons-visible", "icons-mobile-visible", 
+                      "article-info-hidden", "share-icon-mobile"];
+
+        addClass(elements, classNames);
 
         if (iconsInnerContainer.classList.contains("icons-desktop-visible")) {
-            iconsInnerContainer.classList.remove("icons-desktop-visible");
+            removeClass(iconsInnerContainer, "icons-desktop-visible");
         }
 
         console.log("E");
 
     } else if (!status && containerStyle.flexDirection === "column") {
 
-        iconsOuterContainer.classList.remove("icons-visible");
-        iconsInnerContainer.classList.remove("icons-mobile-visible");
-        articleInfo.classList.remove("article-info-hidden");
-        shareIcon.classList.remove("share-icon-mobile");
+        elements = [iconsOuterContainer, iconsInnerContainer, articleInfo, shareIcon];
+        classNames = ["icons-visible", "icons-mobile-visible", 
+                      "article-info-hidden", "share-icon-mobile"];
+        removeClass(elements, classNames);
 
         if (iconsInnerContainer.classList.contains("icons-desktop-visible")) {
-            iconsInnerContainer.classList.remove("icons-desktop-visible");
+            removeClass(iconsInnerContainer, "icons-desktop-visible");
         }
 
         console.log("F");
