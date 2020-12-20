@@ -17,13 +17,26 @@
 </head>
 
 <body>
-
   <main>
     <div id="container">
       <div id="page-tanya" class="slider">
-        <div class="image-container">
+        <div class="image-and-icons">
           <img class="image" src="./images/image-tanya.jpg" alt="woman picture">
+
+          <div class="button-container">
+            <button id="prev-button" class="button" type="button">
+              <svg id="left-arrow" class="button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8" />
+              </svg>
+            </button>
+            <button id="next-button" class="button" type="button">
+              <svg id="right-arrow" class="button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8" />
+              </svg>
+            </button>
+          </div>
         </div>
+
 
         <div class="description-and-info">
           <div class="description-container">
@@ -37,7 +50,7 @@
             <p class="fullname">
               Tanya Sinclair
             </p>
-            <p class="position">
+            <p class="job">
               UX Engineer
             </p>
           </div>
@@ -45,10 +58,24 @@
       </div>
 
       <div id="page-john" class="slider hide">
-        <div class="image-container">
-          <img class="image" src="./images/image-john.jpg" alt="man picture">
-        </div>
+        <div class="image-and-icons">
+          <div class="image-container">
+            <img class="profile-image" src="./images/image-john.jpg" alt="man picture">
+          </div>
 
+          <div class="button-container">
+            <button id="prev-button" class="button" type="button">
+              <svg id="left-arrow" class="button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8" />
+              </svg>
+            </button>
+            <button id="next-button" class="button" type="button">
+              <svg id="right-arrow" class="button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8" />
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="description-and-info">
           <div class="description-container">
             <p class="description-text">
@@ -63,19 +90,6 @@
           </div>
         </div>
       </div>
-
-      <div id="button-container">
-        <button id="prev-button" class="button" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
-            <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8" />
-          </svg>
-        </button>
-        <button id="next-button" class="button" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
-            <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8" />
-          </svg>
-        </button>
-      </div>
     </div>
   </main>
 
@@ -88,4 +102,5 @@
   -->
 
 </body>
+
 </html>

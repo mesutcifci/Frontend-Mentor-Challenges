@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-    background-image: url("../images/pattern-bg.svg"), url("../images/pattern-curve.svg"), url("../images/pattern-quotes.svg");
+    background-image: url("../images/pattern-bg.svg"), url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     font-family: 'Inter', sans-serif;
 }
@@ -40,30 +40,96 @@ main {
     padding: 40px 30px 30px 30px;
 }
 
-/* profiles */
+/* CONTAINER - SLIDER */
 
 .slider {
     display: flex;
     font-size: 1.4rem;
 }
 
-.image {
-    width: inherit;
+.hide {
+    display: none;
 }
+
+
+/* SLIDER - IMAGE AND ICONS */
+
+.image-and-icons {
+    position: relative;
+}
+
+/* IMAGE AND ICONS - BUTTON CONTAINER */
 
 .button-container {
     display: flex;
     width: max-content;
-    justify-content: center;
+    height: max-content;
+    position: absolute;
+    bottom: -15px;
+    left: 60px;
 }
 
+/* BUTTON CONTAINER - BUTTON */
+
 .button {
-    box-sizing: border-box;
-    background-color: white;
-    cursor: pointer;
     border: none;
-    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 55px;
 }
+
+#prev-button {
+    background-color: red;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#left-arrow {
+    
+}
+
+#next-button {
+    background-color: yellow;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* Description And  Info */
+
+.description-and-info {
+    background-image: url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 400px;
+    border: 1px solid;
+    height: max-content;
+    width: 250px;
+}
+
+/* Description Dontainer */
+
+.description-text {
+    font-weight: 300;
+}
+
+/* Writer Info */
+
+.writer-info {
+    display: flex;
+}
+
+.fullname {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.job {
+    color: var(--color-grayish-blue);
+}
+
 
 /* Media Queries */
 
@@ -71,12 +137,12 @@ main {
 
     .slider {
         flex-direction: column;
+        align-items: center;
     }
-    .image-container {
+    .image-and-icons {
+        border: 1px solid red;
         width: 200px;
+        height: max-content;
     }
 }
 
-.hide {
-    display: none;
-}
