@@ -1,5 +1,4 @@
 @import "./normalize.css";
-
 /* Global */
 
 :root {
@@ -22,6 +21,8 @@ html, body {
 }
 
 body {
+    background-image: url("../images/pattern-bg.svg"), url("../images/pattern-curve.svg"), url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
     font-family: 'Inter', sans-serif;
 }
 
@@ -29,6 +30,15 @@ a {
     text-decoration: none;
 }
 
+main {
+    height: 100%;
+}
+
+/* CONTAINER */
+
+#container {
+    padding: 40px 30px 30px 30px;
+}
 
 /* profiles */
 
@@ -41,6 +51,20 @@ a {
     width: inherit;
 }
 
+.button-container {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+}
+
+.button {
+    box-sizing: border-box;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+}
+
 /* Media Queries */
 
 @media (max-width:375px) {
@@ -48,16 +72,11 @@ a {
     .slider {
         flex-direction: column;
     }
-
     .image-container {
         width: 200px;
     }
-
-    
 }
-
 
 .hide {
     display: none;
 }
-
