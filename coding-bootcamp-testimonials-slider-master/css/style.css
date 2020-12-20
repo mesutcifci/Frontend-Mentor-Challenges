@@ -21,8 +21,10 @@ html, body {
 }
 
 body {
-    background-image: url("../images/pattern-bg.svg"), url("../images/pattern-curve.svg");
+    background-image: url("../images/pattern-curve.svg"), url("../images/pattern-bg.svg");
     background-repeat: no-repeat;
+    background-position: bottom 0px left 0px, top -10px right 50px;
+    background-size: 50%;
     font-family: 'Inter', sans-serif;
 }
 
@@ -36,26 +38,41 @@ main {
 
 /* CONTAINER */
 
-#container {
+.container {
+    background-image: url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top 114px left 195px;
     padding: 40px 30px 30px 30px;
 }
 
 /* CONTAINER - SLIDER */
 
 .slider {
-    display: flex;
+    display: grid;
     font-size: 1.4rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
 }
 
 .hide {
     display: none;
 }
 
-
 /* SLIDER - IMAGE AND ICONS */
 
 .image-and-icons {
     position: relative;
+    height: max-content;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/* IMAGE AND ICONS */
+
+.image {
+    display: block;
+    height: 450px;
+    margin-left: -58px;
 }
 
 /* IMAGE AND ICONS - BUTTON CONTAINER */
@@ -65,8 +82,8 @@ main {
     width: max-content;
     height: max-content;
     position: absolute;
-    bottom: -15px;
-    left: 60px;
+    bottom: -25px;
+    left: -23px;
 }
 
 /* BUTTON CONTAINER - BUTTON */
@@ -83,36 +100,36 @@ main {
 }
 
 #prev-button {
-    background-color: red;
+    background-color: white;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
-#left-arrow {
-    
-}
-
 #next-button {
-    background-color: yellow;
+    background-color: white;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-/* Description And  Info */
+/* DESCRIPTION AND INFO */
 
 .description-and-info {
-    background-image: url("../images/pattern-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 400px;
-    border: 1px solid;
+    align-self: center;
+    justify-self: flex-end;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     height: max-content;
-    width: 250px;
+    z-index: 1;
 }
 
-/* Description Dontainer */
+/* DESCRIPTION AND INFO - DESCRIPTION TEXT*/
 
 .description-text {
+    font-size: 2.9rem;
     font-weight: 300;
+    height: 200px;
+    width: 570px;
+    text-align: left;
 }
 
 /* Writer Info */
@@ -130,12 +147,11 @@ main {
     color: var(--color-grayish-blue);
 }
 
-
 /* Media Queries */
 
 @media (max-width:375px) {
-
     .slider {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -145,4 +161,3 @@ main {
         height: max-content;
     }
 }
-
