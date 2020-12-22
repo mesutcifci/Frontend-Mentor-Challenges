@@ -88,7 +88,7 @@ main {
     position: absolute;
     bottom: -25px;
     left: -23px;
-    z-index: 2;
+    z-index: 2000;
 }
 
 /* BUTTON CONTAINER - BUTTON */
@@ -329,5 +329,9 @@ main {
 }
 
 .hide {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 8888;
 }
