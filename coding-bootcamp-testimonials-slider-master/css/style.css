@@ -21,10 +21,9 @@ html, body {
 }
 
 body {
-    background-image: url("../images/pattern-curve.svg"), url("../images/pattern-bg.svg");
+    background-image: url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
-    background-position: bottom 0px left 0px, top -10px right 50px;
-    background-size: 50%;
+    background-position: bottom 0px left 0px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -33,25 +32,27 @@ a {
 }
 
 main {
+    box-sizing: border-box;
+    padding-top: 70px;
     height: 100%;
 }
 
 /* CONTAINER */
 
 .container {
-    background-image: url("../images/pattern-quotes.svg");
-    background-repeat: no-repeat;
-    background-position: top 114px left 195px;
-    padding: 40px 30px 30px 30px;
+   
 }
 
 /* CONTAINER - SLIDER */
 
 .slider {
+    border: 1px solid yellow;
     display: grid;
     font-size: 1.4rem;
     grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hide {
@@ -61,18 +62,29 @@ main {
 /* SLIDER - IMAGE AND ICONS */
 
 .image-and-icons {
+    border: 1px solid green;
     position: relative;
-    height: max-content;
+    width: max-content;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 /* IMAGE AND ICONS */
 
-.image {
-    display: block;
-    height: 450px;
+.profile-image {
+    display: inline-block;
+    max-height: 450px;
     margin-left: -58px;
+    position: relative;
+    z-index: 1;
+}
+
+.background-pattern {
+    max-height: 550px;
+    position: absolute;
+    top: -55px;
+    left: -120px;
+    z-index: 0;
 }
 
 /* IMAGE AND ICONS - BUTTON CONTAINER */
@@ -84,6 +96,7 @@ main {
     position: absolute;
     bottom: -25px;
     left: -23px;
+    z-index: 2;
 }
 
 /* BUTTON CONTAINER - BUTTON */
@@ -154,10 +167,5 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .image-and-icons {
-        border: 1px solid red;
-        width: 200px;
-        height: max-content;
     }
 }
