@@ -24,6 +24,7 @@ body {
     background-image: url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position: bottom 0px left 0px;
+    background-size: 40%;
     font-family: 'Inter', sans-serif;
 }
 
@@ -138,9 +139,21 @@ main {
     font-weight: 300;
     height: 200px;
     width: 570px;
+    position: relative;
     text-align: left;
 }
 
+.description-text::after {
+    background-image: url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    height: 180px;
+    width: 110px;
+    position: absolute;
+    top: -65px;
+    left: 85px;
+}
 
 /* Writer Info */
 
@@ -188,11 +201,19 @@ main {
         font-size: 2.3rem;
         margin-bottom: 10px;
     }
+    .description-text::after {
+        width: 90px;
+        top: -55px;
+        left: 65px;
+    }
 }
 
 /* SMALL VIEW */
 
 @media(max-width:835px) {
+    body {
+        background-size: 60%;
+    }
     .slider {
         display: flex;
         flex-direction: column;
@@ -212,12 +233,16 @@ main {
         left: 85px;
     }
     .description-text {
-        border: 1px solid;
         margin-top: 90px;
         font-size: 1.8rem;
         width: 315px;
         line-height: 25px;
         text-align: center;
+    }
+    .description-text::after {
+        top: -35px;
+        left: 120px;
+        width: 70px;
     }
     .writer-info {
         display: flex;
@@ -270,6 +295,11 @@ main {
         font-weight: 300;
         width: 260px;
     }
+    .description-text::after {
+        top: -20px;
+        left: 105px;
+        width: 50px;
+    }
 }
 
 /* XSMALL VIEW */
@@ -291,6 +321,10 @@ main {
     .button-container {
         bottom: -14px;
         left: calc(10vw);
+    }
+    .description-text::after {
+        top: -20px;
+        left: 40vw;
     }
 }
 
