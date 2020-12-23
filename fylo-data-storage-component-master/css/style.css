@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 /* GLOBAL */
 
 :root {
@@ -37,14 +39,22 @@ a {
 main {
     background: url("../images/bg-desktop.png") no-repeat;
     background-position: 0 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
     width: 100%;
 }
 
 #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -85,7 +95,8 @@ main {
 /* PROGRESS BAR */
 
 #progress-and-description {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     background-color: var(--color-dark-blue);
     border-radius: 1rem;
     height: 110px;
@@ -99,6 +110,8 @@ main {
 #bubble {
     background-color: var(--color-white);
     border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 40px;
     width: 100px;
@@ -151,18 +164,26 @@ main {
 }
 
 #progress-bar {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(6, 100%, 80%)), to(hsl(335, 100%, 65%)));
+    background-image: -o-linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border: 3px solid var(--color-very-dark-blue);
     border-radius: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 18px;
     width: 70%;
 }
 
 #small-circle {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     background-color: var(--color-pale-blue);
     border-radius: 100%;
     margin-right: 1px;
@@ -174,6 +195,8 @@ main {
     color: var(--color-white);
     font-size: 1.2rem;
     font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 1rem;
     width: 100%;
@@ -206,10 +229,15 @@ footer {
 
 @media (min-width: 590px) and (max-width:940px) {
     #container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #logo-and-icons {
         border-radius: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 30px 30px 0px 30px;
         margin-right: 0;
@@ -217,13 +245,18 @@ footer {
         max-width: unset;
     }
     #icons-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 100%;
     }
     #bubble::after {
         right: 50px;
-        transform: skew(-20deg);
+        -webkit-transform: skew(-20deg);
+            -ms-transform: skew(-20deg);
+                transform: skew(-20deg);
     }
 
     footer {
@@ -239,17 +272,23 @@ footer {
     }
 
     #container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     #logo-and-icons {
-        align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
     #progress-and-description {
         height: 110px;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
         padding-left: 22px;
         padding-right: 22px;

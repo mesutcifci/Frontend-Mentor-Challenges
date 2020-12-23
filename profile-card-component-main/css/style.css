@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 /* GLOBAL */
 
 :root {
@@ -34,23 +36,34 @@ body {
 }
 
 main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
     /* 
     Thanks ApplePieGiraffe (from frontendmentor.com) for pieces of code.
     */
     background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-height: calc(100% - 35px);
 }
 
 #card {
     background-color: #ffffff;
     border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 320px;
     height: 340px;
 }
@@ -66,14 +79,20 @@ main {
 }
 
 #profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 33%;
     margin-bottom: 1rem;
 }
 
 #profile-photo {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     border: 5px solid #ffffff;
     border-radius: 50%;
     position: relative;
@@ -81,7 +100,8 @@ main {
 }
 
 #name-and-age {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     color: var(--color--very-dark-desaturated-blue);
     font-size: 1.8rem;
     font-weight: 700;
@@ -95,7 +115,8 @@ main {
 }
 
 #country {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     color: var(--color--dark-grayish-blue);
     font-size: 1.3rem;
     font-weight: 400;
@@ -107,9 +128,14 @@ main {
     border-top: 2px solid hsl(0, 0%, 93%);
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 27%;
 }
 
