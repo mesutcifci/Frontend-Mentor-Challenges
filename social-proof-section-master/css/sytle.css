@@ -1,7 +1,7 @@
 @import "font.css";
 @import "style.css";
 
-/* Global */
+/* GLOBAL */
 
 *, ::before, ::after {
     margin: 0;
@@ -31,9 +31,9 @@ main {
     max-width: 111rem;
 }
 
-/* Header And Stars */
+/* HEADER AND STARS */
 
-#header-and-stars {
+.header-and-stars {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -56,7 +56,7 @@ h1 {
     line-height: 1.15;
 }
 
-#introduction {
+.introduction {
     color: hsl(303, 10%, 53%);
     font-family: Spartan-Medium, sans-serif;
     font-size: 1.5rem;
@@ -65,7 +65,7 @@ h1 {
     width: 46rem;
 }
 
-#wrapper-stars {
+.wrapper-stars {
     margin-top: 1rem;
     padding-left: 12rem;
     height: -webkit-max-content;
@@ -84,8 +84,8 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-family: Spartan-Bold, sans-serif;
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -117,9 +117,9 @@ h1 {
     margin: 0 0 0 8rem;
 }
 
-/* Cards */
+/* CARDS */
 
-#cards {
+.cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -139,15 +139,15 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .customer-name {
     color: hsl(0, 0%, 100%);
     font-family: Spartan-SemiBold;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     font-size: 1.35rem;
     margin-top: 1rem;
 }
@@ -180,7 +180,7 @@ h1 {
     margin: 4rem 0 0 auto;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
     background-color: hsl(300, 4%, 90%);
@@ -191,7 +191,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 
 @media (max-width:1125px) {
     main {
@@ -200,67 +200,62 @@ footer {
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
-    #header-and-stars {
+    .header-and-stars {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         text-align: center;
     }
-
     h1 {
         font-size: 3.5rem;
     }
-
-    #wrapper-stars {
+    .wrapper-stars {
         padding-left: 0;
     }
     #reviews, #guru, #best-tech {
         margin: 0 0 2rem 0;
     }
-    #cards {
+    .cards {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .container-cards, #anne {
         margin-right: 0;
         margin-left: 0;
         margin-top: 2rem;
     }
-
     footer {
         height: auto;
     }
 }
 
 @media (max-width: 500px) {
-    header, #wrapper-stars, .container-cards{
+    header, .wrapper-stars, .container-cards {
         width: 90%;
-    } 
-    
-    #introduction, .container-star {
+    }
+    .introduction, .container-star {
         width: 100%;
     }
-
     .container-star {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         height: auto;
     }
     .container-star div {
@@ -274,11 +269,9 @@ footer {
     .first-star {
         margin-left: 0;
     }
-
     .container-cards {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         height: auto;
     }
-
 }

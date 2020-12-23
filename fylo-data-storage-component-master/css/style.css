@@ -52,7 +52,7 @@ main {
     width: 100%;
 }
 
-#container {
+.container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -60,7 +60,7 @@ main {
 
 /* LOGO AND ICONS */
 
-#logo-and-icons {
+.logo-and-icons {
     background-color: var(--color-dark-blue);
     border-radius: 1rem;
     border-top-right-radius: 45%;
@@ -69,7 +69,7 @@ main {
     max-width: 200px;
 }
 
-#logo-wrapper {
+.logo-wrapper {
     margin-bottom: 25px;
 }
 
@@ -94,7 +94,7 @@ main {
 
 /* PROGRESS BAR */
 
-#progress-and-description {
+.progress-and-description {
     -ms-flex-item-align: end;
         align-self: flex-end;
     background-color: var(--color-dark-blue);
@@ -107,7 +107,7 @@ main {
     position: relative;
 }
 
-#bubble {
+.bubble {
     background-color: var(--color-white);
     border-radius: 1rem;
     display: -webkit-box;
@@ -122,20 +122,20 @@ main {
     left: 400px;
 }
 
-#bubble span:first-child {
+.bubble span:first-child {
     font-size: 3rem;
     font-weight: 700;
     margin-right: 5px;
 }
 
-#bubble span:nth-child(2) {
+.bubble span:nth-child(2) {
     color: var(--color-grayish-blue);
     font-size: 1.1rem;
     font-weight: 700;
     margin-top: 13px;
 }
 
-#bubble::after {
+.bubble::after {
     border-right: 25px solid var(--color-white);
     border-bottom: 30px solid transparent;
     content: '';
@@ -144,26 +144,26 @@ main {
     right: 0px;
 }
 
-#used-data {
+.used-data {
     color: var(--color-grayish-blue);
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 12px;
 }
 
-#used-data span {
+.used-data span {
     color: var(--color-white);
     font-weight: 700;
 }
 
-#progress-bar-wrapper {
+.progress-bar-wrapper {
     background-color: var(--color-very-dark-blue);
     border-radius: 20px;
     height: 18px;
     width: 100%;
 }
 
-#progress-bar {
+.progress-bar {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(6, 100%, 80%)), to(hsl(335, 100%, 65%)));
@@ -181,7 +181,7 @@ main {
     width: 70%;
 }
 
-#small-circle {
+.small-circle {
     -ms-flex-item-align: center;
         align-self: center;
     background-color: var(--color-pale-blue);
@@ -191,7 +191,7 @@ main {
     width: 10px;
 }
 
-#labels {
+.labels {
     color: var(--color-white);
     font-size: 1.2rem;
     font-weight: 700;
@@ -202,7 +202,7 @@ main {
     width: 100%;
 }
 
-#maximum-data {
+.maximum-data {
     margin-left: auto;
 }
 
@@ -228,13 +228,13 @@ footer {
 /* MEDIA QUERIES */
 
 @media (min-width: 590px) and (max-width:940px) {
-    #container {
+    .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
-    #logo-and-icons {
+    .logo-and-icons {
         border-radius: 10px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -244,7 +244,7 @@ footer {
         margin-bottom: 50px;
         max-width: unset;
     }
-    #icons-wrapper {
+    .icons-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -252,7 +252,7 @@ footer {
             justify-content: space-around;
         width: 100%;
     }
-    #bubble::after {
+    .bubble::after {
         right: 50px;
         -webkit-transform: skew(-20deg);
             -ms-transform: skew(-20deg);
@@ -271,21 +271,21 @@ footer {
         background-size: cover;
     }
 
-    #container {
+    .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
 
-    #logo-and-icons {
+    .logo-and-icons {
         -ms-flex-item-align: center;
             align-self: center;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    #progress-and-description {
+    .progress-and-description {
         height: 110px;
         width: -webkit-max-content;
         width: -moz-max-content;
@@ -295,19 +295,19 @@ footer {
         padding-top: 22px;
     }
 
-    #used-data {
+    .used-data {
         width: 250px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #progress-bar-wrapper {
+    .progress-bar-wrapper {
         margin-left: auto;
         margin-right: auto;
         width: 270px;
     }
 
-    #bubble {
+    .bubble {
         bottom: 0px;
         top: 100px;
         left: 75px;
@@ -316,7 +316,7 @@ footer {
         padding: 1rem 0 1rem 3rem;
     }
 
-    #bubble::after {
+    .bubble::after {
         display: none;
     }
 

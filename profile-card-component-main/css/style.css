@@ -54,7 +54,7 @@ main {
     min-height: calc(100% - 35px);
 }
 
-#card {
+.card {
     background-color: #ffffff;
     border-radius: 1rem;
     display: -webkit-box;
@@ -68,7 +68,7 @@ main {
     height: 340px;
 }
 
-#background-area {
+.background-area {
     background-image: url("./images/bg-pattern-card.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -78,7 +78,7 @@ main {
     width: 100%;
 }
 
-#profile {
+.profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -90,7 +90,7 @@ main {
     margin-bottom: 1rem;
 }
 
-#profile-photo {
+.profile-photo {
     -ms-flex-item-align: center;
         align-self: center;
     border: 5px solid #ffffff;
@@ -99,7 +99,7 @@ main {
     bottom: 70px;
 }
 
-#name-and-age {
+.name-and-age {
     -ms-flex-item-align: center;
         align-self: center;
     color: var(--color--very-dark-desaturated-blue);
@@ -114,7 +114,7 @@ main {
     font-weight: 400;
 }
 
-#country {
+.country {
     -ms-flex-item-align: center;
         align-self: center;
     color: var(--color--dark-grayish-blue);
@@ -124,7 +124,7 @@ main {
     bottom: 40px;
 }
 
-#social-media-statics {
+.social-media-statics {
     border-top: 2px solid hsl(0, 0%, 93%);
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;

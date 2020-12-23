@@ -2,7 +2,7 @@
 
 let shareIcon = document.getElementsByClassName("share-icon")[0];
 
-let container = document.getElementById("container");
+let container = document.getElementsByClassName("container")[0];
 let containerStyle = window.getComputedStyle(container);
 
 let iconsOuterContainer = document.getElementById("icons-outer-container");
