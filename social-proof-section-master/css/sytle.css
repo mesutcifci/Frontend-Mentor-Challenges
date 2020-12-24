@@ -14,8 +14,8 @@ html, body {
 }
 
 body {
-    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
-    background-repeat: no-repeat, no-repeat;
+    background-image:    url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat:   no-repeat, no-repeat;
     background-position: left top, right bottom;
 }
 
@@ -46,12 +46,12 @@ header {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    width: 46rem;
+    width:  46rem;
 }
 
 h1 {
     font-family: Spartan-Bold, sans-serif;
-    font-size: 4.5rem;
+    font-size:   4.5rem;
     color: hsl(300, 43%, 22%);
     line-height: 1.15;
 }
@@ -59,7 +59,7 @@ h1 {
 .introduction {
     color: hsl(303, 10%, 53%);
     font-family: Spartan-Medium, sans-serif;
-    font-size: 1.5rem;
+    font-size:   1.5rem;
     line-height: 1.5;
     margin-top: 1rem;
     width: 46rem;
@@ -71,9 +71,9 @@ h1 {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width:  -webkit-max-content;
+    width:  -moz-max-content;
+    width:  max-content;
 }
 
 .container-star {
@@ -84,10 +84,10 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align:    center;
+    align-items:       center;
     font-family: Spartan-Bold, sans-serif;
-    font-size: 1.5rem;
+    font-size:   1.5rem;
     margin-bottom: 2rem;
     height: 5.5rem;
     width: 45rem;
@@ -128,7 +128,7 @@ h1 {
 .container-cards {
     background-color: hsl(300, 43%, 22%);
     border-radius: 3%;
-    width: 29.5rem;
+    width:  29.5rem;
     height: 18rem;
     margin-right: 3.8rem;
     padding: 4rem 2.5rem 3rem 2.5rem;
@@ -139,15 +139,15 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align:    center;
+    align-items:       center;
 }
 
 .customer-name {
     color: hsl(0, 0%, 100%);
-    font-family: Spartan-SemiBold;
+    font-family:         Spartan-SemiBold;
     -ms-flex-item-align: center;
-    align-self: center;
+    align-self:          center;
     font-size: 1.35rem;
     margin-top: 1rem;
 }
@@ -161,13 +161,13 @@ h1 {
 .customer-status {
     color: hsl(333, 80%, 67%);
     font-family: Spartan-Light;
-    font-size: 1.2rem;
+    font-size:   1.2rem;
 }
 
 .customer-comment {
     color: hsl(0, 0%, 100%);
     font-family: Spartan-Medium;
-    font-size: 1.35rem;
+    font-size:   1.35rem;
     line-height: 1.7;
     margin-top: 3rem;
 }
@@ -186,8 +186,8 @@ footer {
     background-color: hsl(300, 4%, 90%);
     height: 2rem;
     font-family: Spartan-Medium;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size:   1.5rem;
+    text-align:  center;
     margin-top: 2rem;
 }
 
@@ -198,19 +198,19 @@ footer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient:    vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        -ms-flex-direction:    column;
+        flex-direction:        column;
     }
     .header-and-stars {
-        -webkit-box-orient: vertical;
+        -webkit-box-orient:    vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        -ms-flex-direction:    column;
+        flex-direction:        column;
         -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        -ms-flex-align:    center;
+        align-items:       center;
         text-align: center;
     }
     h1 {
@@ -223,18 +223,18 @@ footer {
         margin: 0 0 2rem 0;
     }
     .cards {
-        -webkit-box-orient: vertical;
+        -webkit-box-orient:    vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        -ms-flex-direction:    column;
+        flex-direction:        column;
         -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        -ms-flex-align:    center;
+        align-items:       center;
     }
     .container-cards, #anne {
         margin-right: 0;
-        margin-left: 0;
-        margin-top: 2rem;
+        margin-left:  0;
+        margin-top:   2rem;
     }
     footer {
         height: auto;
@@ -249,29 +249,29 @@ footer {
         width: 100%;
     }
     .container-star {
-        -webkit-box-orient: vertical;
+        -webkit-box-orient:    vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        -ms-flex-direction:    column;
+        flex-direction:        column;
         -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
+        -ms-flex-align:    center;
+        align-items:       center;
         height: auto;
     }
     .container-star div {
-        margin-top: 1.5rem;
+        margin-top:    1.5rem;
         margin-bottom: 1.5rem;
     }
     .stars-description {
         margin-bottom: 1.5rem;
-        margin-left: 0px;
+        margin-left:   0px;
     }
     .first-star {
         margin-left: 0;
     }
     .container-cards {
         -webkit-box-sizing: border-box;
-        box-sizing: border-box;
+        box-sizing:         border-box;
         height: auto;
     }
 }

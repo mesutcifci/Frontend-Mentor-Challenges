@@ -22,8 +22,8 @@ a {
 html, body {
     height: 100%;
     min-height: 330px;
-    max-width: 1440px;
-    min-width: 330px;
+    max-width:  1440px;
+    min-width:  330px;
 }
 
 html {
@@ -39,17 +39,17 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    -webkit-box-align:   center;
+        -ms-flex-align:  center;
             align-items: center;
-    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-image:  url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
     /* 
     Thanks ApplePieGiraffe (from frontendmentor.com) for pieces of code.
     */
     background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -webkit-box-pack:        center;
+        -ms-flex-pack:       center;
             justify-content: center;
     min-height: calc(100% - 35px);
 }
@@ -60,30 +60,30 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-box-orient:     vertical;
+    -webkit-box-direction:  normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 320px;
+    width:  320px;
     height: 340px;
 }
 
 .background-area {
-    background-image: url("./images/bg-pattern-card.svg");
+    background-image:  url("./images/bg-pattern-card.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    border-top-left-radius: inherit;
+    background-size:   contain;
+    border-top-left-radius:  inherit;
     border-top-right-radius: inherit;
     height: 40%;
-    width: 100%;
+    width:  100%;
 }
 
 .profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    -webkit-box-orient:     vertical;
+    -webkit-box-direction:  normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 33%;
@@ -92,8 +92,8 @@ main {
 
 .profile-photo {
     -ms-flex-item-align: center;
-        align-self: center;
-    border: 5px solid #ffffff;
+        align-self:      center;
+    border:        5px solid #ffffff;
     border-radius: 50%;
     position: relative;
     bottom: 70px;
@@ -101,9 +101,9 @@ main {
 
 .name-and-age {
     -ms-flex-item-align: center;
-        align-self: center;
+        align-self:      center;
     color: var(--color--very-dark-desaturated-blue);
-    font-size: 1.8rem;
+    font-size:   1.8rem;
     font-weight: 700;
     position: relative;
     bottom: 50px;
@@ -116,38 +116,38 @@ main {
 
 .country {
     -ms-flex-item-align: center;
-        align-self: center;
+        align-self:      center;
     color: var(--color--dark-grayish-blue);
-    font-size: 1.3rem;
+    font-size:   1.3rem;
     font-weight: 400;
     position: relative;
     bottom: 40px;
 }
 
 .social-media-statics {
-    border-top: 2px solid hsl(0, 0%, 93%);
-    border-bottom-left-radius: inherit;
+    border-top:                 2px solid hsl(0, 0%, 93%);
+    border-bottom-left-radius:  inherit;
     border-bottom-right-radius: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    -webkit-box-align:   center;
+        -ms-flex-align:  center;
             align-items: center;
-    -ms-flex-pack: distribute;
+    -ms-flex-pack:       distribute;
         justify-content: space-around;
     height: 27%;
 }
 
 .statics {
     color: var(--color--very-dark-desaturated-blue);
-    font-size: 1.8rem;
+    font-size:   1.8rem;
     font-weight: 700;
 }
 
 .label {
     color: var(--color--dark-grayish-blue);
-    font-size: 1.1rem;
+    font-size:   1.1rem;
     font-weight: 400;
     margin-top: 5px;
 }
@@ -166,7 +166,7 @@ footer {
     background-color: var(--color--transparent);
     color: #fff;
     font-weight: 400;
-    font-size: 2rem;
+    font-size:   2rem;
     min-height: 30px;
     line-height: 30px;
     margin-top: 5px;
