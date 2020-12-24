@@ -21,10 +21,10 @@ html, body {
 }
 
 body {
-    background-image: url("../images/pattern-curve.svg");
-    background-repeat: no-repeat;
+    background-image:    url("../images/pattern-curve.svg");
+    background-repeat:   no-repeat;
     background-position: bottom 0px left 0px;
-    background-size: 40%;
+    background-size:     40%;
     font-family: 'Inter', sans-serif;
 }
 
@@ -40,8 +40,8 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -webkit-box-pack:        center;
+        -ms-flex-pack:       center;
             justify-content: center;
 }
 
@@ -50,8 +50,8 @@ main {
 footer {
     color: rgb(255, 140, 140);
     font-weight: 400;
-    font-size: 2rem;
-    min-height: 30px;
+    font-size:   2rem;
+    min-height:  30px;
     line-height: 30px;
     text-align: center;
 }
@@ -65,8 +65,8 @@ footer {
     width: 970px;
     opacity: 1;
     -webkit-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
 }
 
 /* SLIDER - IMAGE AND ICONS */
@@ -98,7 +98,7 @@ footer {
 .background-pattern {
     max-height: 550px;
     position: absolute;
-    top: -55px;
+    top:  -55px;
     left: -120px;
     z-index: 0;
 }
@@ -117,7 +117,7 @@ footer {
     height: max-content;
     position: absolute;
     bottom: -25px;
-    left: -23px;
+    left:   -23px;
     z-index: 2000;
 }
 
@@ -131,25 +131,25 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
+    -webkit-box-align:   center;
+        -ms-flex-align:  center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    -webkit-box-pack:        center;
+        -ms-flex-pack:       center;
             justify-content: center;
     height: 50px;
-    width: 55px;
+    width:  55px;
 }
 
 #prev-button {
     background-color: white;
-    border-top-left-radius: 25px;
+    border-top-left-radius:    25px;
     border-bottom-left-radius: 25px;
 }
 
 #next-button {
     background-color: white;
-    border-top-right-radius: 25px;
+    border-top-right-radius:    25px;
     border-bottom-right-radius: 25px;
 }
 
@@ -174,21 +174,21 @@ footer {
 /* DESCRIPTION AND INFO - DESCRIPTION TEXT*/
 
 .description-text {
-    font-size: 2.9rem;
+    font-size:   2.9rem;
     font-weight: 300;
     height: 200px;
-    width: 575px;
+    width:  575px;
     position: relative;
     text-align: left;
 }
 
 .description-text::after {
-    background-image: url("../images/pattern-quotes.svg");
+    background-image:  url("../images/pattern-quotes.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:   100%;
     content: "";
     height: 180px;
-    width: 110px;
+    width:  110px;
     position: absolute;
     top: -65px;
     left: 85px;
@@ -224,17 +224,17 @@ footer {
         max-height: 350px;
     }
     .background-pattern {
-        top: -45px;
+        top:  -45px;
         left: -110px;
         max-height: 430px;
     }
     .button-container {
         bottom: -17px;
-        left: -37px;
+        left:   -37px;
     }
     .button {
         height: 40px;
-        width: 45px;
+        width:  45px;
     }
     .description-text {
         width: 470px;
@@ -246,7 +246,7 @@ footer {
     }
     .description-text::after {
         width: 90px;
-        top: -55px;
+        top:  -55px;
         left: 65px;
     }
 }
@@ -275,7 +275,7 @@ footer {
         margin-left: 0;
     }
     .background-pattern {
-        top: -33px;
+        top:  -33px;
         left: -40px;
         max-height: 340px;
     }
@@ -290,7 +290,7 @@ footer {
         text-align: center;
     }
     .description-text::after {
-        top: -35px;
+        top:  -35px;
         left: 120px;
         width: 70px;
     }
@@ -298,8 +298,8 @@ footer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
+        -webkit-box-orient:     vertical;
+        -webkit-box-direction:  normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         text-align: center;
@@ -323,40 +323,40 @@ footer {
 @media(max-width:380px) {
     .slider {
         padding-left: 0px;
-        margin-left: auto;
+        margin-left:  auto;
         margin-right: auto;
     }
     .image-and-icons {
-        margin-left: auto;
+        margin-left:  auto;
         margin-right: auto;
     }
     .profile-image {
         max-height: 200px;
     }
     .background-pattern {
-        top: -23px;
+        top:  -23px;
         left: -26px;
         max-height: 240px;
     }
     .button-container {
         bottom: -14px;
-        left: 68px;
+        left:   68px;
     }
     .button {
         height: 35px;
-        width: 35px;
+        width:  35px;
     }
     .button-icon {
-        width: 10px;
+        width:  10px;
         height: 12px;
     }
     .description-text {
-        font-size: 1.5rem;
+        font-size:   1.5rem;
         font-weight: 300;
         width: 260px;
     }
     .description-text::after {
-        top: -20px;
+        top:  -20px;
         left: 105px;
         width: 50px;
     }
@@ -367,20 +367,20 @@ footer {
 @media(max-width:275px) {
     .profile-image {
         max-height: auto;
-        height: auto;
-        width: 70vw;
+        height:     auto;
+        width:      70vw;
     }
     .background-pattern {
         max-height: auto;
-        height: auto;
-        width: 90vw;
+        height:     auto;
+        width:      90vw;
     }
     .description-text {
         width: auto;
     }
     .button-container {
         bottom: -14px;
-        left: calc(10vw);
+        left:   calc(10vw);
     }
     .description-text::after {
         top: -20px;
@@ -392,5 +392,4 @@ footer {
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    z-index: 8888;
 }
