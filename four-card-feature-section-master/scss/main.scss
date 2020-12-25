@@ -1,24 +1,25 @@
-/* BASE */
+@charset 'utf-8';
 
+// BASE 
 @import "./base/normalize.scss";
+
+
+// ABSTRACTS 
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixins.scss";
+
+// BASE 
+@import "./base/base.scss";
 @import "./base/typography.scss";
 
 
+// LAYOUT 
+@import "./layout/global.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
-/* ABSTRACTS */
 
-@import "./abstracts/variables";
-
-
-
-/* LAYOUT */
-
-@import "./layout/global";
-@import "./layout/header";
-@import "./layout/footer";
-
-/* COMPONENTS */
-
-@import "./components/cards";
+// COMPONENTS 
+@import "./components/cards.scss";
 
 
