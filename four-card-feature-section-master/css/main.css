@@ -355,39 +355,43 @@ body {
 .top-header-heading span {
   color: #4c4e61;
   font-weight: 600;
+  margin-top: 5px;
 }
 .top-header-description {
   color: #a3a5ae;
   font-size: 1.2rem;
+  line-height: 20px;
 }
 
 .card-heading {
   color: #4c4e61;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .card-description {
   color: #a3a5ae;
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 25px;
 }
 
 .wrapper {
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 90px 20px 20px 20px;
+  padding: 50px 20px 20px 20px;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 100%;
+  justify-content: center;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  width: max-content;
   height: 70%;
 }
 
@@ -404,11 +408,12 @@ main {
 .card {
   background-color: #ffffff;
   border-radius: 10px;
+  box-shadow: 0px 8px 13px -7px #4c4e61;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  height: 250px;
-  max-width: 350px;
+  height: 230px;
+  max-width: 330px;
   padding: 30px 30px 30px 30px;
   position: relative;
 }
@@ -435,6 +440,36 @@ main {
   align-self: flex-end;
   margin-left: auto;
   margin-right: 0;
+}
+
+.supervisor {
+  grid-row: 2/3;
+}
+.supervisor::before {
+  background-color: #45d3d3;
+}
+
+.teambuilder {
+  grid-column: 2/3;
+}
+.teambuilder::before {
+  background-color: #ea5353;
+}
+
+.karma {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.karma::before {
+  background-color: #fcaf4a;
+}
+
+.calculator {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.calculator::before {
+  background-color: #549ef2;
 }
 
 /*# sourceMappingURL=main.css.map */

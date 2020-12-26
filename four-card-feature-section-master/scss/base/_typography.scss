@@ -16,12 +16,14 @@ body {
     span {
       color: $very-dark-blue;
       font-weight: $bold;
+      margin-top: 5px;
     }
   }
 
   &-description {
     color: $grayish-blue;
     font-size: 1.2rem;
+    line-height: 20px;
   }
 
 }
@@ -30,16 +32,15 @@ body {
 
   &-heading {
     color: $very-dark-blue;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: $bold;
   }
 
   &-description {
     color: $grayish-blue;
     font-size: 1.2rem;
-    font-weight: $light;
+    font-weight: $medium;
     line-height: 25px;
   }
-
 
 }
