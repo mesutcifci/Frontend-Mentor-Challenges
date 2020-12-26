@@ -1,5 +1,43 @@
+/* Flex */
+
 @mixin flex-center($direction: row) {
-    flex-direction: $direction;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Media Queries */
+
+@mixin  media($property, $value) {
+    @if($property == "max-width") {
+        @if($value == "medium") {
+
+            @content;
+
+        } @else if($value == "small") {
+
+            @content;
+
+        } @else if($value == "xsmall") {
+
+            @content;
+
+        }
+    } @else if($property == "min-width") {
+        @if($value == "medium") {
+
+            @content;
+
+        } @else if($value == "small") {
+
+            @content;
+
+        } @else if($value == "xsmall") {
+
+            @content;
+            
+        }
+    }
 }

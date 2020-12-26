@@ -1,7 +1,45 @@
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-header {
+  text-align: center;
+
+  &-heading {
+    font-size: 3rem;
+    font-weight: $light;
+
+    span {
+      color: $very-dark-blue;
+      font-weight: $bold;
+    }
+  }
+
+  &-description {
+    color: $grayish-blue;
+    font-size: 1.2rem;
+  }
+
+}
+
+.card {
+
+  &-heading {
+    color: $very-dark-blue;
+    font-size: 1.5rem;
+    font-weight: $bold;
+  }
+
+  &-description {
+    color: $grayish-blue;
+    font-size: 1.2rem;
+    font-weight: $light;
+    line-height: 25px;
+  }
+
+
 }

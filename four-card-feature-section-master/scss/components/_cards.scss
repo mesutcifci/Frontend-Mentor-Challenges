@@ -1,0 +1,41 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  height: 250px;
+  max-width: 350px;
+  padding:30px 30px 30px 30px;
+  position: relative;
+
+
+  &::before {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+  }
+
+  &-heading {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &-description {
+    width: 90%;
+    height: max-content;
+  }
+
+  &-icon {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+}

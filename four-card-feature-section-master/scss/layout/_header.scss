@@ -1,0 +1,13 @@
+.top-header {
+  box-sizing: border-box;
+  height: 30%;
+  max-width: 430px;
+  margin-bottom: 50px;
+
+  &-heading { 
+    span {
+      display: block;
+    }
+  }
+  
+}
