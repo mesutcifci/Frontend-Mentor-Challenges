@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 230px;
-  max-width: 330px;
+  width: 330px;
   padding:30px 30px 30px 30px;
   position: relative;
 
@@ -39,7 +39,18 @@
     margin-right: 0;
   }
 
+  @include media("1100px") {
+    width: 300px;
+
+    &-icon {
+      width: 5rem;
+      height: auto;
+    }
+
+  }
+
 }
+
 
 .supervisor {
   grid-row: 2 / 3;
@@ -50,6 +61,7 @@
 
 }
 
+
 .teambuilder {
   grid-column: 2 / 3;
 
@@ -58,6 +70,7 @@
   }
 
 }
+
 
 .karma {
   grid-column: 2 / 3;
@@ -69,6 +82,7 @@
 
 }
 
+
 .calculator {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -78,3 +92,4 @@
   }
 
 }
+

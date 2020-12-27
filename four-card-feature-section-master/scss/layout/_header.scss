@@ -9,5 +9,30 @@
       display: block;
     }
   }
+
+
+  @include media("440px") {
+
+    &-heading {
+      width: 95vw;
+      min-width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-description {
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @include media("365px") {
   
+    &-description {
+      max-width: 280px;
+      min-width: 270px;
+    }
+  }
+
 }

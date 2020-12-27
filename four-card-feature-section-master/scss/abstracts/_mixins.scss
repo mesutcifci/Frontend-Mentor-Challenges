@@ -10,34 +10,12 @@
 
 /* Media Queries */
 
-@mixin  media($property, $value) {
-    @if($property == "max-width") {
-        @if($value == "medium") {
+@mixin  media($value) {
 
-            @content;
+   @media(max-width: $value) {
+       @content
+   }
 
-        } @else if($value == "small") {
-
-            @content;
-
-        } @else if($value == "xsmall") {
-
-            @content;
-
-        }
-    } @else if($property == "min-width") {
-        @if($value == "medium") {
-
-            @content;
-
-        } @else if($value == "small") {
-
-            @content;
-
-        } @else if($value == "xsmall") {
-
-            @content;
-            
-        }
-    }
 }
+
+// 1100 440 365
