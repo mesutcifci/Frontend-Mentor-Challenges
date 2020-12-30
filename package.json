@@ -1,0 +1,24 @@
+{
+  "name": "Frontend-Mentor-Challenges",
+  "version": "1.0.0",
+  "description": "This repository contains some challenges from [Frontend Mentors](https://www.frontendmentor.io/challenges).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesutcifci/Frontend-Mentor-Challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mesutcifci/Frontend-Mentor-Challenges/issues"
+  },
+  "homepage": "https://github.com/mesutcifci/Frontend-Mentor-Challenges#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
