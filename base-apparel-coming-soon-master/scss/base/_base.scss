@@ -1,0 +1,15 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 1440px;
+    min-height: 100vh;
+    min-width: 280px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
