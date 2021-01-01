@@ -1,1 +1,27 @@
-@import './base/normalize'
+@charset 'utf-8';
+
+// BASE 
+@import './base/normalize';
+
+
+// ABSTRACT
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+
+
+// BASE
+@import './base/base';
+@import './base/typography';
+
+
+// LAYOUT 
+@import "./layout/global";
+@import "./layout/footer";
+
+
+// COMPONENTS 
+@import "./components/form";
+@import "./components/header";
+@import "./components/hero_image";
+@import "./components/logo";

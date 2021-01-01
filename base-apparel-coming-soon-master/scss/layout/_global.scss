@@ -1,0 +1,13 @@
+main {
+ display: flex;
+ flex-direction: column;
+}
+
+.image-wrapper {
+ order: 1;
+ width: 100%;
+}
+
+.header-and-form {
+ order: 2;
+}

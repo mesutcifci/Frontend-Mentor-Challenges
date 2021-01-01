@@ -1,0 +1,33 @@
+.email-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  position: relative;
+  width: max-content;
+  
+  &-input {
+    border: 1px solid $desaturated-red;
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 50px;
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 70px;
+    width: 300px;
+    min-width: 250px;
+  }
+
+  &-button {
+    border: none;
+    border-radius: 20px;
+    background: $gradient-2;
+    width: 65px;
+    height: 48px;
+    position: absolute;
+    right: 0px;
+    z-index: 100;
+  }
+
+}

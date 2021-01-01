@@ -1,0 +1,45 @@
+html {
+ font-size: 10px;
+}
+
+
+body {
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.top-header {
+
+  &-heading {
+    color: $desaturated-red;
+    font-size: 4.3rem;
+    font-weight: $small;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+   
+    span {
+      color: $dark-grayish-red;
+      font-weight: $medium;
+    }
+   
+  }  
+  
+  &-text {
+    color: $desaturated-red;
+    font-size: 1.4rem;
+    font-weight: $medium;
+    line-height: 25px;
+    text-align: center;
+  }
+
+}
+
+.email-form {
+
+  &-input {
+    font-size: 1.5rem;
+  }
+
+  
+}

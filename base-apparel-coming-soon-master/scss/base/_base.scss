@@ -1,15 +1,22 @@
 *, ::before, ::after {
-    margin: 0;
-    padding: 0;
+ margin: 0;
+ padding: 0;
 }
 
 html, body {
-    max-width: 1440px;
-    min-height: 100vh;
-    min-width: 280px;
-    height: 100%;
+ max-width: 1440px;
+ min-height: 100vh;
+ min-width: 250px;
+}
+
+body {
+    background: $gradient-1;
 }
 
 a {
-    text-decoration: none;
+ text-decoration: none;
+}
+
+.hide {
+ display: none;
 }
