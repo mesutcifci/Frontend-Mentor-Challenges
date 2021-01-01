@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mesutcifci/Frontend-Mentor-Challenges#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0"
   }
 }
