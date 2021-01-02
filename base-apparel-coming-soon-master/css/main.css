@@ -339,10 +339,6 @@ a {
   text-decoration: none;
 }
 
-.hide {
-  display: none;
-}
-
 html {
   font-size: 10px;
 }
@@ -391,7 +387,12 @@ main {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .header-and-form {
@@ -458,11 +459,100 @@ main {
 
 .hero-image-mobile {
   width: 100%;
+  max-width: 400px;
 }
 
 .logo {
   margin: 25px 0px 25px 25px;
-  border: -1;
   height: auto;
   width: 100px;
+}
+
+@media (min-width: 800px) {
+  /* GLOBAL */
+  body {
+    background: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+    background-repeat: no-repeat;
+    background-size: 53vw;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .header-and-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 53vw;
+  }
+  .logo {
+    width: 158px;
+    height: auto;
+    margin-top: -5px;
+    margin-bottom: 60px;
+    margin-left: -2px;
+  }
+  .image-wrapper {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  /* IMAGE */
+  .hide-mobile {
+    display: none;
+  }
+  .hero-image-desktop {
+    width: 47vw;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  /* HEADER */
+  .top-header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
+  }
+  .top-header-heading {
+    font-size: 6.5rem;
+    text-align: left;
+    letter-spacing: 10px;
+    line-height: 70px;
+    max-width: 420px;
+  }
+  .top-header-text {
+    font-size: 1.7rem;
+    text-align: left;
+    max-width: 420px;
+  }
+  /* FORM */
+  .email-form-input {
+    max-width: 400px;
+    padding-right: 90px;
+    width: 400px;
+  }
+  .email-form-button {
+    border-radius: 25px;
+    height: 51px;
+    width: 85px;
+  }
+}
+
+@media (max-width: 799px) {
+  /* IMAGE */
+  .hide-desktop {
+    display: none;
+  }
 }
