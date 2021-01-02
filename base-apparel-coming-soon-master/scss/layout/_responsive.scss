@@ -1,0 +1,126 @@
+@include media(min, 375px) {
+  .email-form-input {
+    width: 370px;
+  }
+}
+
+@include media(min, 800px) {
+  
+  /* GLOBAL */
+
+  body {
+    background: url("../images/bg-pattern-desktop.svg"), $gradient-1;
+    background-repeat: no-repeat;
+    background-size: 57vw;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .header-and-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    order: 1;
+    width: 57vw;
+  }
+
+  .logo {
+    width: 158px;
+    height: auto;
+    margin-top: -5px;
+    margin-bottom: 100px;
+    margin-left: -2px;
+  }
+
+  .image-wrapper {
+    order: 2;
+  }
+
+  /* IMAGE */
+
+  .hide-mobile {
+    display: none;
+  }
+  
+  .hero-image-desktop {
+    width: 43vw;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* HEADER */
+
+  .top-header{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    max-width: 440px;
+    
+    &-heading {
+      font-size: 6.5rem;
+      text-align: left;
+      letter-spacing: 10px;
+      line-height: 70px;
+      max-width: 440px;
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      text-align: left;
+      max-width: 440px;
+    }
+    
+  }
+
+  /* FORM */
+
+  .email-form {
+    
+    &-input {
+      margin-left: -15px;
+      padding-left: 30px;
+      padding-right: 120px;
+      width: 420px;
+    }
+
+    &-error {
+      right: 90px;
+    }
+
+    &-button {
+      border-radius: 25px;
+      cursor: pointer;
+      height: 53px;
+      width: 85px;
+
+      &:active {
+        transform: scale(0.97);
+      }
+
+      &:hover {
+        background: linear-gradient(135deg,hsl(0, 80%, 86%), hsla(0, 74%, 74%, 0.582));
+      }
+
+      &:hover path{
+        fill: #ffffff;
+      }
+
+    }
+
+  }
+
+}
+  
+@include media(max, 799px) {
+
+  /* IMAGE */
+
+  .hide-desktop {
+    display: none;
+  }
+  
+}
+  

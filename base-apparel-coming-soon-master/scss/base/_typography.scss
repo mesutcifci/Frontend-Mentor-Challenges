@@ -12,11 +12,11 @@ body {
 
   &-heading {
     color: $desaturated-red;
-    font-size: 4.3rem;
+    font-size: 5rem;
     font-weight: $small;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
    
     span {
       color: $dark-grayish-red;
@@ -26,7 +26,7 @@ body {
   }  
   
   &-text {
-    color: $desaturated-red;
+    color: hsl(358, 43%, 68%);
     font-size: 1.4rem;
     font-weight: $medium;
     line-height: 25px;
@@ -41,5 +41,9 @@ body {
     font-size: 1.5rem;
   }
 
+  &-label {
+    color: $desaturated-red;
+    font-size: 1.5rem;
+  }
   
 }

@@ -6,25 +6,52 @@
   margin-bottom: 40px;
   position: relative;
   width: max-content;
-  
+
   &-input {
     border: 1px solid $desaturated-red;
     border-radius: 25px;
     box-sizing: border-box;
-    height: 50px;
-    max-width: 300px;
+    height: 52px;
     padding-left: 20px;
     padding-right: 70px;
-    width: 300px;
-    min-width: 250px;
+    width: 90vw;
+    min-width: 260px;
+
+
+    &::placeholder {
+      color: $desaturated-red;
+    }
+    
+  }
+
+  &-error {
+    display: none;
+    position: absolute;
+    right: 70px;
+  }
+
+  &-label {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+  }
+
+  .js-show {
+    display: initial;
+  }
+
+  .js-input {
+    border: 2px solid $soft-red;
   }
 
   &-button {
+    background: $gradient-2;
     border: none;
     border-radius: 20px;
-    background: $gradient-2;
+    box-shadow: 0px 16px 15px -6px hsl(0, 36%, 70%);
     width: 65px;
-    height: 48px;
+    height: 50px;
     position: absolute;
     right: 0px;
     z-index: 100;

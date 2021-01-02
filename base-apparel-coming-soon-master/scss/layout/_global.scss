@@ -1,13 +1,14 @@
 main {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-wrapper {
- order: 1;
- width: 100%;
+  order: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .header-and-form {
- order: 2;
+  order: 2;
 }

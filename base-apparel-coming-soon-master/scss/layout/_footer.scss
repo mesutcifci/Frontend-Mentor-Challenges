@@ -1,0 +1,16 @@
+footer {
+    color: $desaturated-red;
+    text-align: center;
+    font-size: 2rem;
+    min-height: 30px;
+    margin-top: 5px;
+  }
+  
+  .link {
+    color: $soft-red;
+    font-weight: 700;
+  }
+  
+  .link::before {
+    content: "\00a0";
+  }

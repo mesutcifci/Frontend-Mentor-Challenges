@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <script src="./index.js" defer></script>
+
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
@@ -20,7 +22,7 @@
 
   <main>
 
-    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 158 33" width="158" height="33">
+    <svg class="logo hide-mobile" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 158 33" width="158" height="33">
       <defs>
         <linearGradient id="a" x1="0%" y1="0%" y2="100%">
           <stop offset="0%" stop-color="#F8BFBF" />
@@ -40,6 +42,8 @@
 
       <header class="top-header">
 
+        <img class="logo hide-desktop" src="./images/logo.svg" alt="">
+
         <h1 class="top-header-heading">
           We're <span>coming soon</span>
         </h1>
@@ -52,13 +56,24 @@
       </header>
 
       <form class="email-form">
-        <input class="email-form-input" type="text" placeholder="Email Address">
 
-        <button class="email-form-button">
+        <input class="email-form-input" type="email" required="required" autocomplete='off' placeholder="Email Address">
+
+        <svg class="email-form-error" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="12" cy="12" r="12" fill="#F96464" />
+            <path fill="#FFF" fill-rule="nonzero"
+              d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z" />
+          </g>
+        </svg>
+
+        <button class="email-form-button" type="button">
           <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="20">
             <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
           </svg>
         </button>
+
+        <label class="email-form-label" for="email-form-input">Please provide a valid email</label>
 
       </form>
 
@@ -66,19 +81,19 @@
 
     <div class="image-wrapper">
 
-      <img class="hero-image-mobile" src="./images/hero-mobile.jpg" alt="woman">
-      <img class="hero-image-desktop hide" src="./images/hero-desktop.jpg" alt="woman">
+      <img class="hero-image-mobile  hide-mobile" src="./images/hero-mobile.jpg" alt="woman">
+      <img class="hero-image-desktop hide-desktop" src="./images/hero-desktop.jpg" alt="woman">
 
     </div>
 
   </main>
-  <!--
+  
   <footer>
     Challenge by
     <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
       class="link" href="https://github.com/mesutcifci">Mesut Çifci</a>.
   </footer>
--->
+
 </body>
 
 </html>
