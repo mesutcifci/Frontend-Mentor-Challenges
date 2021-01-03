@@ -505,6 +505,11 @@ footer {
   z-index: 100;
 }
 
+.email-form-button:active {
+  -webkit-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
 .top-header {
   margin-top: 60px;
 }
@@ -623,10 +628,6 @@ footer {
     cursor: pointer;
     height: 53px;
     width: 85px;
-  }
-  .email-form-button:active {
-    -webkit-transform: scale(0.97);
-    transform: scale(0.97);
   }
   .email-form-button:hover {
     background: linear-gradient(135deg, #f8bfbf, rgba(238, 140, 140, 0.582));

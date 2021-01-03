@@ -96,10 +96,6 @@
       height: 53px;
       width: 85px;
 
-      &:active {
-        transform: scale(0.97);
-      }
-
       &:hover {
         background: linear-gradient(135deg,hsl(0, 80%, 86%), hsla(0, 74%, 74%, 0.582));
       }

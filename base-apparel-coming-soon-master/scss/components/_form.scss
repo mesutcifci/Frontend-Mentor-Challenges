@@ -55,6 +55,11 @@
     position: absolute;
     right: 0px;
     z-index: 100;
+
+    &:active {
+      transform: scale(0.97);
+    }
+    
   }
 
 }
