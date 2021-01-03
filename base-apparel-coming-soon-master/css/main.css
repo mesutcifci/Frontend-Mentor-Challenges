@@ -500,12 +500,14 @@ footer {
   box-shadow: 0px 16px 15px -6px #ce9797;
   width: 65px;
   height: 50px;
+  outline: none;
   position: absolute;
   right: 0px;
   z-index: 100;
 }
 
 .email-form-button:active {
+  outline: none;
   -webkit-transform: scale(0.97);
   transform: scale(0.97);
 }
