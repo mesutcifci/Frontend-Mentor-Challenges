@@ -46,9 +46,10 @@
   }
   
   .hero-image-desktop {
-    width: 43vw;
     margin-left: auto;
     margin-right: 0;
+    object-fit: cover;
+    width: 43vw;
   }
 
   /* HEADER */

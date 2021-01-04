@@ -592,9 +592,11 @@ footer {
     display: none;
   }
   .hero-image-desktop {
-    width: 43vw;
     margin-left: auto;
     margin-right: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 43vw;
   }
   /* HEADER */
   .top-header {
