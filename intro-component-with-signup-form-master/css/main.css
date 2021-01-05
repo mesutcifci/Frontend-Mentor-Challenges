@@ -612,6 +612,10 @@ footer {
   box-shadow: none;
 }
 
+.card-wrapper--input:focus {
+  border: 1px solid #3e3c49;
+}
+
 .card-wrapper--button {
   background-color: #38cc8c;
   border: 1px solid #38cc8c;
@@ -673,6 +677,10 @@ footer {
 .js-border:required {
   -webkit-box-shadow: red 0px 0px 1.5px 1px;
   box-shadow: red 0px 0px 1.5px 1px;
+}
+
+.js-border:focus {
+  border: 1px solid red;
 }
 
 /* TABLET */
@@ -748,9 +756,6 @@ footer {
     max-width: 500px;
     width: 500px;
     padding: 40px 15px 40px 15px;
-  }
-  .card-wrapper--input:focus {
-    border: 1px solid #3e3c49;
   }
   .card-wrapper--text {
     width: -webkit-max-content;

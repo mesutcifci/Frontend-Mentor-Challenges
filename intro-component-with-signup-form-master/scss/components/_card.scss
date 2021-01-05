@@ -34,8 +34,17 @@
     padding-left: 30px; 
 
     &:required {
+
       box-shadow: none;
+
     }
+
+    &:focus {
+    
+      border: 1px solid $dark-blue;    
+
+    }
+
 
   }
 
@@ -106,6 +115,14 @@
   display: initial;
 }
 
-.js-border:required{
+.js-border:required {
   box-shadow: rgb(255, 0, 0) 0px 0px 1.5px 1px;
 }
+
+.js-border:focus {
+  border: 1px solid red;
+}
+
+
+
+
