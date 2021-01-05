@@ -1,0 +1,116 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TOP HEADER */
+
+.top-header {
+
+  &-heading {
+
+   color: #ffffff; 
+   font-size: 2.8rem;
+   font-weight: $bold;
+   line-height: 35px; 
+    
+  }  
+
+  &-text {
+
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: $medium;
+    line-height: 30px;
+    text-align: center;
+    
+  }
+
+
+}
+
+
+/* CARD WRAPPER */
+
+.card-wrapper {
+
+    &-header {
+        
+      color: #ffffff;
+      font-size: 1.1rem;
+      
+      span {
+
+        font-weight: $small;
+
+      }
+
+    }
+  
+  
+    &-card {
+
+      &-input {
+
+        &::placeholder {
+
+          color: $dark-blue;
+          font-size: 1.4rem;
+          font-weight: $semi-bold;
+          opacity: 0.8;
+
+        }
+
+      }
+
+      &-button {
+
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: $semi-bold;
+        text-align: center;
+        text-transform: uppercase;
+
+      }
+
+
+      &-text {
+    
+        color: $grayish-blue;
+        font-size: 1.1rem;
+        font-weight: $medium;
+        line-height: 17px;
+        text-align: center;
+        
+        span {
+
+          color: $red;
+          font-weight: $semi-bold;
+
+        }
+    
+      }
+    
+
+    }
+    
+  }
+
+/* FOOTER */ 
+
+footer {
+
+  color: $green;
+  font-size: 1.4rem;
+
+}
+
+.footer-link {
+
+  color: $red;
+  font-weight: $semi-bold;
+  
+}
