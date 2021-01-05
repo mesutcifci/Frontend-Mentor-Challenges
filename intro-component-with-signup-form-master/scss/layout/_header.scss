@@ -2,14 +2,14 @@
 
   @include flex-center(column);
 
-  &-heading {
+  &--heading {
 
    max-width: 240px;
    @include margin-center;
 
   }  
 
-  &-text {
+  &--text {
 
     margin-top: 35px;
     margin-bottom: 40px;
@@ -23,7 +23,7 @@
   
   margin-bottom: 20px;
 
-  &-header {
+  &--header {
 
     background-color: $blue;
     border-radius: 10px;
@@ -36,13 +36,13 @@
     max-width: 320px;
     min-width: 250px;
 
-    &-heading {
+  }
+  
+  &--heading {
       
-      text-align: center;
-      width: 200px;
-    
-    }
-
-  }  
+    text-align: center;
+    width: 200px;
+  
+  }
   
 }

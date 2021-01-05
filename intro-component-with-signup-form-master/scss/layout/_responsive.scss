@@ -6,7 +6,7 @@
 
   .top-header {
 
-    &-heading {
+    &--heading {
 
       font-size: 3.2rem;
       max-width: 650px;
@@ -14,32 +14,41 @@
 
     }
 
-    &-text {
+    &--text {
     
       max-width: 630px;
         
     }
 
+
   }  
 
   
-  // CARD
+  /* CARD */
 
 
   .card-wrapper {
 
-    &-header {
+    &--header {
       
       max-width: 520px;  
 
     }
 
-    &-card {
+    &--card {
 
      max-width: 520px;   
 
     }
 
+  }
+
+  /* ERROR */
+
+  .error-logo {
+
+    right: 55px;
+    
   }
 
 }
@@ -62,7 +71,7 @@
     margin-left: auto;
     margin-right: -3vw;
 
-    &-heading {
+    &--heading {
 
       font-size: 4.2rem;
       line-height: 50px;
@@ -73,7 +82,7 @@
 
     }
 
-    &-text {
+    &--text {
  
       max-width: 550px;
       text-align: left;
@@ -90,46 +99,47 @@
     margin-right: auto;
     width: max-content;
 
-    &-header {
+    &--header {
       
       height: 60px;
       max-width: 500px;
       width: 500px;
-      
-      &-heading {
-
-        width: max-content;
-
-      }
   
     }
+
+    &--heading {
+
+      width: max-content;
+
+    }
   
-    &-card {
+    &--card {
   
       box-sizing: border-box;  
+      min-height: 480px;
       max-width: 500px; 
       width: 500px;   
       padding: 40px 15px 40px 15px;
-
-      &-input {
-
-        &:focus {
-        
-          border: 1px solid $dark-blue;    
-
-        }
-
-      }
-
-      &-text {
-
-        width: max-content;
-
-      }
   
     }
 
+    &-input {
+
+      &:focus {
+      
+        border: 1px solid $dark-blue;    
+
+      }
+
+    }
+
+    &-text {
+
+      width: max-content;
+
+    }
 
   }
 
 }
+

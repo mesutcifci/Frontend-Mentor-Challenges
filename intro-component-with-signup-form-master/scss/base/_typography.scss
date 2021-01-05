@@ -10,7 +10,7 @@ body {
 
 .top-header {
 
-  &-heading {
+  &--heading {
 
    color: #ffffff; 
    font-size: 2.8rem;
@@ -19,7 +19,7 @@ body {
     
   }  
 
-  &-text {
+  &--text {
 
     color: #ffffff;
     font-size: 1.7rem;
@@ -37,7 +37,7 @@ body {
 
 .card-wrapper {
 
-    &-header {
+    &--header {
         
       color: #ffffff;
       font-size: 1.1rem;
@@ -50,44 +50,41 @@ body {
 
     }
   
-  
-    &-card {
+    &--input {
 
-      &-input {
+      color: $dark-blue;
+      font-size: 1.4rem;
+      font-weight: $semi-bold;
+
+      &::placeholder {
 
         color: $dark-blue;
         font-size: 1.4rem;
         font-weight: $semi-bold;
-
-        &::placeholder {
-
-          color: $dark-blue;
-          font-size: 1.4rem;
-          font-weight: $semi-bold;
-          opacity: 0.8;
-
-        }
+        opacity: 0.8;
 
       }
 
-      &-button {
+    }
 
-        color: #ffffff;
-        font-size: 1.5rem;
-        font-weight: $semi-bold;
-        text-align: center;
-        text-transform: uppercase;
+    &--button {
 
-      }
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: $semi-bold;
+      text-align: center;
+      text-transform: uppercase;
+
+    }
 
 
-      &-text {
+    &--text {
     
-        color: $grayish-blue;
-        font-size: 1.1rem;
-        font-weight: $medium;
-        line-height: 17px;
-        text-align: center;
+      color: $grayish-blue;
+      font-size: 1.1rem;
+      font-weight: $medium;
+      line-height: 17px;
+      text-align: center;
         
         span {
 
@@ -96,9 +93,6 @@ body {
 
         }
     
-      }
-    
-
     }
     
   }
