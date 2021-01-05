@@ -19,7 +19,7 @@
 
 // MEDIA  QUERY
 
-@mixin  media($type, $value) {
+@mixin  media($value, $type: "min", ) {
 
     @if $type == max {
 

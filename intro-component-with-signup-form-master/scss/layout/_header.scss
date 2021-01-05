@@ -1,5 +1,7 @@
 .top-header {
 
+  @include flex-center(column);
+
   &-heading {
 
    max-width: 240px;

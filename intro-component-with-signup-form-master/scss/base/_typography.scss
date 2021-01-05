@@ -55,6 +55,10 @@ body {
 
       &-input {
 
+        color: $dark-blue;
+        font-size: 1.4rem;
+        font-weight: $semi-bold;
+
         &::placeholder {
 
           color: $dark-blue;

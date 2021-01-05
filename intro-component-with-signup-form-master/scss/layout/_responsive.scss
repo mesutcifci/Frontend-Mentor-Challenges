@@ -1,0 +1,135 @@
+/* TABLET */
+
+@include media(600px) {
+
+  // TOP HEADER  
+
+  .top-header {
+
+    &-heading {
+
+      font-size: 3.2rem;
+      max-width: 650px;
+      padding-left: 20px;  
+
+    }
+
+    &-text {
+    
+      max-width: 630px;
+        
+    }
+
+  }  
+
+  
+  // CARD
+
+
+  .card-wrapper {
+
+    &-header {
+      
+      max-width: 520px;  
+
+    }
+
+    &-card {
+
+     max-width: 520px;   
+
+    }
+
+  }
+
+}
+
+
+/* DESKTOP */
+
+@include media(1100px) {
+
+  main {
+
+    flex-direction: row;
+
+  }
+
+  /* TOP HEADER */
+
+  .top-header {
+
+    margin-left: auto;
+    margin-right: -3vw;
+
+    &-heading {
+
+      font-size: 4.2rem;
+      line-height: 50px;
+      margin-left: 0;
+      margin-right: auto;
+      max-width: 450px;
+      padding-left: 0;
+
+    }
+
+    &-text {
+ 
+      max-width: 550px;
+      text-align: left;
+
+    }
+
+  }
+
+  /* CARD */
+
+  .card-wrapper {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+
+    &-header {
+      
+      height: 60px;
+      max-width: 500px;
+      width: 500px;
+      
+      &-heading {
+
+        width: max-content;
+
+      }
+  
+    }
+  
+    &-card {
+  
+      box-sizing: border-box;  
+      max-width: 500px; 
+      width: 500px;   
+      padding: 40px 15px 40px 15px;
+
+      &-input {
+
+        &:focus {
+        
+          border: 1px solid $dark-blue;    
+
+        }
+
+      }
+
+      &-text {
+
+        width: max-content;
+
+      }
+  
+    }
+
+
+  }
+
+}
