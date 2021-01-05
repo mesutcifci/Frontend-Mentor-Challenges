@@ -749,10 +749,10 @@ footer {
     width: 500px;
     padding: 40px 15px 40px 15px;
   }
-  .card-wrapper-input:focus {
+  .card-wrapper--input:focus {
     border: 1px solid #3e3c49;
   }
-  .card-wrapper-text {
+  .card-wrapper--text {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
