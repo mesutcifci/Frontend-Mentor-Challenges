@@ -1,0 +1,17 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+     
+html, body {
+  background: $light-gray;  
+  font-family: 'Karla', sans-serif;  
+  font-size: 10px; 
+  max-width: 1440px;
+  min-height: 100vh;
+  min-width: 250px;
+}
+     
+a {
+ text-decoration: none;
+}

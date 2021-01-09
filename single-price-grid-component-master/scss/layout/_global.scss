@@ -1,0 +1,126 @@
+/* MAIN */
+
+main {
+  @include flex-center(column);
+  height: 100vh;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+/* CONTAINER */
+
+.container {
+  @include flex-center(column);
+  height: max-content;
+  max-width: max-content;
+}
+
+
+/* CARD */
+
+.card {
+  box-sizing: border-box;  
+  display: flex;
+  flex-direction: column; 
+  height: 220px;  
+  max-width: 270px;
+  padding: 20px;
+  width: 100%;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 1.6rem;  
+  margin-bottom: 2rem;
+}
+
+.top-card {
+  background: #ffffff;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  
+  &--primary-heading {
+    color: $cyan;
+    font-size: 2rem;
+    font-weight: $bold;
+    margin-bottom: 2rem;
+  }
+
+  &--secondary-heading {
+    color: $bright-yellow;
+  }
+
+  &--text {
+    color: $grayish-blue;  
+    font-size: 1.2rem;
+    font-weight: $regular;
+    line-height: 20px;
+  }
+
+}
+
+
+.left-card {
+  background: $cyan;
+  height: 200px;
+
+  &--currency-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    .currency {
+      color: #ffffff;  
+      font-size: 2.7rem; 
+      font-weight: $bold;
+      margin-right: 5px;
+    }
+
+    small {
+      color: $light-gray;  
+      font-size: 1.2rem;  
+      font-weight: $regular;
+    }
+
+  }
+
+  &--text {
+    color: $light-gray;  
+    font-size: 1.4rem; 
+    margin-bottom: 20px;
+  }
+
+  button {
+    background: $bright-yellow;
+    border: 0px;  
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: $bold;
+    height: 40px;
+    width: 230px;
+    @include margin-center
+  }
+
+  button:active {
+    outline: none;
+    transform: scale(0.97);
+  }
+
+}
+
+
+.right-card {
+  background: hsl(179, 47%, 52%);
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  
+  &--text {
+    color: $light-gray;  
+    font-size: 1.4rem;   
+    width: 160px;  
+  }
+
+
+}

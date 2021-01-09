@@ -22,15 +22,23 @@ gulp.task('base-apparel', () => {
 
 
 gulp.task('intro-component', () => {
-   
     return gulp.src("./intro-component-with-signup-form-master/scss/**/*.scss")
     .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(prefix({ overrideBrowserslist: browserList, cascade: false  }))
     .pipe(gulp.dest("./intro-component-with-signup-form-master/css"))
 });
 
+gulp.task('single-price', () => {
+    return gulp.src("./single-price-grid-component-master/scss/**/*.scss")
+    .pipe(sass({ outputStyle: 'expanded' }))
+    .pipe(prefix({ overrideBrowserslist: browserList, cascade: false  }))
+    .pipe(gulp.dest("./single-price-grid-component-master/css"))
+});
+
+
 gulp.task('watch', () => {
     gulp.watch("./four-card-feature-section-master/scss/**/*.scss", gulp.series("four-card"));
     gulp.watch("./base-apparel-coming-soon-master/scss/**/*.scss", gulp.series("base-apparel"));
     gulp.watch("./intro-component-with-signup-form-master/scss/**/*.scss", gulp.series("intro-component"));
+    gulp.watch("./single-price-grid-component-master/scss/**/*.scss", gulp.series("single-price"));
 });
