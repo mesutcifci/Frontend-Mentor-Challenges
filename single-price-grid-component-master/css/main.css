@@ -479,6 +479,8 @@ main {
 }
 
 .left-card button:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
   outline: none;
   -webkit-transform: scale(0.97);
   transform: scale(0.97);

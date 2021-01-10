@@ -104,6 +104,7 @@ main {
   }
 
   button:active {
+    box-shadow: none;
     outline: none;
     transform: scale(0.97);
   }
