@@ -1,0 +1,68 @@
+@include media("650px") {
+  
+  /* TOP HEADER */
+
+  .top-header {
+
+    &--heading {
+      font-size: 3rem
+    }
+
+    &--text {
+      font-size: 1.2rem;
+    }
+
+  }
+
+
+  /* NOTIFY FORM */   
+
+  .notify-form {
+    width: max-content;
+    @include margin-center;
+
+    flex-direction: row;
+    align-items: initial;
+    position: relative;
+
+    &--input {
+      margin-right: 15px;
+      width: 350px;
+    }
+
+    &--label {
+      position: absolute;
+      bottom: -40px;
+      left: 30px;
+      
+    }
+
+    &--button {
+      width: 200px;
+    }
+
+  }
+
+
+  /* IMAGE */
+
+  .image-container {
+    width: max-content;
+    @include margin-center;
+  }
+
+  .image {
+    width: 580px;
+  }
+
+
+}
+
+
+.js-label {
+  display: initial;  
+}
+
+.js-input {
+  box-shadow: $light-red 0px 0px 1.5px 1px;
+}

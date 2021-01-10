@@ -35,10 +35,17 @@ gulp.task('single-price', () => {
     .pipe(gulp.dest("./single-price-grid-component-master/css"))
 });
 
+gulp.task('ping-coming-soon', () => {
+    return gulp.src("./ping-coming-soon-page-master/scss/**/*.scss")
+    .pipe(sass({ outputStyle: 'expanded' }))
+    .pipe(prefix({ overrideBrowserslist: browserList, cascade: false  }))
+    .pipe(gulp.dest("./ping-coming-soon-page-master/css"))
+});
 
 gulp.task('watch', () => {
     gulp.watch("./four-card-feature-section-master/scss/**/*.scss", gulp.series("four-card"));
     gulp.watch("./base-apparel-coming-soon-master/scss/**/*.scss", gulp.series("base-apparel"));
     gulp.watch("./intro-component-with-signup-form-master/scss/**/*.scss", gulp.series("intro-component"));
     gulp.watch("./single-price-grid-component-master/scss/**/*.scss", gulp.series("single-price"));
+    gulp.watch("./ping-coming-soon-page-master/scss/**/*.scss", gulp.series("ping-coming-soon"));
 });

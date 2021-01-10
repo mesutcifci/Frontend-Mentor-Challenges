@@ -1,0 +1,27 @@
+.top-header {
+  @include flex-center(column);  
+  margin-bottom: 40px;
+  
+  &--logo {
+    width: max-content;
+    margin-bottom: 30px;
+  }
+
+  &--heading {
+    color: $gray;  
+    font-size: 1.5rem;
+    font-weight: $light;
+    margin-bottom: 20px;
+
+    strong {
+      color: $very-dark-blue;
+      font-weight: $bold;    
+    }
+
+  }
+
+  &--text {
+    color: $very-dark-blue;  
+    font-size: 1rem;
+  }
+}

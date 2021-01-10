@@ -1,0 +1,43 @@
+.notify-form {
+  @include flex-center(column);
+  margin-bottom: 100px;
+  
+  &--input {
+    border: 1px solid $pale-blue; 
+    @include input-and-button-style;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 28px;
+
+    &::placeholder {
+      font-size: .9rem;  
+    }
+
+   
+  }
+
+  &--button {
+    background-color: $blue; 
+    border: 0px; 
+    box-shadow: 0px 2px 5px 2px $pale-blue;
+    cursor: pointer;
+    font-weight: $semi-bold;
+    @include input-and-button-style;
+    color: #ffffff;
+
+    &:active {
+      outline: none;
+      box-shadow: none;
+      transform: scale(0.97);
+    }
+  }
+
+  &--label {
+    display: none;
+    color: $light-red;
+    font-size: .8rem;
+    font-weight: $light;
+    margin-bottom: 30px;
+  }
+
+}

@@ -1,0 +1,10 @@
+.image-container {
+  margin-bottom: 100px;
+
+  @at-root {
+    .image {
+      width: 90%;    
+    }
+  }  
+  
+}

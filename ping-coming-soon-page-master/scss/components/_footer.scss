@@ -1,0 +1,48 @@
+.top-footer {
+  @include flex-center(column);
+
+  @at-root {
+    .icon-container{
+      margin-bottom: 35px;  
+
+      svg {
+        border-radius: 50px;  
+        cursor: pointer;
+        margin-right: 20px; 
+
+        path {
+          fill: $blue;    
+        }
+      }
+
+      svg:hover path {
+        fill: $light-red;
+      }
+               
+    }
+    
+    .copyright {
+      color: $gray;  
+      font-size: .9rem;   
+      font-weight: $light; 
+    }
+  }
+
+}
+
+
+.bottom-footer {
+  background-color: #5a5757;
+  color: $pale-blue;
+  font-weight: $semi-bold;
+  height: auto;
+  min-height: 30px;
+  padding: 15px;
+  text-align: center;
+
+  &--link {
+    color: $light-red;
+    font-weight: $bold;
+  }
+
+}

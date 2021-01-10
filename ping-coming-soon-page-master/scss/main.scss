@@ -1,0 +1,28 @@
+// BASE
+@import "./base/normalize";
+
+
+// ABSTRACTS
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+
+// BASE
+@import "./base/base";
+
+
+// LAYOUT
+@import "./layout/global";
+
+
+
+// COMPONENTS
+@import "./components/header";
+@import "./components/footer";
+@import "./components/form";
+@import "./components/image";
+
+
+//LAYOUT 
+@import "./layout/responsive";
+ 
