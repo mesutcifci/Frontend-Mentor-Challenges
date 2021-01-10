@@ -1,0 +1,64 @@
+@include media("750px") {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 180  1fr;
+    }
+
+    .card {
+      max-width: initial;
+      padding: 40px;
+    }
+
+    .top-card {
+      height: 190px;
+      width: 630px;
+      grid-column: 1 / 3;
+
+      &--secondary-heading {
+        margin-bottom: 10px;
+      }
+
+      &--text {
+        font-size: 1.5rem;
+        line-height: 25px;
+      }
+
+    }
+
+    .left-card {
+      border-bottom-left-radius: $border-radius;
+      height: 270px;
+      width: 315px;
+
+      &--text {
+        font-size: 1.5rem;
+        margin-bottom: 35px;
+      }
+
+      button {
+        height: 45px;
+        width: 230px;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+    }
+
+    .right-card {
+      border-bottom-left-radius: 0;
+      height: 270px;
+      width: 315;
+
+      &--text {
+        width: 185px;
+
+        span:after {
+          content: "                 " ;
+          white-space: pre;
+        }
+
+      }
+    }
+
+}

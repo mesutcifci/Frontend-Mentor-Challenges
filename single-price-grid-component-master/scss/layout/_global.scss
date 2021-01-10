@@ -74,12 +74,12 @@ main {
       color: #ffffff;  
       font-size: 2.7rem; 
       font-weight: $bold;
-      margin-right: 5px;
+      margin-right: 8px;
     }
 
     small {
-      color: $light-gray;  
-      font-size: 1.2rem;  
+      color:hsl(182, 64%, 70%); 
+      font-size: 1.3rem;  
       font-weight: $regular;
     }
 
@@ -118,9 +118,29 @@ main {
   
   &--text {
     color: $light-gray;  
-    font-size: 1.4rem;   
+    font-size: 1.4rem; 
+    line-height: 20px;  
     width: 160px;  
   }
 
+}
 
+
+footer {
+  background-color: #0000002a;
+  color: #312c29;
+  @include flex-center;  
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  font-weight: $bold;
+  height: auto;
+  min-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.footer-link {
+  color: #ff580a;
+  margin-left: 4px;
 }

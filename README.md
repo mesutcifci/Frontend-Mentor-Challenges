@@ -21,5 +21,6 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 |  [Four Card Feature Section](https://mesutcifci.github.io/Frontend-Mentor-Challenges/four-card-feature-section-master/index.html) | :star:   |
 |  [Intro Component With Signup Form](https://mesutcifci.github.io/Frontend-Mentor-Challenges/intro-component-with-signup-form-master/index.html) | :star:   |
 |  [Profile card component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/profile-card-component-main/index.html) |  :star: |
+|  [Single Price Grid Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/single-price-grid-component-master/index.html) |    :star:  |
 |  [Social proof section](https://mesutcifci.github.io/Frontend-Mentor-Challenges/social-proof-section-master/index.html) |    :star:  |
 |  [Fylo data storage component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/fylo-data-storage-component-master/index.html) | :star: :star:   |
