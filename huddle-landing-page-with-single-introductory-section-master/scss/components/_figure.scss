@@ -11,12 +11,29 @@
 
 .illustration {
   margin-bottom: 60px;
+  width: max-content;
+  position: relative;
+  
 
   svg {
     height: auto;  
-    max-width: 310px;  
+    max-width: 300px;  
     width: 100%;
   }  
+
+
+  &::after {
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: " ";
+    position: absolute;
+    left: -37px;
+    top: -123px;
+    width: 375px;
+    height: 373px;
+    z-index: -1;
+  }
 
 }
 

@@ -326,13 +326,14 @@ template {
 }
 
 html, body {
-  max-width: 1440px;
   min-height: 100vh;
   min-width: 250px;
+  height: 100%;
 }
 
 body {
   background: linear-gradient(135deg, white, #fff5f5);
+  background-color: rgba(255, 189, 189, 0.103);
 }
 
 a {
@@ -386,6 +387,8 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: auto;
+  min-height: 100%;
 }
 
 .image-wrapper {
@@ -412,6 +415,8 @@ footer {
   font-size: 2rem;
   min-height: 30px;
   margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link {
@@ -549,6 +554,7 @@ footer {
   /* GLOBAL */
   body {
     background: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+    background-color: rgba(255, 189, 189, 0.103);
     background-repeat: no-repeat;
     background-size: 57vw;
   }
@@ -559,6 +565,9 @@ footer {
     flex-direction: row;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .header-and-form {
     display: -webkit-box;
@@ -574,6 +583,7 @@ footer {
     -ms-flex-order: 1;
     order: 1;
     width: 57vw;
+    max-width: 766.663px;
   }
   .logo {
     width: 158px;
@@ -597,6 +607,8 @@ footer {
     -o-object-fit: cover;
     object-fit: cover;
     width: 43vw;
+    max-height: 800px;
+    max-width: 610px;
   }
   /* HEADER */
   .top-header {

@@ -4,16 +4,17 @@
 }
 
 html, body {
- max-width: 1440px;
- min-height: 100vh;
- min-width: 250px;
+  min-height: 100vh;
+  min-width: 250px;
+  height: 100%;
 }
 
 body {
-    background: $gradient-1;
-}
+  background: $gradient-1;
+  background-color: hsla(0, 100%, 87%, 0.103);
+}    
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 

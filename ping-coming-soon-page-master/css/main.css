@@ -328,8 +328,8 @@ template {
 }
 
 html, body {
-  max-width: 1440px;
   min-height: 100vh;
+  height: 100%;
   min-width: 275px;
 }
 
@@ -343,6 +343,7 @@ a {
 
 .wrapper {
   padding: 80px 20px 20px 20px;
+  min-height: 100%;
 }
 
 .top-header {
@@ -434,6 +435,9 @@ a {
   min-height: 30px;
   padding: 15px;
   text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottom-footer--link {

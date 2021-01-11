@@ -22,7 +22,6 @@ a {
 html, body {
     height: 100%;
     min-height: 330px;
-    max-width:  1440px;
     min-width:  330px;
 }
 

@@ -1,9 +1,24 @@
-@include media(900px) {
-
-  body {
-    background-image: url("../images/bg-desktop.svg");
-    background-size: cover;
+@include media(600px) {
+  .register--button:hover {
+    background-color: $soft-magenta;
+    color: #ffffff;
   }
+
+  .social-logos {
+
+    svg {
+      cursor: pointer;
+    }
+
+    svg:hover path {
+      fill: $soft-magenta;
+    }
+
+  }
+}
+ 
+
+@include media(900px) {
 
   .wrapper {
     flex-direction: row; 
@@ -28,8 +43,16 @@
   .illustration {
 
     svg {
-      max-width: 765px;
-      width: 52.8vw
+      max-width: 730px;
+      width: 53.3vw
+    }
+
+    &::after {
+      background-image: url("../images/bg-desktop.svg");
+      width: 1280px;
+      height: 800px;
+      top: -187px;
+      left: -30px;
     }
 
   }
@@ -76,12 +99,6 @@
       width: 175px;  
       margin-right: auto;  
 
-
-      &:hover {
-        background-color: $soft-magenta;
-        color: #ffffff;
-      }
-
     }
 
   }
@@ -90,17 +107,8 @@
   
   .social-logos {
     position: absolute;
-    bottom: 0px;
-    right: 80px;
-
-    svg {
-      cursor: pointer;
-    }
-
-    svg:hover path {
-      fill: $soft-magenta;
-    }
-
+    bottom: 30px;
+    right: 70px;
   }
   
 }

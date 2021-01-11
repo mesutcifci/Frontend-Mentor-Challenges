@@ -333,6 +333,7 @@ html, body {
   min-height: 100vh;
   height: auto;
   min-width: 275px;
+  overflow: visible;
 }
 
 body {
@@ -344,10 +345,7 @@ a {
 }
 
 body {
-  background: url("../images/bg-mobile.svg");
   background-color: #674baf;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .wrapper {
@@ -378,12 +376,29 @@ body {
 
 .illustration {
   margin-bottom: 60px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
 }
 
 .illustration svg {
   height: auto;
-  max-width: 310px;
+  max-width: 300px;
   width: 100%;
+}
+
+.illustration::after {
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: " ";
+  position: absolute;
+  left: -37px;
+  top: -123px;
+  width: 375px;
+  height: 373px;
+  z-index: -1;
 }
 
 .social-logos {
@@ -485,11 +500,20 @@ footer {
   color: #674baf;
 }
 
-@media (min-width: 900px) {
-  body {
-    background-image: url("../images/bg-desktop.svg");
-    background-size: cover;
+@media (min-width: 600px) {
+  .register--button:hover {
+    background-color: #e882e8;
+    color: #ffffff;
   }
+  .social-logos svg {
+    cursor: pointer;
+  }
+  .social-logos svg:hover path {
+    fill: #e882e8;
+  }
+}
+
+@media (min-width: 900px) {
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -510,8 +534,15 @@ footer {
     width: initial;
   }
   .illustration svg {
-    max-width: 765px;
-    width: 52.8vw;
+    max-width: 730px;
+    width: 53.3vw;
+  }
+  .illustration::after {
+    background-image: url("../images/bg-desktop.svg");
+    width: 1280px;
+    height: 800px;
+    top: -187px;
+    left: -30px;
   }
   /* REGISTER */
   .register {
@@ -542,21 +573,11 @@ footer {
     width: 175px;
     margin-right: auto;
   }
-  .register--button:hover {
-    background-color: #e882e8;
-    color: #ffffff;
-  }
   /* SOCIAL LOGOS */
   .social-logos {
     position: absolute;
-    bottom: 0px;
-    right: 80px;
-  }
-  .social-logos svg {
-    cursor: pointer;
-  }
-  .social-logos svg:hover path {
-    fill: #e882e8;
+    bottom: 30px;
+    right: 70px;
   }
 }
 

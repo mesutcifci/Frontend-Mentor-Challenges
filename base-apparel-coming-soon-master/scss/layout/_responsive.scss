@@ -10,6 +10,7 @@
 
   body {
     background: url("../images/bg-pattern-desktop.svg"), $gradient-1;
+    background-color: hsla(0, 100%, 87%, 0.103);
     background-repeat: no-repeat;
     background-size: 57vw;
   }
@@ -17,6 +18,7 @@
   main {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   .header-and-form {
@@ -25,6 +27,7 @@
     align-content: center;
     order: 1;
     width: 57vw;
+    max-width: 766.663px;
   }
 
   .logo {
@@ -50,6 +53,8 @@
     margin-right: 0;
     object-fit: cover;
     width: 43vw;
+    max-height: 800px;
+    max-width: 610px;
   }
 
   /* HEADER */

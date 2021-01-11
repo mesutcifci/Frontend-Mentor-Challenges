@@ -39,6 +39,8 @@
   min-height: 30px;
   padding: 15px;
   text-align: center;
+  max-width: 1600px;
+  @include margin-center;
 
   &--link {
     color: $light-red;
