@@ -28,7 +28,7 @@
   .illustration {
 
     svg {
-      max-width: initial;
+      max-width: 765px;
       width: 52.8vw
     }
 
@@ -105,10 +105,18 @@
   
 }
 
-@include media("1400px") {
-  @include margin-center;
-  width: max-content;
+@include media("1440px") {
+  .wrapper {
+    @include margin-center;
+    width: max-content;
+  }
+
+  .register--heading {
+    font-size: 40px;
+  }
+
 }
+
 
 @include media-min-max("900px", "1200px") {
     .register {
