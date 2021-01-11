@@ -1,0 +1,34 @@
+.top-logo{
+  margin-bottom: 60px;
+
+  svg {
+    width: 130px;  
+    height: auto;
+  }
+ 
+}
+
+
+.illustration {
+  margin-bottom: 60px;
+
+  svg {
+    height: auto;  
+    max-width: 310px;  
+    width: 100%;
+  }  
+
+}
+
+
+.social-logos {
+  width: 120px;
+  @include margin-center;
+  display: flex;
+  justify-content: space-between;
+
+  svg path{
+    fill: #ffffff;
+  }
+
+}

@@ -1,0 +1,125 @@
+@include media(900px) {
+
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  .wrapper {
+    flex-direction: row; 
+    justify-content: initial;
+    align-items: center; 
+    min-height: 100vh;
+    padding: 60px;
+    position: relative;
+  } 
+
+
+  /* LOGO AND ILLUSTRATION */
+
+  .top-logo {
+    
+    svg {
+      width: initial;  
+    }
+
+  }
+
+  .illustration {
+
+    svg {
+      max-width: initial;
+      width: 52.8vw
+    }
+
+  }
+
+  /* REGISTER */
+
+  .register {
+    margin-left: 50px;
+    margin-top: initial;
+
+    &--header { 
+      width: 100%;
+      max-width: 450px;
+      
+      @at-root {
+
+        .register--heading {
+          font-size: calc(10px + 2.15vw);
+          line-height: 50px;
+          text-align: left;
+        }
+
+      }
+
+    }
+
+
+    @at-root {
+      .text-wrapper {
+        width: 100%;  
+      }  
+    }
+    
+
+    &--text {
+      text-align: left;  
+      max-width: 460px;
+    }
+
+    &--button {
+      box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.247);  
+      font-size: 1.4rem;  
+      height: 50px;
+      width: 175px;  
+      margin-right: auto;  
+
+
+      &:hover {
+        background-color: $soft-magenta;
+        color: #ffffff;
+      }
+
+    }
+
+  }
+
+  /* SOCIAL LOGOS */
+  
+  .social-logos {
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+
+    svg {
+      cursor: pointer;
+    }
+
+    svg:hover path {
+      fill: $soft-magenta;
+    }
+
+  }
+  
+}
+
+@include media-min-max("900px", "1200px") {
+    .register {
+        margin-top: 80px;  
+    }
+}
+
+@include media-min-max("900px", "1110px") {
+    .register--heading {
+        font-size: calc(2.5vw);
+        line-height: 40px;  
+    }
+}
+
+@include media-min-max("900px", "960px") {
+    .register {
+        margin-top: 160px;
+    }
+}

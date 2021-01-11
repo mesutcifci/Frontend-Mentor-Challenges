@@ -42,10 +42,21 @@ gulp.task('ping-coming-soon', () => {
     .pipe(gulp.dest("./ping-coming-soon-page-master/css"))
 });
 
+
+gulp.task('huddle-landing-page', () => {
+    return gulp.src("./huddle-landing-page-with-single-introductory-section-master/scss/**/*.scss")
+    .pipe(sass({ outputStyle: 'expanded' }))
+    .pipe(prefix({ overrideBrowserslist: browserList, cascade: false  }))
+    .pipe(gulp.dest("./huddle-landing-page-with-single-introductory-section-master/css"))
+});
+
+
+
 gulp.task('watch', () => {
     gulp.watch("./four-card-feature-section-master/scss/**/*.scss", gulp.series("four-card"));
     gulp.watch("./base-apparel-coming-soon-master/scss/**/*.scss", gulp.series("base-apparel"));
     gulp.watch("./intro-component-with-signup-form-master/scss/**/*.scss", gulp.series("intro-component"));
     gulp.watch("./single-price-grid-component-master/scss/**/*.scss", gulp.series("single-price"));
     gulp.watch("./ping-coming-soon-page-master/scss/**/*.scss", gulp.series("ping-coming-soon"));
+    gulp.watch("./huddle-landing-page-with-single-introductory-section-master/scss/**/*.scss", gulp.series("huddle-landing-page"));
 });

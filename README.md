@@ -19,6 +19,7 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 |  [Coding Bootcamp Testimonials Slider](https://mesutcifci.github.io/Frontend-Mentor-Challenges/coding-bootcamp-testimonials-slider-master/index.html) | :star:   |
 |  [FAQ Accordion Card](https://mesutcifci.github.io/Frontend-Mentor-Challenges/faq-accordion-card-main/index.html) | :star:  |
 |  [Four Card Feature Section](https://mesutcifci.github.io/Frontend-Mentor-Challenges/four-card-feature-section-master/index.html) | :star:   |
+|  [Huddle Landing Page With Introductiory](https://mesutcifci.github.io/Frontend-Mentor-Challenges/uddle-landing-page-with-single-introductory-section-master/index.html) | :star:   |
 |  [Intro Component With Signup Form](https://mesutcifci.github.io/Frontend-Mentor-Challenges/intro-component-with-signup-form-master/index.html) | :star:   |
 |  [Ping Coming Soon Page](https://mesutcifci.github.io/Frontend-Mentor-Challenges/ping-coming-soon-page-master/index.html) |  :star: |
 |  [Profile Card Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/profile-card-component-main/index.html) |  :star: |
