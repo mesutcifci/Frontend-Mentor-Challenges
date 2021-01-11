@@ -1,3 +1,5 @@
 .wrapper {
   padding: 80px 20px 20px 20px;
-}
+  width: max-content;
+  @include margin-center;
+} 
