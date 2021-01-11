@@ -105,6 +105,11 @@
   
 }
 
+@include media("1400px") {
+  @include margin-center;
+  width: max-content;
+}
+
 @include media-min-max("900px", "1200px") {
     .register {
         margin-top: 80px;  

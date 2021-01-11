@@ -560,6 +560,14 @@ footer {
   }
 }
 
+@media (min-width: 1400px) {
+  margin-left: auto;
+  margin-right: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 @media (min-width: 900px) and (max-width: 1200px) {
   .register {
     margin-top: 80px;
