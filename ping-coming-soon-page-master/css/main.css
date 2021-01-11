@@ -343,11 +343,6 @@ a {
 
 .wrapper {
   padding: 80px 20px 20px 20px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .top-header {
@@ -532,6 +527,14 @@ a {
 }
 
 @media (min-width: 650px) {
+  /* WRAPPER */
+  .wrapper {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* TOP HEADER */
   .top-header--heading {
     font-size: 3rem;

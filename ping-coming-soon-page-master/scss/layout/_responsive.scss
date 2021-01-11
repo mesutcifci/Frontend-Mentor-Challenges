@@ -1,5 +1,12 @@
 @include media("650px") {
   
+  /* WRAPPER */
+  .wrapper {
+    width: max-content;
+    @include margin-center;
+  }
+  
+
   /* TOP HEADER */
 
   .top-header {
