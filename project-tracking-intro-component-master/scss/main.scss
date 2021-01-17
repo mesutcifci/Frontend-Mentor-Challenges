@@ -1,0 +1,15 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// ABSTRACTS
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+//LAYOUT
+@import "./layout/global";
+
+// COMPONENTS
+@import "./components/header_and_button";
+@import "./components/hero_image";
+@import "./components/navbar";
+
+

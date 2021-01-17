@@ -1,1 +1,3 @@
 node_modules
+!/project-tracking-intro-component-master/node_modules
+.vscode

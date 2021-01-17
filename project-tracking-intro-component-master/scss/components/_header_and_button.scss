@@ -1,0 +1,68 @@
+.header {
+
+  font-family: $secondary-font;  
+
+  &-span { 
+    color: $grayish-blue;
+    letter-spacing: 5px;
+
+    span {
+      background-color: $very-dark-blue;    
+      border-radius: 15px; 
+      letter-spacing: initial;
+      padding: 3px 10px 3px 10px;  
+    }
+
+  }
+  
+  &-heading {
+    color: $very-dark-blue;
+    font-size: 4rem;
+    max-width: 480px;
+  }
+
+  &-text {
+    font-family: $primary-font;
+    font-size: 18px;
+    color: $dark-grayish-blue;  
+    text-transform: initial;
+    max-width: 290px;  
+  }
+
+}
+
+
+.button-container {
+  font-family: $secondary-font; 
+
+  &-button {
+    background-color: $red;
+    border: 1px solid transparent;  
+    border-radius: 0.25rem;
+    flex-basis: 160px;
+   
+    font-weight: $bold;  
+    height: 40px;
+
+    &:active { 
+      transform: scale(0.98);  
+    }
+
+    &:hover {
+      background-color: $red;
+      border-color: $red;  
+    }
+
+  }  
+
+  &-text {
+    color: $grayish-blue;
+    margin-bottom: 0; 
+    
+    span {
+      margin-right: 7px;  
+    }
+    
+  }
+
+}

@@ -1,0 +1,24 @@
+.top-nav {
+    font-family: $secondary-font;
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }  
+
+  &--link {
+    color: $very-dark-blue;
+    margin-right: 2rem;
+  }
+  
+  &--link:nth-last-child(1) {
+    color: $grayish-blue;
+  }
+}
+
+.dot {
+  border-radius: 100%;
+  background-color: $grayish-blue;  
+  width: 5px;
+  height: 5px;  
+}
