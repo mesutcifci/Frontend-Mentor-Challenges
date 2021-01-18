@@ -1,9 +1,10 @@
 .hero-image {
   position: relative;
   width: max-content;
+  right: calc(-29vw);
+  min-width: 270px;
+  width: calc(270px + 20vw);
   img {
-    max-width: 960px;
-    max-height: 464px;
-    width: 71vw;
+    max-width: 100%;
   }  
 }
