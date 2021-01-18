@@ -1,0 +1,5 @@
+@include media("768px", "min") {
+    .header-and-image {
+      flex-direction: row;  
+    }
+}

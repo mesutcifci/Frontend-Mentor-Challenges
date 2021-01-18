@@ -9,16 +9,23 @@
   &--link {
     color: $very-dark-blue;
     margin-right: 2rem;
+
+    &:nth-last-child(1) {
+      color: $grayish-blue;
+    }
+
+    &:hover {
+      color: $very-dark-blue;
+      text-decoration: underline $grayish-blue;
+    }
   }
   
-  &--link:nth-last-child(1) {
-    color: $grayish-blue;
-  }
+  
 }
 
 .dot {
   border-radius: 100%;
   background-color: $grayish-blue;  
-  width: 5px;
-  height: 5px;  
+  width: 6px;
+  height: 6px;  
 }

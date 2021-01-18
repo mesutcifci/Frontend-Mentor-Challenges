@@ -17,7 +17,7 @@
   
   &-heading {
     color: $very-dark-blue;
-    font-size: 4rem;
+    font-size: calc(1.5rem + 2.4vw);
     max-width: 480px;
   }
 
@@ -38,11 +38,8 @@
   &-button {
     background-color: $red;
     border: 1px solid transparent;  
-    border-radius: 0.25rem;
     flex-basis: 160px;
-   
-    font-weight: $bold;  
-    height: 40px;
+    height: 45px;
 
     &:active { 
       transform: scale(0.98);  
