@@ -1,31 +1,29 @@
-.top-nav {
-    font-family: $secondary-font;
-
-  .logo {
-    width: 32px;
-    height: 32px;
-  }  
-
+.top-nav-items {
+  font-family: $secondary-font;
+     
+  
   &--link {
-    color: $very-dark-blue;
+    color: $very-dark-blue !important;
     margin-right: 2rem;
-
-    &:nth-last-child(1) {
-      color: $grayish-blue;
-    }
-
+     
     &:hover {
       color: $very-dark-blue;
       text-decoration: underline $grayish-blue;
     }
   }
-  
-  
+
 }
 
-.dot {
-  border-radius: 100%;
-  background-color: $grayish-blue;  
-  width: 6px;
-  height: 6px;  
+#login {
+  color: $grayish-blue !important;    
 }
+
+.line {
+  display: none;  
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}  
+      

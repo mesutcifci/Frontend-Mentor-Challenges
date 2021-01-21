@@ -1,5 +1,28 @@
-@include media("768px", "min") {
-    .header-and-image {
-      flex-direction: row;  
+@include media("991px", "max") {
+  .top-nav-items {
+    background-color: #5c5858;
+    font-family: $secondary-font;
+    margin: 0;
+    max-width: 500px;
+    min-width: 180px;
+    width: 60vw;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+
+    &--link {
+      margin-right: 0;
     }
-}
+
+   
+  }
+
+  .line {
+    display: initial;
+    background-color: $grayish-blue;
+    height: 1px;
+    width: 90%;
+  }
+} 
+

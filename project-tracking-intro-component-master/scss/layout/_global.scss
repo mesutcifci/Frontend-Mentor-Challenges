@@ -2,24 +2,9 @@ html, body {
   height: 100%;
   min-width: 270px;
 }
-
+  
 body {
   font-family: $primary-font;  
-  overflow-x: hidden;
 }
-
-
-.gray-field {
-  background-color: $light-grayish-blue;
-  border-bottom-left-radius: 20%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 52vw;
-  height: calc(100px + 28vw);
-  z-index: -1;
-}
-
-.header-and-image {
-  flex-direction: column;
-}
+  
+  
