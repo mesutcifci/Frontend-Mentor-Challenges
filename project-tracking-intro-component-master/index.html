@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Project tracking intro component</title>
 
   <script src="./index.js" defer></script>
@@ -21,13 +21,17 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <div class="gray-field"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light mt-5 pb-5">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand ps-3" href="#">
         <img class="logo" src="./images/logo.svg" alt="">
       </a>
-      <button id="hamburger-button" class=" navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button id="hamburger-button" class=" navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="">
           <img class="hamburger" src="./images/icon-hamburger.svg" alt="">
           <img class="close d-none" src="./images/icon-close.svg" alt="">
@@ -45,6 +49,7 @@
             <a class="top-nav-items--link nav-link" href="#">Pricing</a>
           </li>
           <span class="line"></span>
+          <div class="dot"></div>
           <li class="nav-item">
             <a id="login" class="top-nav-items--link nav-link" href="#">Login</a>
           </li>
@@ -52,19 +57,37 @@
     </div>
   </nav>
 
-  New
-  Monograph Dashboard
+  <main class="container-lg mt-5 d-flex flex-column-reverse flex-lg-row">
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+    <div class="header-and-button flex-shrink-0 mt-5 pt-5">
+      <header class="header text-uppercase">
+        <span class="header--span "><span class="text-light fw-bold me-2">New</span> Monograph
+          Dashboard</span>
+        <h1 class="header--heading mt-4 mb-5 fw-bold">Powerful insights <span></span> into your team</h1>
+        <p class="header--text mb-5">Project planning and time tracking for agile teams</p>
+      </header>
 
-  Schedule a demo
-  to see a live preview
+      <div class="button-container d-flex align-items-center">
+        <button class="button-container--button text-light text-uppercase fw-bold rounded">Schedule a demo</button>
+        <p class="button-container--text text-uppercase ms-3"><span>to</span> <span>see</span> <span>a</span>
+          <span>live</span> preview
+        </p>
+      </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+
+    <figure class="hero-image-container">
+      <img class="hero-image-container--image" src="./images/illustration-devices(clipped).svg" alt="">
+    </figure>
+  </main>
+
+
+  <footer class="bg-dark py-2 mt-3 text-light d-flex justify-content-center align-items-center fs-3 h-auto">
+    <p class="attribution mb-0 text-center">
+      Challenge by <a class="footer--link text-danger" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.
+      Coded by <a class="footer--link text-danger" href="https://github.com/mesutcifci">Mesut Çifci</a>.
     </p>
   </footer>
 

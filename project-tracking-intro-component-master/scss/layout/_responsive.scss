@@ -1,6 +1,6 @@
 @include media("991px", "max") {
   .top-nav-items {
-    background-color: #5c5858;
+    background: rgb(250, 250, 250);
     font-family: $secondary-font;
     margin: 0;
     max-width: 500px;
@@ -15,7 +15,6 @@
       margin-right: 0;
     }
 
-   
   }
 
   .line {
@@ -24,5 +23,61 @@
     height: 1px;
     width: 90%;
   }
+
+  .hero-image-container {
+    margin-left: 5px;
+  }
 } 
 
+@include media("992px") {
+
+  .gray-field {
+    max-height: 430px;
+  }
+
+  .header-and-button {
+    width: max-content;
+  }
+
+  .hero-image-container {
+    width: 50%;
+    position: absolute;
+    right: 0px;
+  }
+
+}
+
+@include media("374px", "max") {
+  
+  .header {
+    &--heading, &--text {
+      text-align: center;
+      @include margin-center;
+    }
+  }
+
+  .button-container {
+    flex-direction: column;
+    
+    &--button {
+      flex-basis: auto;
+      margin-bottom: 10px;
+      width: 150px;
+    }
+  }
+
+}
+
+
+@include media("335px", "max") {
+  .header--span {
+    @include flex-center(column);
+
+    span {
+      margin-bottom: 10px;
+      width: 100px;
+      text-align: center;
+    }
+
+  }
+}

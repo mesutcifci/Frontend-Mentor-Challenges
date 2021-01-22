@@ -1,10 +1,24 @@
 html, body {
-  height: 100%;
-  min-width: 270px;
+  min-width: 275px;
+  max-width: 1440px;
+  min-height: 100vh;
 }
   
 body {
   font-family: $primary-font;  
 }
+
+main {
+  min-height: 100vh;
+}
   
-  
+.gray-field {
+  background-color: $light-grayish-blue;
+  border-bottom-left-radius: 50px;
+  height: 55%;
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -5;
+}  
