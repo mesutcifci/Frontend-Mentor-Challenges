@@ -31,6 +31,10 @@
 
 @include media("992px") {
 
+  .dot {
+    display: initial;
+  }
+
   .gray-field {
     max-height: 430px;
   }
