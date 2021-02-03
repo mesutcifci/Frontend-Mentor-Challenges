@@ -11432,6 +11432,7 @@ main {
 }
 
 .dot {
+  display: none;
   background-color: #a0a1ac;
   margin-right: 25px;
   height: 5px;
@@ -11476,6 +11477,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .dot {
+    display: initial;
+  }
   .gray-field {
     max-height: 430px;
   }
