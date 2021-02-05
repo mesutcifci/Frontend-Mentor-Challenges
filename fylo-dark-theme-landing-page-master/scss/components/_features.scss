@@ -1,0 +1,68 @@
+.features {
+  margin-bottom: 9rem;
+
+  &__group {
+    @include flex-center(column);
+    margin-bottom: 2.3rem;
+      
+    @at-root {
+
+    .feature {
+      @include flex-center(column);  
+      margin-bottom: 7rem;  
+      width: 85%; 
+
+      /* ACCESS */
+
+      &__illustration--access {
+        width: 62.5px;  
+        margin-bottom: 3.52rem;  
+      }
+
+      &__heading--access {
+        margin-bottom: 1.15rem;  
+      }
+
+      /* SECURITY */
+
+      &__illustration--security {
+        margin-top: 1.5rem; 
+        margin-bottom: 3.45rem; 
+        width: 53.6px;  
+      }
+
+
+      &__heading--security {
+        margin-bottom: 1rem;  
+      }
+
+      /* COLLABORA */
+
+      &__illustration--collabora {
+        width: 62.5px;  
+        margin-bottom: 3.7rem;  
+      }
+
+      &__heading--collabora {
+        margin-bottom: 1rem
+      }
+
+      /* FILE */
+
+      &__illustration--file {
+        margin-bottom: 4.5rem;    
+        margin-top: 2.7rem; 
+        width: 70px;  
+      }
+
+      &__heading--file {
+        margin-bottom: .9rem
+      }
+      
+
+    }
+
+    }  
+  }
+    
+}

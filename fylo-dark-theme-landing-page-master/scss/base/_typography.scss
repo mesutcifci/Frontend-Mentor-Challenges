@@ -1,0 +1,194 @@
+html {
+ font-size: 10px;
+}
+
+body {
+  font-family: $primary-font;  
+  font-size: 1.4rem;  
+}
+
+.button {
+  color: $white;
+}
+
+/* NAVBAR */
+
+.navbar {
+  font-family: $secondary-font;
+  
+  &__items__link {
+    font-size: 1.26rem;
+  }
+
+}
+
+/* INTRO */
+
+.intro {
+  $self: &;  
+  
+  &__header {
+    font-family: $secondary-font;  
+   
+    #{$self}__heading {
+      font-size: 2.4rem; 
+      line-height: 36px;
+      text-align: center; 
+    }  
+
+  }
+
+  &__text-container {
+    #{$self}__text {
+      color: $white;
+      line-height: 1.55;
+      text-align: center;
+    }
+
+  }
+}
+
+
+/* FEATURES */
+
+.features {
+  
+  &__group {
+      
+    @at-root {
+
+    .feature {
+      @include flex-center(column); 
+
+      &__heading {
+        color: $white; 
+        font-family: $secondary-font;   
+        font-size: 1.82rem;
+        
+      }
+
+      &__text {
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+      }
+
+    }
+
+    }  
+  }
+    
+}
+
+
+/* ABOUT */
+
+.about {
+  $self: &;  
+
+  &__container {
+    padding-left: 1px;
+     
+    @at-root {
+
+      #{$self}__heading {
+        color: $white;
+        font-family: $secondary-font;
+        font-size: 1.8rem; 
+      } 
+
+      #{$self}__text {
+        color: $white;
+        line-height: 1.55;
+      }
+
+      #{$self}__link {
+        color: $cyan;
+        font-size: 1.2rem;
+        font-weight: $regular;
+      }
+
+    }
+
+  }
+}
+
+/* TESTIMONIALS */
+
+
+testimonials {
+  @include flex-center(column);
+
+  @at-root {
+    .card {
+      $self: &;
+
+      &__text {
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      &__profile {
+        color: $white;
+
+        #{$self}__status span:nth-child(1){
+          font-family: $secondary-font;
+          font-size: 1rem;
+          font-weight: $bold;
+          word-spacing: 5px;
+        }
+
+        #{$self}__status span:nth-child(2){
+          font-size: 0.8rem;
+          margin-top: 5px;
+        }
+        
+      }
+
+    }  
+  }  
+
+}
+
+
+/* CALL TO ACTIONS */
+
+.cta {
+  color: white;
+  font-family: $secondary-font;
+
+  &__heading {
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.45;
+  }
+
+}
+
+
+/* FOOTER */
+
+.footer {
+  $self : &;
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+  }
+
+  &__container {
+
+    #{$self}__link {
+      font-size: 1.6rem;
+    }
+
+  }
+
+  
+
+}

@@ -1,0 +1,38 @@
+.navbar {
+  $self: &;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding-top: 24px;
+  padding-left: 1px;
+  
+  &__logo {
+    height: auto;  
+    width: 82px;    
+  }
+
+  &__items {
+    display: block; 
+    width: max-content; 
+
+    &__link {
+
+      color: $white;  
+
+      &--features { 
+        margin-right: 20px;
+      }
+
+      &--team { 
+        margin-right: 19px;
+      }
+
+      &--sign {
+        margin-right: 5px;
+      }
+
+    }
+   
+  }
+
+}

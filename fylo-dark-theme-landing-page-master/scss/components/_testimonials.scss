@@ -1,0 +1,58 @@
+.testimonials {
+  @include flex-center(column);
+  margin-bottom: 14rem;
+
+  @at-root {
+    .card {
+      $self: &;  
+      background-color: $dark-blue-testimonials;  
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: 160px;
+      max-width: 280px;
+      margin-bottom: 2.5rem;
+      padding: 3rem 1.5rem 0rem 2.2rem;
+      position: relative;
+
+      &:nth-child(1) .quotes {
+        position: absolute;  
+        left: 5px;
+        top: -17px;
+        width: 22px;
+      }
+
+
+      &_text {
+        width: 95%;  
+      }  
+
+
+      &__profile {
+        margin-top: 1.8rem;
+        @include flex-center;
+        justify-content: flex-start;
+
+        #{$self}__image {
+          border-radius: 50%;  
+          width: 25px; 
+          height: auto; 
+          margin-right: 5px;
+        }
+
+        #{$self}__status {
+          display: flex;
+          flex-direction: column;
+
+          #{$self}__status span:nth-child(1){
+            margin-top: 5px;
+          }
+        }
+
+      }
+      
+    }
+
+    
+  }  
+
+}

@@ -1,0 +1,59 @@
+.about {
+  $self: &; 
+  margin-bottom: 17.2rem; 
+
+  &__illustration {
+    display: block;  
+    @include margin-center;  
+    margin-bottom: 3.8rem;
+    max-width: 338px;  
+    width: 80%;  
+  } 
+  
+  &__container {
+    @include flex-center(column);
+
+    @at-root {
+      #{$self}__heading {
+        margin-bottom: 2rem;
+        margin-right: 14px;   
+      }  
+
+      #{$self}__text {
+        width: 87%;
+        padding-left: 2px;
+        margin-bottom: 1.5rem;
+
+        span {
+          display: block;  
+          margin-top: 1.7rem;
+          width: 100%;
+        }
+
+      }
+
+      #{$self}__link {
+        width: max-content;
+        margin-left: 2.7rem;
+        margin-right: auto; 
+        @include flex-center;
+        position: relative;
+        
+        &__arrow {
+          margin-left: 0.6rem;  
+        }
+
+        &::after {
+          background-color: $cyan;  
+          content: '';  
+          width: 100%;
+          height: 1px;  
+          position: absolute;
+          bottom: -5px;
+        }
+      }
+
+    }
+
+  }
+}

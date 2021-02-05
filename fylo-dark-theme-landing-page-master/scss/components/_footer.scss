@@ -1,0 +1,89 @@
+.footer {
+  $self : &;
+  background-color: $dark-blue-footer; 
+  color: $white; 
+  @include flex-center(column);
+  align-items: flex-start;
+  padding: 8.5rem 2rem 3rem 3rem;
+
+  &__logo {
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+
+    #{$self}__logo--local {
+      margin-top:   1rem;
+      margin-right: 3rem;
+      width:  1.2rem;
+      height: auto;
+    }
+
+    #{$self}__contact {
+      display:     flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+
+      #{$self}__logo--phone {
+        margin-right: 2.2rem;
+        height: auto;
+        width: 1.3rem;
+      } 
+
+      #{$self}__logo--mail {
+        margin-right: 2rem;
+        width: 20px;
+        height: auto;
+      }
+
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 6rem;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 3rem;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 6.3rem;
+    }
+
+    &:nth-child(6) {
+      @include flex-center;
+      width: 100%;
+    }
+
+
+    &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #{$self}__link {
+      color: $white;
+      margin-bottom: 2rem;
+    }
+
+  }
+
+}
+
+.ionicon {
+  width: 3rem;
+  height: auto;
+  margin-right: .6rem;
+
+  path {
+    fill: $white;
+  }
+
+}

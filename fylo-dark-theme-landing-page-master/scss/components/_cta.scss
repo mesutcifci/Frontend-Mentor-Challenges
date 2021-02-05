@@ -1,0 +1,43 @@
+.cta {
+  $self: &;  
+  background-color: $dark-blue-components;  
+  box-sizing: border-box;
+  @include flex-center(column);
+  @include margin-center;
+  width: 90%;  
+  padding: 4rem 2rem 2.5rem 2rem;  
+
+  &__heading {
+    margin-bottom: 2rem;  
+  }
+
+  &__text {
+    margin-bottom: 3.2rem; 
+    width: 92% 
+  }
+
+  &__get-started {
+    @include flex-center(column);
+    width: 100%;
+
+    @at-root {
+
+      #{$self}__input {
+        border: 0px;  
+        border-radius: 50px;  
+        box-sizing: border-box;
+        height: 48px;
+        padding-left: 1rem;
+        width: 94.5%;
+        margin-bottom: 2.4rem;
+      } 
+      
+      #{$self}__button {
+        width: 94.5%;
+      }
+      
+    }
+
+  }
+
+}

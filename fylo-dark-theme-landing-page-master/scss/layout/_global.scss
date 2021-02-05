@@ -1,0 +1,19 @@
+body {
+  background-color: $dark-blue-main;  
+}
+
+.container {
+  @include margin-center;
+  width: 90%;
+}
+
+.button {
+  background: linear-gradient($blue, $cyan);
+  border: 0px;
+  border-radius: 50px;
+  font-family: $secondary-font;
+  font-weight: $bold;
+  width: 240px;
+  height: 48px;
+}
+
