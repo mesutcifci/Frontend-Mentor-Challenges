@@ -30,12 +30,13 @@ body {
   &__header {
     font-family: $secondary-font;  
    
-    #{$self}__heading {
-      font-size: 2.4rem; 
-      line-height: 36px;
-      text-align: center; 
-    }  
-
+    @at-root {
+      #{$self}__heading {
+        font-size: 2.4rem; 
+        line-height: 36px;
+        text-align: center; 
+      }
+    }
   }
 
   &__text-container {
@@ -56,28 +57,25 @@ body {
   &__group {
       
     @at-root {
-
-    .feature {
-      @include flex-center(column); 
-
-      &__heading {
-        color: $white; 
-        font-family: $secondary-font;   
-        font-size: 1.82rem;
-        
+      .feature {
+        @include flex-center(column); 
+  
+        &__heading {
+          color: $white; 
+          font-family: $secondary-font;   
+          font-size: 1.82rem;
+          text-align: center;
+        }
+  
+        &__text {
+          color: white;
+          text-align: center;
+          line-height: 1.5;
+        }
+  
       }
-
-      &__text {
-        color: white;
-        text-align: center;
-        line-height: 1.5;
-      }
-
-    }
-
     }  
-  }
-    
+  }   
 }
 
 
@@ -95,6 +93,7 @@ body {
         color: $white;
         font-family: $secondary-font;
         font-size: 1.8rem; 
+        text-align: center;
       } 
 
       #{$self}__text {
@@ -132,23 +131,22 @@ testimonials {
       &__profile {
         color: $white;
 
-        #{$self}__status span:nth-child(1){
-          font-family: $secondary-font;
-          font-size: 1rem;
-          font-weight: $bold;
-          word-spacing: 5px;
+        @at-root {
+          #{$self}__status span:nth-child(1){
+            font-family: $secondary-font;
+            font-size: 1rem;
+            font-weight: $bold;
+            word-spacing: 5px;
+          }
+  
+          #{$self}__status span:nth-child(2){
+            font-size: 0.8rem;
+            margin-top: 5px;
+          }
         }
-
-        #{$self}__status span:nth-child(2){
-          font-size: 0.8rem;
-          margin-top: 5px;
-        }
-        
       }
-
     }  
   }  
-
 }
 
 
@@ -160,6 +158,7 @@ testimonials {
 
   &__heading {
     font-size: 1.8rem;
+    text-align: center;
   }
 
   &__text {
@@ -178,17 +177,14 @@ testimonials {
   &__text {
     font-size: 1.6rem;
     line-height: 1.5;
-    
   }
 
   &__container {
 
-    #{$self}__link {
-      font-size: 1.6rem;
+    @at-root {
+      #{$self}__link {
+        font-size: 1.6rem;
+      }
     }
-
   }
-
-  
-
 }

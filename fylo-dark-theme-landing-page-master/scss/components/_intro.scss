@@ -18,10 +18,11 @@
     margin-top: 47px; 
     padding-left: 32px; 
     
-
-    #{$self}__illustration {
-      max-width: 305.226px;
-      width: 90.35%; 
+    @at-root {
+      #{$self}__illustration {
+        max-width: 305.226px;
+        width: 90.35%; 
+      }
     }
 
   }
@@ -29,22 +30,28 @@
   &__header {
     margin-top: 3rem;
        
-    #{$self}__heading {
-      color: $white;  
-      max-width: 350px;
-    }  
-    
+    @at-root {
+      #{$self}__heading {
+        color: $white;  
+        @include margin-center;
+        max-width: 350px;
+      }
+    }
+
   }
 
   &__text-container {
     margin-bottom: 3.1rem;
     padding-left: 2px;
 
-    #{$self}__text { 
-      @include margin-center;
-      width: 81%;
+    @at-root {
+      #{$self}__text { 
+        @include margin-center;
+        width: 81%;
+        max-width: 425px;
+      }
     }
-
+   
   }
 
   &__button {

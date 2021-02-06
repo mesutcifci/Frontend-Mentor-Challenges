@@ -1,6 +1,6 @@
 .testimonials {
   @include flex-center(column);
-  margin-bottom: 14rem;
+  margin-bottom: -3rem;
 
   @at-root {
     .card {
@@ -21,38 +21,29 @@
         width: 22px;
       }
 
-
       &_text {
         width: 95%;  
       }  
-
 
       &__profile {
         margin-top: 1.8rem;
         @include flex-center;
         justify-content: flex-start;
 
-        #{$self}__image {
-          border-radius: 50%;  
-          width: 25px; 
-          height: auto; 
-          margin-right: 5px;
-        }
-
-        #{$self}__status {
-          display: flex;
-          flex-direction: column;
-
-          #{$self}__status span:nth-child(1){
-            margin-top: 5px;
+        @at-root {
+          #{$self}__image {
+            border-radius: 50%;  
+            width: 25px; 
+            height: auto; 
+            margin-right: 5px;
+          }
+  
+          #{$self}__status {
+            display: flex;
+            flex-direction: column;
           }
         }
-
-      }
-      
+      } 
     }
-
-    
   }  
-
 }

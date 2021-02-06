@@ -3,9 +3,11 @@
   background-color: $dark-blue-components;  
   box-sizing: border-box;
   @include flex-center(column);
-  @include margin-center;
+  margin-left: 20px;
   width: 90%;  
   padding: 4rem 2rem 2.5rem 2rem;  
+  position: relative;
+  bottom: -170px;
 
   &__heading {
     margin-bottom: 2rem;  
@@ -27,9 +29,11 @@
         border-radius: 50px;  
         box-sizing: border-box;
         height: 48px;
-        padding-left: 1rem;
-        width: 94.5%;
         margin-bottom: 2.4rem;
+        outline-color: $dark-blue-footer;
+        padding-left: 2rem;
+        width: 94.5%;
+
       } 
       
       #{$self}__button {
@@ -40,4 +44,17 @@
 
   }
 
+}
+
+.label {
+  display: none;
+  color: $light-red;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.js-label {
+  display: initial;
 }

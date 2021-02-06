@@ -26,6 +26,7 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 |  [Single Price Grid Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/single-price-grid-component-master/index.html) |    :star:  | HTML, SCSS, JS |
 |  [Social Proof Section](https://mesutcifci.github.io/Frontend-Mentor-Challenges/social-proof-section-master/index.html) |    :star:  | HTML, CSS, JS |
 |  [Fylo Data Storage Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/fylo-data-storage-component-master/index.html) | :star: :star:   | HTML, CSS, JS |
+|  [Fylo Dark Theme Landing Page](https://mesutcifci.github.io/Frontend-Mentor-Challenges/fylo-dark-theme-landing-page-master/index.html) | :star: :star:   | HTML, SCSS(BEM), JS, PIXEL PERFECT |
 |  [Project Tracking Intro Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/project-tracking-intro-component-master/index.html) | :star: :star:   | HTML, SCSS, JS, BOOTSTRAP |
 
 

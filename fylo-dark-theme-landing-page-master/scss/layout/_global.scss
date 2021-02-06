@@ -1,5 +1,11 @@
 body {
-  background-color: $dark-blue-main;  
+  background-color: $dark-blue-components;  
+}
+
+main {
+  background-color: $dark-blue-main;
+  z-index: 2;
+  position: relative;
 }
 
 .container {
@@ -15,5 +21,9 @@ body {
   font-weight: $bold;
   width: 240px;
   height: 48px;
+  
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
