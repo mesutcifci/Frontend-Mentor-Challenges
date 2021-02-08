@@ -62,6 +62,13 @@ gulp.task('fylo-dark-theme-landing', () => {
     .pipe(gulp.dest('./fylo-dark-theme-landing-page-master/css'))
 });
 
+gulp.task('manage-landing-page', () => {
+    return gulp.src("./manage-landing-page-master/scss/**/*.scss")
+    .pipe(sass({ outputStyle: 'expanded'}))
+    .pipe(prefix( {cascade: false} ))
+    .pipe(gulp.dest('./manage-landing-page-master/css'))
+});
+
 gulp.task('watch', () => {
     gulp.watch("./four-card-feature-section-master/scss/**/*.scss", gulp.series("four-card"));
     gulp.watch("./base-apparel-coming-soon-master/scss/**/*.scss", gulp.series("base-apparel"));
@@ -70,5 +77,6 @@ gulp.task('watch', () => {
     gulp.watch("./ping-coming-soon-page-master/scss/**/*.scss", gulp.series("ping-coming-soon"));
     gulp.watch("./huddle-landing-page-with-single-introductory-section-master/scss/**/*.scss", gulp.series("huddle-landing-page"));
     gulp.watch("./project-tracking-intro-component-master/scss/**/*.scss", gulp.series("project-tracking-intro"));
-    gulp.watch("./fylo-dark-theme-landing-page-master/scss/**/*.scss", gulp.series('fylo-dark-theme-landing'))
+    gulp.watch("./fylo-dark-theme-landing-page-master/scss/**/*.scss", gulp.series('fylo-dark-theme-landing'));
+    gulp.watch("./manage-landing-page-master/scss/**/*.scss", gulp.series('manage-landing-page'));
 });

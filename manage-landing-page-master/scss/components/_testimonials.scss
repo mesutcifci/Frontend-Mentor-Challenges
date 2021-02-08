@@ -1,0 +1,95 @@
+/* TESTIMONIALS */
+
+.testimonials {
+  padding-top: 2px;
+
+  &__heading {
+    @include margin-center;
+    margin-bottom: 7rem;
+    width: max-content;  
+  } 
+
+  &__slider {
+    margin-bottom: 2.5rem;  
+    padding-top: 3.3rem;
+
+    @at-root {
+      .card {
+        $self: &;  
+        background-color: $very-light-gray;  
+        @include flex-center(column) ;
+        @include margin-center;
+        position: relative; 
+        transition: transform 2s;
+        height: 25rem; 
+        max-width: 33.8rem;
+        width:  90%;
+
+        &__image {
+          position: absolute;
+          top:      -3.5rem;
+          width: 7.2rem;  
+        }
+        
+        &__heading {
+          margin-top:   4.5rem;
+          margin-right: -2px;  
+        }
+
+        &__text-container {
+          box-sizing: border-box;
+          padding-top: 2.4rem; 
+          height: 15rem; 
+          width:  85%;   
+        }
+      }
+    }
+  }
+
+  @at-root {
+    .dots__container {  
+      @include flex-center;
+      @include margin-center;
+      width: max-content;
+      margin-bottom: 4.6rem;
+      
+  
+      @at-root {
+        .dot {
+          border: 1px solid $bright-red;
+          border-radius: 0.7rem;
+          cursor: pointer;
+          height: 0.7rem;
+          width: 0.7rem;
+          margin-right: 0.48rem;
+          
+          &:last-child {
+            margin-right: 0;  
+          }
+  
+          &:active, &:focus {
+            background-color: $bright-red;  
+          }
+  
+        }  
+      }
+    } 
+  }
+
+  &__button {
+    display: block;  
+    @include margin-center; 
+    position: relative;
+    left: 1px;
+  }
+}
+
+
+.js-card{
+  position: absolute;
+  visibility: hidden;
+}
+
+.js-translate {
+  transform: translate(-2000px);
+}

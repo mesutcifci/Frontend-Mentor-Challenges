@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+// BASE 
+@import './base/normalize';
+
+
+// ABSTRACT
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+
+
+// BASE
+@import './base/base';
+@import './base/typography';
+
+
+// LAYOUT 
+@import "./layout/global";
+
+
+
+// COMPONENTS 
+@import "./components/_about";
+@import "./components/footer";
+@import "./components/intro";
+@import "./components/navbar";
+@import "./components/testimonials";
+
+// LAYOUT
+@import "./layout/responsive";
+ 

@@ -1,0 +1,24 @@
+.js-body {
+    background: $dark-grayish-blue;
+}
+
+.button {
+    background-color: hsl(12, 88%, 59%);
+    border: 0px;
+    border-radius: 4.5rem;
+    box-shadow: 0px 12px 10px -5px hsla(12, 88%, 59%, 0.596);
+    cursor: pointer;
+    color: $very-light-gray;
+    font-size: 1.32rem;
+    font-weight: $bold;
+    height: 4.4rem;
+    width: 13.7rem;
+
+    &:active {
+      transform: scale(0.98);  
+    }
+}
+
+.js-hide {
+  display: none !important;
+}

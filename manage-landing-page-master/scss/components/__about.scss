@@ -1,0 +1,64 @@
+/* ABOUT */
+
+.about {
+  $self: &;
+  margin-bottom: 6.3rem;
+  
+  &__header {
+    @include flex-center(column);
+    @include margin-center;
+    margin-bottom: 5.4rem;
+    width: 90%;
+
+    @at-root {
+      #{$self}__heading {
+        margin-bottom: 1.8rem;
+        width: 70%;
+      }
+
+      #{$self}__text {
+        width: 90%;
+      }
+    }
+  }
+
+  @at-root {
+    .feature-container {
+      @include margin-center;
+      width: 90%;
+      
+      @at-root {
+        .feature {
+          $self: &;
+          
+          &__number-and-heading {
+            @include flex-center;
+            justify-content: unset;
+            margin-bottom: 0.9rem;
+            
+
+            @at-root {
+              #{$self}__number {
+                background-color: $bright-red;
+                border-radius: 3rem;
+                flex-shrink: 0;
+                display: inline-block;
+                height: 3.9rem;
+                width:  6.6rem;
+                margin-right: 1.8rem;
+                margin-top:   0.1rem;
+                margin-left: -0.25rem;
+              }
+            }
+
+          }
+
+          &__text {
+            margin-left: -1.5px;
+          }
+        }
+      }
+    }
+  }
+}
+

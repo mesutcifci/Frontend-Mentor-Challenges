@@ -1,0 +1,136 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 1.6rem;
+}
+
+
+/* NAVBAR TYPO */
+
+.navbar {
+  $self: &;
+
+  &__items-container {
+
+    @at-root {
+      #{$self}__item {
+        font-weight: $bold;
+      }
+    }
+
+  }
+
+}
+
+/* INTRO TYPO */
+
+.intro {
+  $self: &;
+
+  &__header {
+    @at-root {
+      #{$self}__heading {
+        color: $dark-blue;
+        font-size: 3.8rem;
+        text-align: center;      
+      }  
+
+      #{$self}__text {  
+        text-align: center;
+        line-height: 2.7rem;
+      }
+    }
+
+  }
+}
+
+
+/* ABOUT TYPO */
+
+.about {
+  $self: &;
+  
+  &__header {
+
+    @at-root {
+      #{$self}__heading {
+        font-size: 2.9rem;
+        line-height: 4.2rem;
+        text-align: center;
+      }
+
+      #{$self}__text {
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        text-align: center;
+      }
+
+    }
+    
+  }
+
+
+  @at-root {
+    .feature {
+      $self: &;
+      margin-bottom: 4.5rem;
+      
+      &__number-and-heading {
+        @at-root {
+          #{$self}__number {
+            color: $very-light-gray;
+            font-weight: $bold;
+            line-height: 3.5rem;
+            text-align: center;
+          }
+
+          #{$self}__heading {
+            font-size: 1.54rem;
+          }
+        } 
+      }
+
+      &__text {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+      }
+
+    }
+  }
+}
+
+
+/* TESTIMONIALS TYPO */ 
+
+.testimonials {
+
+  &__heading {
+    font-size: 3.1rem;
+  }
+
+  &__slider {
+    @at-root {
+      .card {
+        $self: &;
+        &__heading {
+          font-size: 1.55rem;
+        }
+
+        &__text-container {
+          @at-root {
+            #{$self}__text {
+              font-size: 1.4rem;
+              line-height: 2.6rem;
+              text-align: center;
+            }
+          }  
+        }
+
+      }
+    }
+
+  }
+}
