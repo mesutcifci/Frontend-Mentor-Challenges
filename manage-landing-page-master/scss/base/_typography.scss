@@ -134,3 +134,24 @@ body {
 
   }
 }
+
+/* SLOGAN TYPO */ 
+
+.slogan {
+  $self: &;
+
+  &__heading-container {
+    #{$self}__heading {
+      color: #ffffff;
+      line-height: 5rem;
+      font-size: 3.8rem;
+      text-align: center;
+    }
+  } 
+
+  &__button {
+    color: $bright-red;
+  }
+
+
+}

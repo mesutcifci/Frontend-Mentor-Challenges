@@ -1,0 +1,28 @@
+/* SLOGAN */
+
+.slogan {
+  $self: &;  
+  background-color: $bright-red;
+  box-sizing: border-box;
+  @include flex-center(column);
+  height: 40.5rem;
+  
+
+  &__heading-container {
+    box-sizing: border-box;
+    margin-top: -2.2rem;
+    min-height: 50%;
+    padding-top: 2.4rem;  
+
+    #{$self}__heading {
+        @include margin-center;
+        width: 85%;
+    }
+
+  }
+
+  &__button {
+    background-color: #ffffff;
+    box-shadow: 0px 12px 10px -5px hsla(0, 0%, 0%, 0.253);  
+  }
+} 
