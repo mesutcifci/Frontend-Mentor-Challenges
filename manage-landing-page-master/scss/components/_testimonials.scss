@@ -17,6 +17,7 @@
   &__slider { 
     padding-top: 3.3rem;
     position: relative;
+  
 
     @at-root {
       .card {
@@ -25,11 +26,10 @@
         @include flex-center(column) ;
         position: absolute; 
         left: 50%;
-        transform: translate(-50%);
-        transition: transform 1000ms;
         height: 25rem; 
         max-width: 33.75rem;
         width:  90%;
+        
 
         &__image {
           position: absolute;
@@ -49,19 +49,6 @@
           width:  85%;   
         }
       }  
-
-      .card--prev {
-        transform: translate(-180%);
-      }
-
-      .card--next {
-        transform: translate(80%);
-      }
-
-      .card--default {
-        left: 50%;
-        transform: translate(-50%);
-      }
 
     }
   }

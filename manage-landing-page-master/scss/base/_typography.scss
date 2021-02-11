@@ -39,6 +39,7 @@ body {
       }  
 
       #{$self}__text {  
+        color: $dark-grayish-blue;
         text-align: center;
         line-height: 2.7rem;
       }
@@ -57,6 +58,7 @@ body {
 
     @at-root {
       #{$self}__heading {
+        color: $dark-blue;
         font-size: 2.9rem;
         line-height: 4.2rem;
         text-align: center;
@@ -88,6 +90,7 @@ body {
           }
 
           #{$self}__heading {
+            color: $dark-blue;
             font-size: 1.54rem;
           }
         } 
@@ -107,7 +110,9 @@ body {
 
 .testimonials {
 
+
   &__heading {
+    color: $dark-blue;
     font-size: 3.1rem;
   }
 
@@ -116,6 +121,7 @@ body {
       .card {
         $self: &;
         &__heading {
+          color: $dark-blue;
           font-size: 1.55rem;
         }
 
@@ -153,5 +159,46 @@ body {
     color: $bright-red;
   }
 
+
+}
+
+/* FOOTER TYPO */
+
+.footer {
+  $self :&;
+
+  &__cta {
+    @at-root {
+
+      #{$self}__input {
+        &::placeholder {
+          font-size: 1.3rem;
+        }
+      }
+
+      #{$self}__button {
+        font-size: 1.37rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__link-container {
+    @at-root {
+      .link-group {
+        @at-root {
+          #{$self}__link {
+            color: #ffffff;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    color: #ffffff;
+    font-size: 1.25rem;
+  }
 
 }

@@ -12,6 +12,9 @@
     
     @at-root {
       #{$self}__illustration {
+        display: block;
+        @include margin-center;
+        max-width: 500px;
         width: 100%;  
       }  
     }

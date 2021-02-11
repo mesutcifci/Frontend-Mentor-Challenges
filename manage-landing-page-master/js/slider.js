@@ -51,3 +51,11 @@ dots.forEach((element, elementIndex, array) => {
     markDot(elementIndex);
   })
 });
+
+
+let slider = document.querySelector(".testimonials__slider")
+
+
+window.addEventListener("load", () => {
+  slider.scrollLeft = 122;
+})

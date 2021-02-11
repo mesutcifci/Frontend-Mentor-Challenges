@@ -1,0 +1,117 @@
+/* FOOTER */
+
+.footer { 
+  $self: &;  
+  background-color: $very-dark-blue;
+  box-sizing: border-box;
+  @include flex-center(column);
+  margin-top: -1px;
+  padding: 5rem 2rem 2rem 2rem;
+
+  &__cta{
+    display: flex;
+    margin-bottom: 5.5rem;  
+
+    @at-root {
+      #{$self}__input {
+        border: 0px;
+        border-radius: 44px;  
+        box-sizing: border-box;
+        height: 44px;
+        margin-top: 0.1rem;
+        margin-right: 0.9rem;
+        margin-left: 1.2rem;
+        padding-left: 2.2rem;
+        padding-bottom: 4px;
+        width: 23.9rem;
+      }  
+
+      #{$self}__button {
+        box-shadow: none;
+        width: 8rem;
+        margin-right: 1.2rem;
+        margin-top: 1px;
+        margin-left: -1px;
+
+      }
+
+    }
+  }
+
+
+  &__link-container {
+    display: flex;  
+    margin-bottom: 3.4rem;
+    @include margin-center;
+    max-width: 312px;
+    padding-left: 1rem;
+    width: 90%;
+
+    @at-root {
+      .link-group {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(1) {
+          margin-left: 2rem;
+          margin-top: 2px;
+          
+          #{$self}__link {
+            margin-bottom: 1.8rem;
+          }
+        }
+        
+        &:nth-child(2) {
+          margin-left: 10.5rem; 
+          #{$self}__link {
+            margin-bottom: 1.9rem;
+          }  
+        } 
+        
+      }  
+    }  
+  }
+
+  &__icon-and-logo {
+    display: flex;
+    flex-direction: column;  
+    padding-left: 6px;
+    margin-bottom: 5.1rem;
+    max-width: 31rem;
+    width: 90%;
+
+    @at-root {
+      #{$self}__social-icon-container {
+        margin-bottom: 5.1rem;  
+        
+        @at-root {
+          #{$self}__social-icon {
+            height: auto;  
+            width: 32px;   
+            margin-right: 3rem; 
+
+            &:nth-child(5) {
+              margin-right: 0px;  
+            }
+
+          }  
+        }
+      }  
+      
+      #{$self}__logo {
+        align-self: center;
+        margin-right: 1rem;
+        margin-top: 2px; 
+        height: auto; 
+        width: 16.2rem;
+      }
+
+      
+    }
+
+    
+  }
+
+
+
+}

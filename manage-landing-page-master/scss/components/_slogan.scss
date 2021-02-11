@@ -6,6 +6,7 @@
   box-sizing: border-box;
   @include flex-center(column);
   height: 40.5rem;
+  margin-bottom: 1px;
   
 
   &__heading-container {
@@ -15,8 +16,8 @@
     padding-top: 2.4rem;  
 
     #{$self}__heading {
-        @include margin-center;
-        width: 85%;
+      @include margin-center;
+      width: 85%;
     }
 
   }

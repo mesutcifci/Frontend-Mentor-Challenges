@@ -1,0 +1,297 @@
+@include media("1439px", "max") {
+
+  .card {
+    transform: translate(-50%);
+    transition: transform 1000ms;
+  }
+
+  .card--prev {
+    transform: translate(-180%);
+  }
+
+  .card--next {
+    transform: translate(80%);
+  }
+
+  .card--default {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@include media("1024px") {
+
+/* NAVBAR MEDIA*/
+
+.navbar {
+  $self: &;
+  margin-bottom: 9rem;
+  padding: 6.3rem 0 0 0;
+  width: 77%;
+
+
+  &__logo {
+    margin-top: 8px;
+    margin-left: 0;  
+    width: initial;
+  }
+
+  &__icon-container {
+    display: none;
+  }
+  
+  &__items-container {
+    flex-direction: row; 
+    @include margin-center;
+    height: initial;
+    width: 40.6rem;
+    max-width: initial;
+    padding-top: 0; 
+    padding-bottom: 0.7rem;
+
+    position: static;
+    transform: initial;
+
+    
+
+    @at-root {
+      #{$self}__item {
+        color: $dark-blue;
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-left: 0;
+        margin-left: 0;   
+        margin-right: 3.4rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }   
+    }
+   
+
+  }
+
+  &__button {
+    display: initial;
+    margin-top: -0.7rem;
+    margin-right: -1px;
+  }
+}
+
+
+/* INTRO MEDIA */ 
+  
+  .intro {
+    $self: &;  
+    flex-direction: row-reverse;
+    @include margin-center;
+    width: 77%;  
+
+    &__header {
+      padding-top: 3.3rem;
+      width: 100%;  
+      @at-root {
+        #{$self}__heading {
+          font-size: 3rem;
+          margin-right: auto; 
+          text-align: left; 
+        } 
+        
+        #{$self}__text {
+          text-align: left;
+          margin-right: auto;   
+          width: 75%; 
+        }
+      }  
+    }
+
+    &__button {
+      margin-right: auto;    
+    }
+
+  }  
+
+  /* TESTIMONIALS MEDIA */
+
+  .testimonials {
+    max-width: 600px;
+  }
+
+}
+
+
+@include media("1440px") {
+
+  /* INTRO MEDIA */
+
+  .intro {
+    $self: &;
+
+    &__header {
+      padding-top: 0;
+      width: 50%;
+
+      @at-root {
+        #{$self}__heading {
+          font-size: 5.4rem;
+          line-height: 6.5rem; 
+          margin-bottom: 3.3rem;
+          width: 80%; 
+        } 
+        
+        #{$self}__text {
+          line-height: 2.5rem;
+          width: 64%;
+        }
+      }  
+    }
+
+    &__button {
+      margin-left: -1px;
+      margin-top: 1.1rem;
+    }
+
+    &__illustration-container {
+      margin-right: 0.5rem;
+      padding-top: 2rem;
+      width: 50%;
+
+      @at-root {
+        #{$self}__illustration {
+          width: 580px;
+          max-width: initial;
+        }
+      }
+
+    }
+  }
+  
+  
+    /* ABOUT MEDIA */
+  .about {
+    $self: &;
+    display: flex;
+    height: max-content;
+    width: 77%;
+    margin-bottom: 11rem;
+    @include margin-center;
+
+    &__header {
+      height: max-content;
+
+      @at-root {
+        #{$self}__heading {
+          font-size: 3.87rem;
+          line-height: 4.4rem;
+          margin-bottom: 3rem;
+          margin-top: 0.5rem;
+          margin-right: auto;
+          text-align: left;
+          width: 80%;
+        }
+    
+        #{$self}__text {
+          font-size: 1.6rem;
+          margin-right: auto;
+          text-align: left;
+          width: 59%;
+        }
+      }
+    }
+
+    &__feature-container {
+     
+
+      @at-root {
+        .feature {
+          $self: &;
+          margin-top: 0.4rem;
+          margin-bottom: 3.9rem;
+
+          &__number-and-heading {
+            width: max-content;
+
+            @at-root {
+              #{$self}__number {
+                margin-left: 1.5rem;
+                margin-right: 3rem;
+              }
+
+              #{$self}__text {
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+                margin-left: auto;
+                width: 80%;
+              }
+
+            }
+
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+
+  /* TESTIMONIALS MEDIA */
+
+  .testimonials {
+    max-width: initial;
+    
+    &__heading {
+      font-size: 3.85rem;
+      margin-top: -0.4rem;
+    }
+
+    &__slider {
+      display: flex;
+      margin-bottom: 4.8rem;
+      @include margin-center;
+      overflow-x: scroll;
+      min-width: 1500px;
+      max-width: 2200px;
+
+      @at-root {
+
+        .card {
+          $self: &; 
+          flex-shrink: 0;
+          margin-top: 1rem;
+          margin-right: 3.4rem;
+          max-width: 53.8rem;
+          position: relative;
+          left: 0;
+          height: 22rem;
+
+          &__image {
+            margin-right: -1px;
+          }
+
+          &__heading {
+            margin-top: 6.3rem;
+          }
+
+          &__text-container {
+            padding-top: 2.3rem;
+
+            #{$self}__text {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+
+    @at-root {
+      .dots-container {
+        display: none;
+      }
+    }
+
+  }
+}
