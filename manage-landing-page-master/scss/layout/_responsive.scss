@@ -21,64 +21,73 @@
 
 @include media("1024px") {
 
-/* NAVBAR MEDIA*/
-
-.navbar {
-  $self: &;
-  margin-bottom: 9rem;
-  padding: 6.3rem 0 0 0;
-  width: 77%;
-
-
-  &__logo {
-    margin-top: 8px;
-    margin-left: 0;  
-    width: initial;
-  }
-
-  &__icon-container {
+  .bg-middle {
     display: none;
   }
-  
-  &__items-container {
-    flex-direction: row; 
-    @include margin-center;
-    height: initial;
-    width: 40.6rem;
-    max-width: initial;
-    padding-top: 0; 
-    padding-bottom: 0.7rem;
 
-    position: static;
-    transform: initial;
+ .button:hover {
+   background-color: hsl(12, 88%, 74%);
+ } 
 
-    
+/* NAVBAR MEDIA*/
 
-    @at-root {
-      #{$self}__item {
-        color: $dark-blue;
-        font-size: 1.25rem;
-        font-weight: 500;
-        margin-bottom: 0;
-        padding-left: 0;
-        margin-left: 0;   
-        margin-right: 3.4rem;
+  .navbar {
+    $self: &;
+    margin-bottom: 9rem;
+    padding: 6.3rem 0 0 0;
+    width: 77%;
 
-        &:last-child {
-          margin-right: 0;
-        }
-      }   
+
+    &__logo {
+      margin-top: 8px;
+      margin-left: 0;  
+      width: initial;
     }
+
+    &__icon-container {
+      display: none;
+    }
+  
+    &__items-container {
+      flex-direction: row; 
+      @include margin-center;
+      height: initial;
+      width: 40.6rem;
+      max-width: initial;
+      padding-top: 0; 
+      padding-bottom: 0.7rem;
+      position: static;
+      transform: initial;
+
+      @at-root {
+        #{$self}__item {
+          color: $dark-blue;
+          font-size: 1.25rem;
+          font-weight: 500;
+          margin-bottom: 0;
+          padding-left: 0;
+          margin-left: 0;   
+          margin-right: 3.4rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            color: $dark-grayish-blue
+          }
+
+        }   
+      }
    
+    }
 
+    &__button {
+      display: initial;
+      margin-top: -0.7rem;
+      margin-right: -1px;
+    }
   }
-
-  &__button {
-    display: initial;
-    margin-top: -0.7rem;
-    margin-right: -1px;
-  }
-}
 
 
 /* INTRO MEDIA */ 
@@ -118,11 +127,61 @@
   .testimonials {
     max-width: 600px;
   }
+   
+  /* SLOGAN MEDIA */
+
+  .slogan {
+
+    &__button:hover {
+      background-color: #ffffff;
+      color: hsl(12, 88%, 74%);
+    }
+  }
+
+  /* FOOTER MEDIA */
+
+  .footer {
+    $self: &;
+    &__link-container {
+       @at-root {
+        .link-group {
+          @at-root {
+            #{$self}__link:hover {
+              color: $bright-red;
+            }
+          }
+        }
+       }
+    }
+
+    &__icon-and-logo {
+      @at-root {
+        #{$self}__social-icon-container {
+          @at-root {
+            #{$self}__social-icon:hover path {
+              cursor: pointer;
+              fill: $bright-red;
+            }
+          }
+        }
+      }
+    }
+
+  }
 
 }
 
 
 @include media("1440px") {
+
+  .bg-middle {
+    display: initial;
+  }
+
+  .bg-top {
+    max-width: 80rem;
+    right: -14rem;
+  }
 
   /* INTRO MEDIA */
 
@@ -241,6 +300,7 @@
   /* TESTIMONIALS MEDIA */
 
   .testimonials {
+    margin-bottom: 9.5rem;
     max-width: initial;
     
     &__heading {
@@ -249,12 +309,22 @@
     }
 
     &__slider {
+      cursor: grab;
       display: flex;
       margin-bottom: 4.8rem;
       @include margin-center;
       overflow-x: scroll;
       min-width: 1500px;
       max-width: 2200px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+
+      &.cursor {
+        cursor: grabbing;
+      }
 
       @at-root {
 
@@ -291,6 +361,136 @@
       .dots-container {
         display: none;
       }
+    }
+  }
+
+  /* SLOGAN MEDIA */
+
+  .slogan {
+    $self: &;
+    flex-direction: row;
+    height: 22rem;
+    padding-right: 16.1rem;
+
+    &__bg--1 {
+      display: none;
+    }
+
+    &__bg--2 {
+      display: initial;
+      bottom: 0;
+      left: 26rem;
+    }
+
+    &__heading-container {
+      margin-top: -2.8rem;
+      margin-left: 0.1rem;
+      margin-right: auto;
+      padding-left: 12.2rem;
+      width: 66rem;
+      @at-root {
+        #{$self}__heading {
+          font-size: 3.89rem;
+          line-height: 4.1rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  /* FOOTER */
+
+  .footer {
+    $self: &;
+    box-sizing: border-box;
+    flex-direction: row-reverse;
+    height: 25rem;
+    position: relative;
+
+    &__icon-and-logo {
+      flex-direction: column-reverse;
+      padding-top: 6.2rem;
+
+      @at-root {
+        #{$self}__logo {
+          margin-bottom: 8.5rem;
+          margin-left: 12.5rem;
+          margin-right: 0;
+          margin-top: 1rem;
+          width: 14.3rem;
+        }
+
+        #{$self}__social-icon-container {
+          margin-left: auto;
+          margin-right: 1rem;
+          width: max-content;
+          @at-root {
+            #{$self}__social-icon {
+              margin-right: 1rem;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+
+    &__link-container {
+      padding-top: 2rem;
+      padding-left: 9.3rem;
+      margin-left: 0;
+      width: max-content;
+
+      @at-root {
+        .link-group {
+          width: max-content;
+
+          &:nth-child(1) {
+            @at-root {
+              #{$self}__link:nth-child(4) {
+                width: 6.8rem;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            margin-left: 18.8rem;
+            margin-top: 1px;
+            @at-root {
+              #{$self}__link:nth-child(3) {
+                width: 9.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__cta {
+      margin-bottom: 11rem;
+      padding-right: 12rem;
+
+      @at-root {
+        #{$self}__input {
+          margin-right: 0.9rem;
+          margin-top: 0.3rem;
+          width: 20rem;
+        }
+
+        #{$self}__button {
+          margin-right: 2.5rem;
+          margin-top: 0.3rem; 
+          width: 6.4rem;
+        }
+
+      }
+
+    }
+
+    &__copyright {
+      position: absolute;
+      bottom: 6.5rem;
+      right: 16.8rem;
     }
 
   }

@@ -13,14 +13,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <script src="./js/navbar.js" defer></script>
-  <script src="./js/slider.js" defer></script>
+  <script src="./js/navbar.js"   defer></script>
+  <script src="./js/slider.js"   defer></script>
+  <script src="./js/validate.js" defer></script>
 
   <title>Frontend Mentor | Manage landing page</title>
 
 </head>
 
 <body>
+
+  <img class="bg-top" src="./images/bg-tablet-pattern.svg" alt="">
 
   <nav class="navbar">
     <img src="./images/logo.svg" alt="manage" class="navbar__logo">
@@ -120,7 +123,12 @@
         </div>
 
       </div>
+
+      <img src="./images/bg-tablet-pattern.svg" alt="" class="bg-middle">
+
     </section>
+
+    
 
     <!-- TESTIMONIALS -->
 
@@ -190,6 +198,8 @@
       <button class="button testimonials__button ">Get Started</button>
     </section>
 
+    <!-- SLOGAN -->
+
     <section class="slogan">
       <div class="slogan__heading-container">
         <h2 class="slogan__heading">Simplify how your team works today.</h2>
@@ -197,6 +207,10 @@
 
 
       <button class="button slogan__button">Get Started</button>
+
+      <img src="./images/bg-simplify-section-mobile.svg" alt="" class="slogan__bg--1">
+      <img src="./images/bg-simplify-section-desktop.svg" alt="" class="slogan__bg--2">
+
     </section>
 
   </main>
@@ -206,7 +220,8 @@
   <footer class="footer">
 
     <div class="footer__cta">
-      <input type="email" class="footer__input" placeholder="Updates in your inbox…">
+      <input type="email" id="email" class="footer__input" placeholder="Updates in your inbox…" required>
+      <label class="footer__label" for="email">Please insert a valid email</label>
       <button class="button footer__button">Go</button>
     </div>
 
@@ -272,16 +287,5 @@
     <span class="footer__copyright">Copyright 2020. All Rights Reserved</span>
 
   </footer>
-
-
-  <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
-  -->
-
-
+  
 </html>

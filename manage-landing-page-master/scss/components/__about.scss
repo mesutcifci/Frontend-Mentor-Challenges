@@ -3,6 +3,7 @@
 .about {
   $self: &;
   margin-bottom: 6.3rem;
+  position: relative;
   
   &__header {
     @include flex-center(column);

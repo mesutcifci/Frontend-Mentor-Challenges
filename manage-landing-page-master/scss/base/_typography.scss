@@ -17,6 +17,7 @@ body {
 
     @at-root {
       #{$self}__item {
+        color: $dark-blue;
         font-weight: $bold;
       }
     }
@@ -65,6 +66,7 @@ body {
       }
 
       #{$self}__text {
+        color: $dark-grayish-blue;
         font-size: 1.4rem;
         line-height: 2.7rem;
         text-align: center;
@@ -97,6 +99,7 @@ body {
       }
 
       &__text {
+        color: $dark-grayish-blue;
         font-size: 1.4rem;
         line-height: 2.8rem;
       }
@@ -128,6 +131,7 @@ body {
         &__text-container {
           @at-root {
             #{$self}__text {
+              color: $dark-grayish-blue;
               font-size: 1.4rem;
               line-height: 2.6rem;
               text-align: center;
@@ -147,11 +151,14 @@ body {
   $self: &;
 
   &__heading-container {
-    #{$self}__heading {
-      color: #ffffff;
-      line-height: 5rem;
-      font-size: 3.8rem;
-      text-align: center;
+
+    @at-root {
+      #{$self}__heading {
+        color: #ffffff;
+        line-height: 5rem;
+        font-size: 3.8rem;
+        text-align: center;
+      }
     }
   } 
 
@@ -171,6 +178,7 @@ body {
     @at-root {
 
       #{$self}__input {
+        color: $bright-red;
         &::placeholder {
           font-size: 1.3rem;
         }
@@ -179,6 +187,12 @@ body {
       #{$self}__button {
         font-size: 1.37rem;
         text-transform: uppercase;
+      }
+
+      #{$self}__label {
+        color: $bright-red;
+        font-size: 1.2rem;
+        font-weight: $regular;
       }
     }
   }

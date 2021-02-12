@@ -7,7 +7,17 @@
   @include flex-center(column);
   height: 40.5rem;
   margin-bottom: 1px;
+  position: relative;
+
+  &__bg--1 {
+    position: absolute;
+    left: 0;
+  }
   
+  &__bg--2 {
+    display: none;
+    position: absolute;
+  }
 
   &__heading-container {
     box-sizing: border-box;
@@ -15,9 +25,11 @@
     min-height: 50%;
     padding-top: 2.4rem;  
 
-    #{$self}__heading {
-      @include margin-center;
-      width: 85%;
+    @at-root { 
+      #{$self}__heading {
+        @include margin-center;
+        width: 85%;
+      }
     }
 
   }

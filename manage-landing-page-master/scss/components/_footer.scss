@@ -11,6 +11,7 @@
   &__cta{
     display: flex;
     margin-bottom: 5.5rem;  
+    position: relative;
 
     @at-root {
       #{$self}__input {
@@ -22,6 +23,7 @@
         margin-right: 0.9rem;
         margin-left: 1.2rem;
         padding-left: 2.2rem;
+        padding-right: 1rem;
         padding-bottom: 4px;
         width: 23.9rem;
       }  
@@ -32,7 +34,13 @@
         margin-right: 1.2rem;
         margin-top: 1px;
         margin-left: -1px;
+      }
 
+      #{$self}__label {
+        display: none;
+        position: absolute;
+        left: 3rem;
+        top: 5rem;
       }
 
     }
@@ -112,6 +120,8 @@
     
   }
 
+}
 
-
+.js-label {
+  display: initial;
 }
