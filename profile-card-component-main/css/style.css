@@ -41,7 +41,7 @@ main {
     -webkit-box-align:   center;
         -ms-flex-align:  center;
             align-items: center;
-    background-image:  url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-image:  url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
     background-repeat: no-repeat, no-repeat;
     /* 
     Thanks ApplePieGiraffe (from frontendmentor.com) for pieces of code.
