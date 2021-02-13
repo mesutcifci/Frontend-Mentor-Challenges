@@ -512,6 +512,7 @@ main {
   background: linear-gradient(#339ecc, #65e2d9);
   border: 0px;
   border-radius: 50px;
+  cursor: pointer;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   width: 240px;
@@ -770,16 +771,6 @@ main {
   position: relative;
 }
 
-.intro::after {
-  background-color: #1c2431;
-  content: " ";
-  height: 50%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
 .intro__illustration-container {
   margin-top: 47px;
   padding-left: 32px;
@@ -820,10 +811,11 @@ main {
 }
 
 .bg-curvy {
+  background-color: #1c2431;
   background-image: url("../images/bg-curvy-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: left 0px bottom 55%;
+  background-position: center bottom;
 }
 
 .footer {
@@ -1220,6 +1212,8 @@ main {
   }
   .about__link {
     margin-left: 0;
+    -webkit-transition: font-size 500ms;
+    transition: font-size 500ms;
   }
   .about__link:hover {
     color: white;

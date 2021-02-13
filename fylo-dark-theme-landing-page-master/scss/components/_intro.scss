@@ -2,17 +2,6 @@
   $self : &;
   margin-bottom: 13.15rem;
   position: relative;
-  
-  &::after {
-    background-color: $dark-blue-components;
-    content: " ";
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-
 
   &__illustration-container {
     margin-top: 47px; 
@@ -62,8 +51,9 @@
 }
 
 .bg-curvy {
+  background-color: #1c2431;
   background-image: url("../images/bg-curvy-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: left 0px bottom 55%;
+  background-position: center bottom
 }

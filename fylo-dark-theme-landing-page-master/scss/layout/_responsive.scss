@@ -83,7 +83,6 @@
   
       &__link {
         font-size: 1.6rem;
-        
   
         &--features { 
          margin-left: 18px;
@@ -207,6 +206,7 @@
       @at-root {
         #{$self}__link {
           margin-left: 0;
+          transition: font-size 500ms;
 
           &:hover {
             color: $white;
