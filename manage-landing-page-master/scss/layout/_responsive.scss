@@ -19,6 +19,62 @@
   }
 }
 
+@include media("375px") {
+  .footer {
+    $self: &;
+
+    &__cta {
+      @at-root {
+        #{$self}__input {
+          padding-left: 2.2rem;
+          padding-right: 1rem;
+          padding-bottom: 4px;
+          width: 23.9rem;
+        }
+      }
+    }
+
+    &__link-container {
+      padding-left: 1rem;
+      width: 90%;
+
+      @at-root {
+        .link-group {
+          display: flex;
+          flex-direction: column; 
+
+          &:nth-child(1) {
+            margin-left: 2rem;
+            margin-top: 2px;
+          }
+
+          &:nth-child(2) {
+            margin-left: 10.5rem;    
+          }
+        }  
+      } 
+
+    }
+
+    &__icon-and-logo {
+      width: 90%;
+      @at-root {
+        #{$self}__social-icon-container {
+          @at-root {
+            #{$self}__social-icon {
+              width: 32px; 
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+ 
+
 @include media("1024px") {
 
   .bg-middle {

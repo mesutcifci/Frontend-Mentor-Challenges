@@ -22,10 +22,8 @@
         margin-top: 0.1rem;
         margin-right: 0.9rem;
         margin-left: 1.2rem;
-        padding-left: 2.2rem;
-        padding-right: 1rem;
-        padding-bottom: 4px;
-        width: 23.9rem;
+        padding-left: 1rem;
+        width: 17rem;
       }  
 
       #{$self}__button {
@@ -52,28 +50,38 @@
     margin-bottom: 3.4rem;
     @include margin-center;
     max-width: 312px;
-    padding-left: 1rem;
-    width: 90%;
+    width: max-content;
 
     @at-root {
       .link-group {
         display: flex;
         flex-direction: column;
 
-        &:nth-child(1) {
-          margin-left: 2rem;
-          margin-top: 2px;
-          
+        @at-root {
           #{$self}__link {
-            margin-bottom: 1.8rem;
+            width: max-content;
           }
+        }
+
+        &:nth-child(1) {
+          
+          @at-root {
+            #{$self}__link {
+              margin-bottom: 1.8rem;
+            }
+          }
+
         }
         
         &:nth-child(2) {
-          margin-left: 10.5rem; 
-          #{$self}__link {
-            margin-bottom: 1.9rem;
-          }  
+          margin-left: 5rem; 
+
+          @at-root {
+            #{$self}__link {
+              margin-bottom: 1.9rem;
+            } 
+          }
+ 
         } 
         
       }  
@@ -86,7 +94,7 @@
     padding-left: 6px;
     margin-bottom: 5.1rem;
     max-width: 31rem;
-    width: 90%;
+    width: max-content;
 
     @at-root {
       #{$self}__social-icon-container {
@@ -95,7 +103,6 @@
         @at-root {
           #{$self}__social-icon {
             height: auto;  
-            width: 32px;   
             margin-right: 3rem; 
 
             &:nth-child(5) {

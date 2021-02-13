@@ -376,7 +376,7 @@ body {
 }
 
 html, body {
-  min-width: 251px;
+  min-width: 270px;
   overflow-x: hidden;
   width: 100%;
 }
@@ -941,10 +941,8 @@ body {
   margin-top: 0.1rem;
   margin-right: 0.9rem;
   margin-left: 1.2rem;
-  padding-left: 2.2rem;
-  padding-right: 1rem;
-  padding-bottom: 4px;
-  width: 23.9rem;
+  padding-left: 1rem;
+  width: 17rem;
 }
 
 .footer__button {
@@ -971,8 +969,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 312px;
-  padding-left: 1rem;
-  width: 90%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .link-group {
@@ -985,20 +984,21 @@ body {
   flex-direction: column;
 }
 
-.link-group:nth-child(1) {
-  margin-left: 2rem;
-  margin-top: 2px;
+.footer__link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
-.link-group:nth-child(1) .footer__link {
+.footer__link {
   margin-bottom: 1.8rem;
 }
 
 .link-group:nth-child(2) {
-  margin-left: 10.5rem;
+  margin-left: 5rem;
 }
 
-.link-group:nth-child(2) .footer__link {
+.footer__link {
   margin-bottom: 1.9rem;
 }
 
@@ -1013,7 +1013,9 @@ body {
   padding-left: 6px;
   margin-bottom: 5.1rem;
   max-width: 31rem;
-  width: 90%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .footer__social-icon-container {
@@ -1022,7 +1024,6 @@ body {
 
 .footer__social-icon {
   height: auto;
-  width: 32px;
   margin-right: 3rem;
 }
 
@@ -1068,6 +1069,41 @@ body {
     -webkit-transform: translate(-50%);
     -ms-transform: translate(-50%);
     transform: translate(-50%);
+  }
+}
+
+@media (min-width: 375px) {
+  .footer__input {
+    padding-left: 2.2rem;
+    padding-right: 1rem;
+    padding-bottom: 4px;
+    width: 23.9rem;
+  }
+  .footer__link-container {
+    padding-left: 1rem;
+    width: 90%;
+  }
+  .link-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .link-group:nth-child(1) {
+    margin-left: 2rem;
+    margin-top: 2px;
+  }
+  .link-group:nth-child(2) {
+    margin-left: 10.5rem;
+  }
+  .footer__icon-and-logo {
+    width: 90%;
+  }
+  .footer__social-icon {
+    width: 32px;
   }
 }
 
