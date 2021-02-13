@@ -12,7 +12,7 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 | Advanced | :star: :star: :star: :star: :star: |
 | Guru | :star: :star: :star: :star: :star: :star: |
 
-|Name|Difficulty| Technologies |
+|Name|Difficulty| Technologies / Approaches |
 |---|---|---|
 |  [Article Preview Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/article-preview-component-master/index.html) | :star:   | HTML, CSS, JS |
 |  [Base Apparel Coming Soon](https://mesutcifci.github.io/Frontend-Mentor-Challenges/base-apparel-coming-soon-master/index.html) | :star:   | HTML, SCSS, JS |
@@ -28,6 +28,6 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 |  [Fylo Data Storage Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/fylo-data-storage-component-master/index.html) | :star: :star:   | HTML, CSS, JS |
 |  [Fylo Dark Theme Landing Page](https://mesutcifci.github.io/Frontend-Mentor-Challenges/fylo-dark-theme-landing-page-master/index.html) | :star: :star:   | HTML, SCSS(BEM), JS, PIXEL PERFECT |
 |  [Project Tracking Intro Component](https://mesutcifci.github.io/Frontend-Mentor-Challenges/project-tracking-intro-component-master/index.html) | :star: :star:   | HTML, SCSS, JS, BOOTSTRAP |
-|  [Manage Landing Page](https://mesutcifci.github.io/Frontend-Mentor-Challenges/manage-landing-page-master/index.html) | :star: :star: :star: | HTML, SCSS, JS|
+|  [Manage Landing Page](https://mesutcifci.github.io/Frontend-Mentor-Challenges/manage-landing-page-master/index.html) | :star: :star: :star: | HTML, SCSS(BEM), JS, PIXEL PERFECT|
 
 

@@ -1178,6 +1178,10 @@ body {
 @media (min-width: 1440px) {
   .bg-middle {
     display: initial;
+    left: -62rem;
+    top: 32rem;
+    width: 100%;
+    max-width: 80rem;
   }
   .bg-top {
     max-width: 80rem;
