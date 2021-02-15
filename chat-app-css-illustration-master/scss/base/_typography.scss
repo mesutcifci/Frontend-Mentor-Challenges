@@ -1,0 +1,95 @@
+html {
+  font-size: 10px;  
+}
+
+/* PHONE TYPO */
+
+.phone {
+  $phone: &;
+        
+  @at-root {
+
+    .profile {
+      $profile: &;
+
+      &__info {
+              
+        @at-root {
+          #{$profile}__name {
+            color: $white;
+            font-size: 1.05rem;  
+          }   
+                
+          #{$profile}__status {
+            color: $pale-violet;
+            font-size: 0.8rem;  
+            font-weight: $regular;  
+          } 
+        }
+      }  
+    }  
+  }  
+
+  &__text-area {
+
+    @at-root {
+      #{$phone}__message-container {
+        @at-root {
+          #{$phone}__message {
+            &-text {
+               color: $moderate-violet; 
+               font-size: 0.8rem; 
+               line-height: 1.1rem;
+            }  
+          }    
+        }    
+      } 
+      
+      #{$phone}__message-container--middle {
+        @at-root {
+          #{$phone}__message--middle {
+    
+            @at-root {
+              #{$phone}__message-text--middle {
+                color: $desaturated-dark-violet;  
+              }    
+            }
+          }   
+        }
+      } 
+
+      #{$phone}__message-container--bottom {  
+        @at-root {
+
+          #{$phone}__message--selector {
+            color: $white;
+            @at-root {
+              #{$phone}__message-service-text {
+                font-size: 0.8rem;
+              }
+
+              #{$phone}__message-service-price {
+                font-size: 1.25rem;
+                font-weight: $bold;
+              }
+            }
+
+          }  
+        }    
+      }
+
+      #{$phone}__input {
+      
+        &::placeholder {
+          color: $grayish-blue;
+          font-size: 0.85rem;
+        }
+      }
+
+    }
+  }
+
+
+
+}    
+

@@ -69,6 +69,13 @@ gulp.task('manage-landing-page', () => {
     .pipe(gulp.dest('./manage-landing-page-master/css'))
 });
 
+gulp.task('chat-app', () => {
+    return gulp.src("./chat-app-css-illustration-master/scss/**/*.scss")
+    .pipe(sass( {outputStyle: 'expanded' }))
+    .pipe(prefix( {cascade: false}))
+    .pipe(gulp.dest('./chat-app-css-illustration-master/css'))
+})
+
 gulp.task('watch', () => {
     gulp.watch("./four-card-feature-section-master/scss/**/*.scss", gulp.series("four-card"));
     gulp.watch("./base-apparel-coming-soon-master/scss/**/*.scss", gulp.series("base-apparel"));
@@ -79,4 +86,5 @@ gulp.task('watch', () => {
     gulp.watch("./project-tracking-intro-component-master/scss/**/*.scss", gulp.series("project-tracking-intro"));
     gulp.watch("./fylo-dark-theme-landing-page-master/scss/**/*.scss", gulp.series('fylo-dark-theme-landing'));
     gulp.watch("./manage-landing-page-master/scss/**/*.scss", gulp.series('manage-landing-page'));
+    gulp.watch("./chat-app-css-illustration-master/scss/**/*.scss", gulp.series('chat-app'));
 });

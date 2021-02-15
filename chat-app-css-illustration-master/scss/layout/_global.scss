@@ -1,0 +1,10 @@
+body {
+  background-color: $light-grayis-violet;  
+  font-family: 'Rubik', sans-serif;  
+  font-size: 1.6rem;
+}
+
+main {
+  @include flex-center(column);
+  width: 95%;
+}

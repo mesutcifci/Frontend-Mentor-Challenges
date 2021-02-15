@@ -1,0 +1,687 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button, input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"], [type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* PHONE TYPO */
+.profile__name {
+  color: white;
+  font-size: 1.05rem;
+}
+
+.profile__status {
+  color: #d89eff;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.phone__message-text {
+  color: #9241c8;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.phone__message-text--middle {
+  color: #6e5d7e;
+}
+
+.phone__message--selector {
+  color: white;
+}
+
+.phone__message-service-text {
+  font-size: 0.8rem;
+}
+
+.phone__message-service-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.phone__input::-webkit-input-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input::-moz-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input:-ms-input-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input::-ms-input-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input::placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+body {
+  background-color: #f5f3f7;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 95%;
+}
+
+/* PHONE STYLE */
+.phone {
+  background-color: white;
+  border-radius: 4rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50rem;
+  width: 25rem;
+  margin-top: 6.4rem;
+  margin-left: 1.8rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.phone::after {
+  background-color: inherit;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  content: '';
+  height: 2rem;
+  width: 12.9rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.profile {
+  background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to left, #e942ff, #8838ff);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 6.8rem;
+  width: 98.5%;
+  margin-left: 2px;
+  padding-top: 2rem;
+  padding-left: 1.6rem;
+  position: relative;
+}
+
+.profile__left-arrow {
+  border: solid white;
+  border-width: 0 0 2px 2px;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.profile__avatar {
+  border: 1px solid white;
+  border-radius: 2.5rem;
+  height: auto;
+  margin-bottom: 2px;
+  margin-left: 3px;
+  width: 2.2rem;
+}
+
+.profile__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-left: 0.8rem;
+}
+
+.profile__name {
+  margin-top: -2px;
+}
+
+.profile__status {
+  margin-top: 2px;
+}
+
+.dot {
+  background-color: white;
+  height: 2px;
+  width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1px;
+  position: relative;
+  right: -77px;
+}
+
+.phone__text-area {
+  background-color: #f5f3f7;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: -1rem;
+  margin-left: 2px;
+  width: 98.5%;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+/* MESSAGE CONTAINER GENERAL */
+.phone__message-container {
+  max-width: 13rem;
+}
+
+.phone__message {
+  border-radius: 1.5rem;
+  border-bottom-left-radius: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5rem 0 0.5rem 1rem;
+  background-color: #f0e6f5;
+}
+
+.phone__message:nth-child(odd) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.phone__message-text {
+  width: 11rem;
+}
+
+/* MESSAGE CONTAINER MIDDLE */
+.phone__message-container--middle {
+  margin-left: auto;
+  max-width: 15rem;
+}
+
+.phone__message--image-container {
+  background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.3rem  !important;
+  padding-right: 0.2rem;
+  padding-top: 0.8rem;
+}
+
+.phone__message-image {
+  border-radius: 1rem;
+  height: auto;
+  width: 4rem;
+}
+
+.phone__message--middle {
+  background-color: white;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1rem;
+  margin-left: auto;
+  padding-right: 0.8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.phone__message--middle:nth-child(3) .phone__message-text--middle {
+  width: 7rem;
+}
+
+/* MESSAGE CONTAINER BOTTOM */
+.phone__message-container--bottom {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 15rem;
+}
+
+.phone__message--bottom {
+  margin-top: 1.8rem;
+  max-width: 13rem;
+}
+
+.phone__message--selector {
+  background: -webkit-gradient(linear, right top, left top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(to left, #8838ff, #e942ff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 3rem;
+  width: 16rem;
+  margin-left: 2px;
+  padding: 0.5rem 1.8rem 0.5rem 0.8rem;
+}
+
+.phone__message-circle {
+  border: 1px solid #e570ff;
+  border-radius: 1.2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.phone__message-service-price {
+  margin-left: 3rem;
+}
+
+/* INPUT AREA */
+.phone__input {
+  border: 0px;
+  border-radius: 1.5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+}
+
+.phone__input::-webkit-input-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input::-moz-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input:-ms-input-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input::-ms-input-placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}
+
+.phone__input::placeholder {
+  color: #c6cacd;
+  font-size: 0.85rem;
+}

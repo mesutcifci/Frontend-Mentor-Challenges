@@ -1,0 +1,243 @@
+/* PHONE STYLE */
+
+.phone {
+  $phone: &;
+  background-color: $white;
+  border-radius: 4rem;
+  box-sizing: border-box;
+  height: 50rem;
+  width: 25rem;
+  margin-top: 6.4rem;
+  margin-left: 1.8rem;
+  padding: 1rem;
+  position: relative;
+
+  &::after {
+    background-color: inherit; 
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    content: '';
+    height: 2rem;
+    width: 12.9rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 50%;
+    transform: translate(-50%);  
+  }
+
+      
+  @at-root { 
+    .profile {
+      $profile: &;
+      background: linear-gradient(to left, $light-magenta, $light-violet);
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;  
+      height: 6.8rem;
+      width: 98.5%;
+      margin-left: 2px;
+      padding-top: 2rem;
+      padding-left: 1.6rem;
+      position: relative;
+
+          
+      &__left-arrow {
+        border:solid $white;
+        border-width: 0 0 2px 2px;
+        padding: 3px;
+        transform: rotate(45deg);
+      }
+
+      &__avatar {
+        border: 1px solid $white;
+        border-radius: 2.5rem;  
+        height: auto;  
+        margin-bottom: 2px;
+        margin-left: 3px;
+        width: 2.2rem     
+      }
+
+      &__info {
+        @include flex-center(column);
+        align-items: flex-start;
+        margin-left: 0.8rem;
+        
+
+        @at-root {
+          #{$profile}__name {
+            margin-top: -2px;
+          }   
+              
+          #{$profile}__status {
+            margin-top: 2px;
+          }   
+        }           
+      }
+      
+      &__kebab-menu {
+          
+        @at-root {
+          .dot {
+            background-color: $white;  
+            height: 2px;
+            width: 2px;
+            @include margin-center;
+            margin-bottom: 1px;
+            position: relative;
+            right: -77px;
+          }  
+        }
+      }
+    }  
+  }
+ 
+
+  &__text-area {  
+    background-color: $light-grayis-violet;  
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-sizing: border-box;
+    margin-top: -1rem;
+    margin-left: 2px;
+    width: 98.5%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    @at-root {
+
+      /* MESSAGE CONTAINER GENERAL */  
+      #{$phone}__message-container {
+        max-width: 13rem;  
+        @at-root {
+          #{$phone}__message {
+            border-radius: 1.5rem;
+            border-bottom-left-radius: 1rem; 
+            box-sizing: border-box; 
+            padding: 0.5rem 0 0.5rem 1rem;  
+            background-color: hsl(281, 42%, 93%);    
+
+            &:nth-child(odd) {
+              margin-top: 1rem;
+              margin-bottom: 1rem;  
+            }
+
+            &-text {
+              width: 11rem;  
+            }
+
+          }    
+        }    
+      }
+
+      /* MESSAGE CONTAINER MIDDLE */  
+      #{$phone}__message-container--middle {
+        margin-left: auto;  
+        max-width: 15rem;
+
+        @at-root {
+          #{$phone}__message--image-container {
+            background-color: inherit;  
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.3rem  !important;
+            padding-right: 0.2rem;
+            padding-top: 0.8rem;
+        
+
+            @at-root {
+              #{$phone}__message-image {
+                border-radius: 1rem;  
+                height: auto;
+                width: 4rem;  
+              }    
+            }
+
+          }  
+          
+          #{$phone}__message--middle {
+            background-color: $white; 
+            border-bottom-left-radius: 1.5rem; 
+            border-bottom-right-radius: 1rem; 
+            margin-left: auto;
+            padding-right: 0.8rem;
+            width: max-content; 
+
+
+            &:nth-child(3) {
+                #{$phone}__message-text--middle {
+                    width: 7rem;  
+                }  
+            }
+          }
+        }        
+      }
+
+
+      /* MESSAGE CONTAINER BOTTOM */  
+
+      #{$phone}__message-container--bottom {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        max-width: 15rem;  
+        @at-root {
+
+          #{$phone}__message--bottom {
+            margin-top: 1.8rem;
+            max-width: 13rem;
+          }
+
+          #{$phone}__message--selector {
+            background: linear-gradient(to left, $light-violet,$light-magenta);  
+            @include flex-center;
+            justify-content: space-between;
+            height: 3rem;
+            width: 16rem;
+            margin-left: 2px;
+            padding: 0.5rem 1.8rem 0.5rem 0.8rem;
+
+            @at-root {
+              #{$phone}__message-service-text {
+                
+              }
+
+              #{$phone}__message-circle {
+                border: 1px solid $very-light-magenta;
+                border-radius: 1.2rem;
+                box-sizing: border-box;
+                height: 1.2rem;
+                width: 1.2rem;
+              }
+
+              #{$phone}__message-service-price {
+                margin-left: 3rem;
+              }
+
+            }
+          }  
+        }    
+      }
+
+      /* INPUT AREA */
+
+      #{$phone}__input {
+        border: 0px;
+        border-radius: 1.5rem;
+        box-sizing: border-box;
+        display: block;
+        height: 3.5rem;
+        @include margin-center;
+        padding-left: 1rem;
+
+        &::placeholder {
+          color: $grayish-blue;
+          font-size: 0.85rem;
+        }
+
+      }
+
+
+    }
+  }
+
+}  
+  
