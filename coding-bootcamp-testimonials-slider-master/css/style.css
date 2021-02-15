@@ -61,6 +61,7 @@ footer {
     display: grid;
     font-size: 1.4rem;
     grid-template-columns: 1fr 1fr;
+    height: max-content;
     width: 970px;
     opacity: 1;
     -webkit-transition: opacity 1s;
