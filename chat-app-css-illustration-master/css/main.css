@@ -368,6 +368,10 @@ html {
   font-weight: 700;
 }
 
+.phone__input {
+  font-size: 1.2rem;
+}
+
 .phone__input::-webkit-input-placeholder {
   color: #c6cacd;
   font-size: 0.85rem;
@@ -656,8 +660,10 @@ main {
   box-sizing: border-box;
   display: block;
   height: 3.5rem;
+  width: 97%;
   margin-left: auto;
   margin-right: auto;
+  min-width: 15rem;
   padding-left: 1rem;
 }
 

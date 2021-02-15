@@ -79,6 +79,7 @@ html {
       }
 
       #{$phone}__input {
+        font-size: 1.2rem;
       
         &::placeholder {
           color: $grayish-blue;
@@ -88,8 +89,6 @@ html {
 
     }
   }
-
-
 
 }    
 

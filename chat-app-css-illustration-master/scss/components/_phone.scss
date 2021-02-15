@@ -225,9 +225,11 @@
         box-sizing: border-box;
         display: block;
         height: 3.5rem;
+        width: 97%;
         @include margin-center;
+        min-width: 15rem;
         padding-left: 1rem;
-
+        
         &::placeholder {
           color: $grayish-blue;
           font-size: 0.85rem;
