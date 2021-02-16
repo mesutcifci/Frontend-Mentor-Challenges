@@ -1,7 +1,30 @@
 body {
   background-color: $light-grayis-violet;  
-  font-family: 'Rubik', sans-serif;  
-  font-size: 1.6rem;
+  position: relative;
+
+  &::before {
+    background: linear-gradient(to bottom, $light-magenta, $light-violet);
+    border-bottom-right-radius: 47rem;
+    content: '';
+    height: 50rem;
+    max-width: 20rem;
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::after {
+    background-color: hsl(290, 37%, 97%);
+    border-top-left-radius: 47rem;
+    content: '';
+    height: 47rem;
+    max-width: 20rem;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 main {

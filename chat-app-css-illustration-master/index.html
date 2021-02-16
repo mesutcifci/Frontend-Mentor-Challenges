@@ -15,13 +15,16 @@
 
   <title>Frontend Mentor | Chat App Illustration</title>
 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 
 </head>
 
 <body>
 
   <main>
-
 
     <section class="phone">
 
@@ -53,12 +56,12 @@
 
         <div class="phone__message-container phone__message-container--top">
 
-          <div class="phone__message">
-            <p class="phone__message-text">That sounds great. I’d be happy with that.</p>
+          <div class="phone__message phone__message--top">
+            <p class="phone__message-text phone__message-text--top">That sounds great. I’d be happy with that.</p>
           </div>
 
-          <div class="phone__message">
-            <p class="phone__message-text">Could you send over some pictures of your dog, please?</p>
+          <div class="phone__message phone__message--top">
+            <p class="phone__message-text phone__message-text--top">Could you send over some pictures of your dog, please?</p>
           </div>
 
         </div>
@@ -107,18 +110,14 @@
 
         <!-- INPUT -->
 
-        <input type="text" class="phone__input" placeholder="Type a message_">
-
+        <div class="phone__input-and-button">
+          <input type="text" class="phone__input" placeholder="Type a message_">
+          <buttton class="phone__submit-button"></buttton>
+        </div>
 
       </div>
 
     </section>
-
-
-
-    </div>
-
-
 
     <section class="introduction">
       <h1 class="introduction__heading"> Simple booking</h1>
@@ -129,8 +128,12 @@
       </p>
     </section>
 
-
   </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/mesutcifci">Mesut ÇİFCİ</a>.
+  </div>
 
 </body>
 

@@ -1,5 +1,12 @@
+/* GLOBAL TYPO */
+
 html {
   font-size: 10px;  
+}
+
+body {
+  font-family: 'Rubik', sans-serif;  
+  font-size: 1.6rem;
 }
 
 /* PHONE TYPO */
@@ -78,12 +85,16 @@ html {
         }    
       }
 
-      #{$phone}__input {
-        font-size: 1.2rem;
-      
-        &::placeholder {
-          color: $grayish-blue;
-          font-size: 0.85rem;
+      #{$phone}__input-and-button {
+        @at-root{
+          #{$phone}__input {
+            font-size: 1.2rem;
+          
+            &::placeholder {
+              color: $grayish-blue;
+              font-size: 0.85rem;
+            }
+          }
         }
       }
 
@@ -92,3 +103,21 @@ html {
 
 }    
 
+
+
+/* INTRODUCTION TYPO */
+
+.introduction {
+  &__heading {
+    color: $very-dark-desaturated-violet;
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    color: $dark-grayish-violet;
+    font-size: 1.59rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,73 @@
+@include media("375px") {
+  .phone {
+    margin-left: 1.8rem;
+    margin-right: 0;  
+  }  
+
+  .introduction {
+    &__heading {
+      font-size: 3.85rem;
+    }
+  }
+}
+
+@include media("768px") {
+  main {
+    flex-direction: row;
+    padding-bottom: 10.5rem;
+  }
+
+  .phone {
+    margin-left: 5rem;
+    margin-right: 3rem;
+  }
+
+  .introduction {
+    width: max-content;
+
+    &__heading {
+      margin-left: 2rem;
+      margin-right: auto;
+    }
+
+    &__text {
+      text-align: left;
+      max-width: 44rem;
+    }
+
+  }
+
+}
+
+
+@include media("1024px") {
+  body {
+    &::before {
+      border-bottom-right-radius: 70rem;
+      border-bottom-left-radius: 67rem;
+      height: 70rem;
+      left: -8rem;
+      max-width: 50rem;
+    }
+
+    &::after {
+      border-top-right-radius: 47rem;
+      height: 60rem;
+      max-width: 32.5rem;
+    }
+
+  }
+
+  .phone {
+    margin-top: 14.8rem;
+    margin-left: 17rem;
+    margin-right: 0;
+
+  }
+
+  .introduction {
+    margin-top: 12rem;
+    padding-left: 10.6rem;
+  }
+
+}

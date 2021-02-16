@@ -5,10 +5,13 @@
   background-color: $white;
   border-radius: 4rem;
   box-sizing: border-box;
-  height: 50rem;
-  width: 25rem;
+  height: 50.5rem;
+  width: 90%;
   margin-top: 6.4rem;
-  margin-left: 1.8rem;
+  margin-bottom: 4rem;
+  @include margin-center;
+  min-width: 20rem;
+  max-width: 25rem;
   padding: 1rem;
   position: relative;
 
@@ -93,7 +96,7 @@
     }  
   }
  
-
+  // TEXT AREA
   &__text-area {  
     background-color: $light-grayis-violet;  
     border-bottom-left-radius: 2rem;
@@ -110,11 +113,12 @@
         max-width: 13rem;  
         @at-root {
           #{$phone}__message {
+            background-color: hsl(281, 42%, 93%);   
             border-radius: 1.5rem;
             border-bottom-left-radius: 1rem; 
             box-sizing: border-box; 
-            padding: 0.5rem 0 0.5rem 1rem;  
-            background-color: hsl(281, 42%, 93%);    
+            padding: 0.5rem 0 0.5rem 1rem;      
+            opacity: 0;
 
             &:nth-child(odd) {
               margin-top: 1rem;
@@ -129,12 +133,47 @@
         }    
       }
 
+      /* MESSAGE CONTAINER TOP */
+
+      #{$phone}__message-container--top {
+        @at-root {
+          #{$phone}__message--top {
+            &:nth-child(1) {
+              animation: showMessage 1s linear .5s forwards;
+            }
+
+            &:nth-child(2) {
+              animation: showMessage 1s linear 1.5s forwards;
+            }
+
+          }
+        }
+      }
+
+
       /* MESSAGE CONTAINER MIDDLE */  
       #{$phone}__message-container--middle {
         margin-left: auto;  
         max-width: 15rem;
 
+        #{$phone}__message {
+
+          &:nth-child(1) {
+            animation: showMessage 1s linear 2.5s forwards;
+          }
+
+          &:nth-child(2) {
+            animation: showMessage 1s linear 3.5s forwards;
+          }
+
+          &:nth-child(3) {
+            animation: showMessage 1s linear 4.5s forwards;
+          }
+        }
+
+
         @at-root {
+
           #{$phone}__message--image-container {
             background-color: inherit;  
             display: flex;
@@ -162,7 +201,6 @@
             padding-right: 0.8rem;
             width: max-content; 
 
-
             &:nth-child(3) {
                 #{$phone}__message-text--middle {
                     width: 7rem;  
@@ -179,6 +217,23 @@
         margin-top: 2rem;
         margin-bottom: 1.5rem;
         max-width: 15rem;  
+
+        #{$phone}__message {
+
+          &:nth-child(1) {
+            animation: showMessage 1s linear 5.5s forwards;
+          }
+
+          &:nth-child(2) {
+            animation: showMessage 1s linear 6.5s forwards;
+          }
+
+          &:nth-child(3) {
+            animation: showMessage 1s linear 7.5s forwards;
+          }
+
+        }
+
         @at-root {
 
           #{$phone}__message--bottom {
@@ -217,29 +272,63 @@
         }    
       }
 
-      /* INPUT AREA */
+      /* INPUT AND BUTTON */
 
-      #{$phone}__input {
-        border: 0px;
-        border-radius: 1.5rem;
-        box-sizing: border-box;
-        display: block;
-        height: 3.5rem;
-        width: 97%;
-        @include margin-center;
-        min-width: 15rem;
-        padding-left: 1rem;
+      #{$phone}__input-and-button {
+        position: relative;
+        @at-root {
+          #{$phone}__input {
+            border: 0px;
+            border-radius: 1.5rem;
+            box-sizing: border-box;
+            display: block;
+            height: 3.5rem;
+            width: 97%;
+            @include margin-center;
+            min-width: 15rem;
+            padding-left: 1rem;
+    
+            
+            &::placeholder {
+              color: $grayish-blue;
+              font-size: 0.85rem;
+            }
         
-        &::placeholder {
-          color: $grayish-blue;
-          font-size: 0.85rem;
+          }
+
+          #{$phone}__submit-button {
+            background-color: $very-dark-desaturated-violet;
+            border-radius: 2.5rem;
+            cursor: pointer;
+            display: block;
+            height: 2.5rem;
+            width: 2.5rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.6rem;
+
+            &:active {
+              transform: scale(0.98);
+            }
+
+            &::after {
+              content: '';
+              border:solid $white;
+              border-width: 2px 2px 0 0;
+              padding: 3px;
+              position: absolute;
+              top: 0.8rem;
+              right: 1rem;
+              transform: rotate(45deg);
+            }
+
+          }
         }
-
       }
-
 
     }
   }
+
 
 }  
   

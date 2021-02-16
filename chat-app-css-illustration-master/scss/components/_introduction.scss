@@ -1,0 +1,21 @@
+/* INTRODUCTION STYLE */
+
+.introduction {
+  @include flex-center(column);   
+  min-width: 20rem; 
+  width: 90%;
+  padding-bottom: 4rem;
+
+  &__heading {
+    width: max-content;
+    margin-right: -2rem;
+    margin-bottom: 2.5rem;  
+  }
+
+  &__text {
+    margin-left: 1.8rem;   
+    max-width: 35rem;  
+    width: 98%; 
+  }
+
+}
