@@ -76,6 +76,13 @@ gulp.task('chat-app', () => {
     .pipe(gulp.dest('./chat-app-css-illustration-master/css'))
 })
 
+gulp.task('job-listings', () => {
+    return gulp.src("./static-job-listings-master/scss/**/*.scss")
+    .pipe(sass( {outputStyle: 'expanded' }))
+    .pipe(prefix( {cascade: false}))
+    .pipe(gulp.dest('./static-job-listings-master/css'))
+})
+
 gulp.task('watch', () => {
     gulp.watch("./four-card-feature-section-master/scss/**/*.scss", gulp.series("four-card"));
     gulp.watch("./base-apparel-coming-soon-master/scss/**/*.scss", gulp.series("base-apparel"));
@@ -87,4 +94,5 @@ gulp.task('watch', () => {
     gulp.watch("./fylo-dark-theme-landing-page-master/scss/**/*.scss", gulp.series('fylo-dark-theme-landing'));
     gulp.watch("./manage-landing-page-master/scss/**/*.scss", gulp.series('manage-landing-page'));
     gulp.watch("./chat-app-css-illustration-master/scss/**/*.scss", gulp.series('chat-app'));
+    gulp.watch("./static-job-listings-master/scss/**/*.scss", gulp.series('job-listings'));
 });
