@@ -5,6 +5,7 @@
     box-shadow: 0px 15px 18px -8px hsla(180, 29%, 50%, 0.466);
     box-sizing: border-box;
     @include margin-center;
+    max-width: 111rem;
     margin-bottom: 4rem;
     min-height: 25.7rem;
     width: 92%;
@@ -81,5 +82,14 @@
                 padding: 1rem;
             }
         }
+    }
+}
+
+.js-border {
+    border-left: 0.5rem solid $desaturated-dark-cyan;
+    padding-left: 1.8rem;
+
+    .job__company-logo {
+        left: 1.9rem;
     }
 }

@@ -7,6 +7,14 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+
+.filter__clear-button {
+  color: $dark-grayish-cyan;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+ 
+
 .job {
   $job: &;
 

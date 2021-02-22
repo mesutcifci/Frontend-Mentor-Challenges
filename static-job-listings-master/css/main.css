@@ -342,6 +342,12 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+.filter__clear-button {
+  color: #7b8e8e;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 .job__company-name {
   color: #5ba4a4;
   font-size: 1.3rem;
@@ -395,6 +401,7 @@ main {
 .filter {
   background-color: #5ba4a4;
   background-image: url("../images/bg-header-mobile.svg");
+  background-repeat: round space;
   height: 15.6rem;
   margin-bottom: 5.6rem;
   position: relative;
@@ -403,6 +410,8 @@ main {
 .filter__wrapper {
   background-color: white;
   bottom: -9.5rem;
+  -webkit-box-shadow: 0px 15px 18px -8px rgba(91, 164, 164, 0.466);
+  box-shadow: 0px 15px 18px -8px rgba(91, 164, 164, 0.466);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: none;
@@ -475,6 +484,7 @@ main {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  max-width: 111rem;
   margin-bottom: 4rem;
   min-height: 25.7rem;
   width: 92%;
@@ -543,4 +553,96 @@ main {
   margin-right: 1rem;
   margin-bottom: 1.2rem;
   padding: 1rem;
+}
+
+.js-border {
+  border-left: 0.5rem solid #5ba4a4;
+  padding-left: 1.8rem;
+}
+
+.js-border .job__company-logo {
+  left: 1.9rem;
+}
+
+@media (min-width: 1024px) {
+  .filter {
+    background-image: url("../images/bg-header-desktop.svg");
+    background-repeat: repeat;
+    background-size: cover;
+    margin-bottom: 7.7rem;
+  }
+  .filter__wrapper {
+    bottom: -4.5rem;
+    min-height: 7rem;
+  }
+  .filter__items-container .job__title {
+    margin-bottom: 0;
+  }
+  .job {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-pack: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+    margin-bottom: 2.6rem;
+    min-height: 15rem;
+    height: 15rem;
+    padding-right: 2.5rem;
+  }
+  .job__company-logo {
+    margin-left: 1.7rem;
+    margin-right: 2.4rem;
+    margin-bottom: 2rem;
+    width: 8.8rem;
+    position: static;
+  }
+  .job__container--first {
+    margin-bottom: 1.2rem;
+    margin-top: -3rem;
+  }
+  .job__company-name {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right: 1.3rem;
+    margin-top: 1rem;
+  }
+  .job__status {
+    margin-top: 1rem;
+  }
+  .job__name {
+    font-size: 1.8rem;
+  }
+  .job__date,
+  .job__work-type,
+  .job__location {
+    font-size: 1.5rem;
+  }
+  .dot {
+    margin-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1.4rem;
+  }
+  .job__title-container {
+    border-top: 0;
+    margin-left: auto;
+    height: 9rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+.js-hide {
+  display: none;
 }
