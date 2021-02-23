@@ -67,7 +67,6 @@ function parseDataset(clickedItemText, element, datasetObject, direction) {
 
 
    if (dataStatus == false && direction == "hide") {
-      console.log("dasdasd");
       hideItem(element);
    }
 
@@ -84,7 +83,6 @@ function hideItem(element) {
 // Add border left to first child of filtered job and remove border of other elements
 function manageBorder() {
 
-   console.log("manage");
    [...appearJob][0].classList.add("js-border");
    
    for(let counter = 1; counter < [...appearJob].length; counter++) {
