@@ -16,6 +16,12 @@
                         margin-bottom: 0;
                     }
                 }
+
+                #{$filter}__clear-button:hover {
+                    color: $desaturated-dark-cyan;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -57,7 +63,12 @@
                 }
 
                 #{$job}__name {
+                    cursor: pointer;
                     font-size: 1.8rem;
+
+                    &:hover {
+                        color: $desaturated-dark-cyan;
+                    }
                 }
 
                 #{$job}__container--second {
@@ -83,10 +94,16 @@
             margin-left: auto;
             height: 9rem;
             width: max-content;
+
+            #{$job}__title:hover {
+                background-color: $desaturated-dark-cyan;
+                color: $white;
+                cursor: pointer;
+            }
+
         }
     }
 }
-
 
 .js-hide {
     display: none;

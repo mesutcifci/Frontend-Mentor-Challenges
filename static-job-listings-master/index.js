@@ -82,12 +82,26 @@ function hideItem(element) {
 
 // Add border left to first child of filtered job and remove border of other elements
 function manageBorder() {
-
-   [...appearJob][0].classList.add("js-border");
    
-   for(let counter = 1; counter < [...appearJob].length; counter++) {
-      [...appearJob][counter].classList.remove("js-border");
+   let smallest = Number.parseInt([...appearJob][0].dataset.id)
+   let topElement = [...appearJob][0]
+
+   for(let element of appearJob) {
+
+      let temporary = Number.parseInt(element.dataset.id);
+
+      if( temporary < smallest) {
+         smallest = temporary;
+         topElement = element;
+      }
    }
+
+
+   for(let element of appearJob) {
+      element.classList.remove("js-border");
+   }
+
+   topElement.classList.add("js-border");
 
    for(let element of hiddenJob) {
       element.classList.remove("js-border");

@@ -2,7 +2,7 @@
   $filter: &;
   background-color: $desaturated-dark-cyan;
   background-image: url("../images/bg-header-mobile.svg");
-  background-repeat: round space;
+  background-repeat: round;
   height: 15.6rem;
   margin-bottom: 5.6rem;
   position: relative;
@@ -43,8 +43,15 @@
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   box-sizing: border-box;
+  cursor: pointer;
   margin-left: 1rem;
   padding: 1.1rem 1.3rem 1rem 1.3rem;
+
+
+  &:hover {
+    background-color: $very-dark-grayish-cyan;
+  }
+
 }
 
 .js-margin {
