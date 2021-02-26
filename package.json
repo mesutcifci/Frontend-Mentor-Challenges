@@ -22,7 +22,6 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0"
   },
-
   "browserslist": [
     "last 2 versions, > 0.2%"
   ]

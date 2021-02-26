@@ -420,7 +420,6 @@ main {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
   width: 90%;
   z-index: 444;

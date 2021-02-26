@@ -76,11 +76,11 @@ gulp.task('chat-app', () => {
     .pipe(gulp.dest('./chat-app-css-illustration-master/css'))
 })
 
-gulp.task('job-listings', () => {
-    return gulp.src("./static-job-listings-master/scss/**/*.scss")
+gulp.task('job-listings-with-data-attributes', () => {
+    return gulp.src("./static-job-listings-with-data-attributes/scss/**/*.scss")
     .pipe(sass( {outputStyle: 'expanded' }))
     .pipe(prefix( {cascade: false}))
-    .pipe(gulp.dest('./static-job-listings-master/css'))
+    .pipe(gulp.dest('./static-job-listings-with-data-attributes/css'))
 })
 
 gulp.task('watch', () => {
@@ -94,5 +94,5 @@ gulp.task('watch', () => {
     gulp.watch("./fylo-dark-theme-landing-page-master/scss/**/*.scss", gulp.series('fylo-dark-theme-landing'));
     gulp.watch("./manage-landing-page-master/scss/**/*.scss", gulp.series('manage-landing-page'));
     gulp.watch("./chat-app-css-illustration-master/scss/**/*.scss", gulp.series('chat-app'));
-    gulp.watch("./static-job-listings-master/scss/**/*.scss", gulp.series('job-listings'));
+    gulp.watch("./static-job-listings-with-data-attributes/scss/**/*.scss", gulp.series('job-listings-with-data-attributes'));
 });
