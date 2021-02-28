@@ -1,0 +1,64 @@
+.filter {
+  $filter: &;
+  background-color: $desaturated-dark-cyan;
+  background-image: url("../images/bg-header-mobile.svg");
+  background-repeat: round;
+  height: 15.6rem;
+  margin-bottom: 5.6rem;
+  position: relative;
+
+  &__wrapper {
+    background-color: $white;
+    bottom: -9.5rem;
+    box-shadow: 0px 15px 18px -8px hsla(180, 29%, 50%, 0.466);
+    box-sizing: border-box;
+    display: none;
+    min-height: 13rem;
+    padding: 1.5rem;
+    position: absolute;
+    left: (50%);
+    transform: translate(-50%);
+    width: 90%;
+    z-index: 444;
+
+    @at-root {
+      #{$filter}__items-container {
+        width: max-content;
+        .job__title {
+          position: relative;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.remove-button {
+  background-color: $desaturated-dark-cyan;
+  background-image: url("../images/icon-remove.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 1.1rem 1.3rem 1rem 1.3rem;
+
+
+  &:hover {
+    background-color: $very-dark-grayish-cyan;
+  }
+
+}
+
+.js-margin {
+  margin-bottom: 14rem;
+}
+
+.js-filter {
+  @include flex-center;
+  justify-content: space-between;
+}

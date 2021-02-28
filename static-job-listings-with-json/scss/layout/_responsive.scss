@@ -1,0 +1,110 @@
+@include media("1024px") {
+    .filter {
+        $filter: &;
+        background-image: url("../images/bg-header-desktop.svg");
+        background-repeat: repeat;
+        background-size: cover;
+        margin-bottom: 7.7rem;
+
+        &__wrapper {
+            bottom: -4.5rem;
+            min-height: 7rem;
+
+            @at-root {
+                #{$filter}__items-container {
+                    .job__title {
+                        margin-bottom: 0;
+                    }
+                }
+
+                #{$filter}__clear-button:hover {
+                    color: $desaturated-dark-cyan;
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .job {
+        $job: &;
+        @include flex-center;
+        justify-content: initial;
+        margin-bottom: 2.6rem;
+        min-height: 15rem;
+        height: 15rem;
+        padding-right: 2.5rem;
+
+        &__company-logo {
+            margin-left: 1.7rem;
+            margin-right: 2.4rem;
+            margin-bottom: 2rem;
+            width: 8.8rem;
+            position: static;
+        }
+
+        &__info {
+            @at-root {
+                #{$job}__container--first {
+                    margin-bottom: 1.2rem;
+                    margin-top: -3rem;
+                    @at-root {
+                        #{$job}__company-name {
+                            display: inline-block;
+                            font-size: 1.4rem;
+                            margin-right: 1.3rem;
+                            margin-top: 1rem;
+                        }
+
+                        #{$job}__status {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+
+                #{$job}__name {
+                    cursor: pointer;
+                    font-size: 1.8rem;
+
+                    &:hover {
+                        color: $desaturated-dark-cyan;
+                    }
+                }
+
+                #{$job}__container--second {
+                    @at-root {
+                        #{$job}__date,
+                        #{$job}__work-type,
+                        #{$job}__location {
+                            font-size: 1.5rem;
+                        }
+
+                        .dot {
+                            margin-left: 1.2rem;
+                            margin-bottom: 0.5rem;
+                            margin-right: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__title-container {
+            border-top: 0;
+            margin-left: auto;
+            height: 9rem;
+            width: max-content;
+
+            #{$job}__title:hover {
+                background-color: $desaturated-dark-cyan;
+                color: $white;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.js-hide {
+    display: none;
+}

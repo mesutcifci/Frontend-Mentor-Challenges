@@ -1,0 +1,12 @@
+body {
+    background-color: $light-grayish-cyan-1;
+}
+
+main {
+    @include margin-center;
+    width: 95%;
+}
+
+.js-hide {
+    display: none;
+}
