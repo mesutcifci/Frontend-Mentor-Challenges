@@ -1,6 +1,11 @@
 let main = document.getElementsByTagName("main")[0];
+
+let filterContainer = document.querySelector(".filter");
+let filterWrapper = document.querySelector(".filter__wrapper");
+let filterItemsContainer = document.querySelector(".filter__items-container");
+
 let appearJob;
-let hiddenJob = [];
+let hiddenJob = new Set();
 let jobTitles = [];
 
 const getData = async callback => {
@@ -30,7 +35,7 @@ getData().then(
   }
 ).then(
   resolve => {
-    appearJob = Array.from(document.getElementsByClassName("job"));
+    appearJob = new Set(document.getElementsByClassName("job"));
     jobTitles = Array.from(document.getElementsByClassName("job__title"));
     makeClickable(jobTitles);
   }
@@ -79,26 +84,42 @@ function populateMain(data) {
 }
 
 function makeClickable(elements) {
-  elements.forEach( element => {
-    element.addEventListener('click', startFiltering);
+  elements.forEach(element => {
+
+    element.addEventListener('click', () => {
+      let clickedItemText = element.textContent;
+
+      let data = {
+        elements: appearJob,
+        text: clickedItemText,
+        direction: false,
+      }
+
+      startFiltering(data, hideItem);
+      showFilterArea();
+      addFilterItems(element, clickedItemText);
+
+    });
+
   });
 }
 
-function startFiltering(element) {
-  let clickedItemText = element.target.textContent;
-  for(job of appearJob) {
-    let status = parseJob(job.children[2], clickedItemText);
-    if(status == false) {
-      hideItem(job);
+function startFiltering(data, callback) {
+  console.log(data)
+  for (job of data.elements) {
+    let status = parseJob(job.children[2], data.text);
+    if (status == data.direction) {
+      callback(job);
     }
   }
 
 }
 
+
 function parseJob(element, clickedItemText) {
   let status = false;
-  for(let title of element.children) {
-    if(title.textContent == clickedItemText) {
+  for (let title of element.children) {
+    if (title.textContent == clickedItemText) {
       status = true;
       return status;
     }
@@ -108,11 +129,101 @@ function parseJob(element, clickedItemText) {
 
 function hideItem(job) {
   job.classList.add("js-hide");
-  let index = appearJob.indexOf(job);
-  if(index > -1) {
-    appearJob.splice(index, 1);
+  appearJob.delete(job);
+  hiddenJob.add(job);
+}
+
+function showFilterArea() {
+  filterContainer.classList.add("js-margin");
+  filterWrapper.classList.add("js-filter");
+}
+
+function addFilterItems(element, clickedItemText) {
+  let clone = element.cloneNode(true);
+
+  for (let items of filterItemsContainer.children) {
+    if (items.textContent == clickedItemText) {
+      return;
+    }
   }
-  hiddenJob.push(job);
+
+  insertRemoveButton(clone, clickedItemText);
+
+  filterItemsContainer.appendChild(clone);
+
+}
+
+function insertRemoveButton(element, clickedItemText) {
+  let removeButton = document.createElement("span");
+  removeButton.classList.add("remove-button");
+
+  clickRemoveButton(removeButton, clickedItemText);
+  element.appendChild(removeButton);
+}
+
+
+function clickRemoveButton(removeButton, clickedItemText) {
+  removeButton.addEventListener("click", () => {
+
+    for (let job of appearJob) {
+      hideItem(job);
+    }
+
+    deleteFilterElement(clickedItemText);
+
+  });
+}
+
+function deleteFilterElement(clickedItemText) {
+
+  for (let element of filterItemsContainer.children) {
+    if (element.textContent == clickedItemText) {
+      filterItemsContainer.removeChild(element);
+    }
+  }
+
+  reverseFiltering();
+
+}
+
+function reverseFiltering() {
+  let filterItems = filterItemsContainer.children;
+  let itemText = filterItems[0].textContent;
+
+  let data = {
+    elements: hiddenJob,
+    text: itemText,
+    direction: true,
+  }
+
+  startFiltering(data, showItem);
+
+  checkFilterItems(filterItems);
+
+
+}
+
+
+function showItem(element) {
+  element.classList.remove("js-hide");
+  appearJob.add(element);
+  hiddenJob.delete(element);
+}
+
+function checkFilterItems(filterItems) {
+
+  let data = {
+    elements: appearJob,
+    text: null,
+    direction: false,
+  }
+
+  for (let counter = 1; counter < filterItems.length; counter++) {
+    let text = filterItems[counter].textContent;
+    data.text = text;
+    startFiltering(data, hideItem);
+  }
+
 }
 
 getData(populateMain);
