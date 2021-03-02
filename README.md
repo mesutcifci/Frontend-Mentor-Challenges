@@ -31,4 +31,4 @@ This repository contains some challenges from [Frontend Mentors](https://www.fro
 |  [Chat App CSS Illustration](https://mesutcifci.github.io/Frontend-Mentor-Challenges/chat-app-css-illustration-master/index.html) | :star: :star: :star: | HTML, SCSS(BEM), JS, PIXEL PERFECT, MOBILE FIRST|
 |  [Manage Landing Page](https://mesutcifci.github.io/Frontend-Mentor-Challenges/manage-landing-page-master/index.html) | :star: :star: :star: | HTML, SCSS(BEM), JS, PIXEL PERFECT, MOBILE FIRST|
 |  [Static Job Listings With Data Attributes](https://mesutcifci.github.io/Frontend-Mentor-Challenges/static-job-listings-with-data-attributes/index.html) | :star: :star: :star: | HTML, SCSS(BEM), JS, PIXEL PERFECT, MOBILE FIRST|
-|  [Static Job Listings With JSON](https://mesutcifci.github.io/Frontend-Mentor-Challenges/static-job-listings-with-json/index.html) | :star: :star: :star: | HTML, SCSS(BEM), JS, PIXEL PERFECT, MOBILE FIRST|
+|  [Static Job Listings With JSON](https://mesutcifci.github.io/Frontend-Mentor-Challenges/static-job-listings-with-json/index.html) | :star: :star: :star: | HTML, SCSS(BEM), JS(AJAX), PIXEL PERFECT, MOBILE FIRST|
