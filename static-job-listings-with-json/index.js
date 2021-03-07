@@ -11,11 +11,10 @@ let hiddenJob = new Set();
 let jobTitles = [];
 
 // Get data from data.json file
-const getData = async callback => {
+function getData() {
   let requestUrl = "./data.json"
 
-  // wait until data is available
-  let response = await new Promise(resolve => {
+  let response = new Promise(resolve => {
     let request = new XMLHttpRequest()
     request.open("GET", requestUrl, true)
     request.responseType = "json"
@@ -34,13 +33,9 @@ const getData = async callback => {
 }
 
 
-
 getData().then(
-  resolve => {
-    populateMain(resolve);
-  }
-).then(
-  resolve => {
+  data => {
+    populateMain(data);
     appearJob = new Set(document.getElementsByClassName("job"));
     jobTitles = Array.from(document.getElementsByClassName("job__title"));
     makeClickable(jobTitles);
@@ -361,6 +356,3 @@ function clearFilterArea() {
     filterItemsContainer.removeChild(element);
   }
 }
-
-
-getData(populateMain);
