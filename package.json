@@ -17,12 +17,13 @@
     "url": "https://github.com/mesutcifci/Frontend-Mentor-Challenges/issues"
   },
   "homepage": "https://github.com/mesutcifci/Frontend-Mentor-Challenges#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.1.0"
-  },
   "browserslist": [
     "last 2 versions, > 0.2%"
-  ]
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  }
 }
