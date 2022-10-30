@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
 
-  <title>Frontend Mentor | Single Price Grid Component</title>
+  <body>
+    <!-- MAIN -->
 
-</head>
+    <main>
+      <!-- CONTAINER -->
 
-<body>
+      <div class="container">
+        <!-- CARD TOP -->
 
-  <!-- MAIN -->
+        <div class="card top-card">
+          <h1 class="top-card--primary-heading">Join our community</h1>
 
-  <main>
+          <h2 class="heading top-card--secondary-heading">
+            30-day, hassle-free money back guarantee
+          </h2>
 
-    <!-- CONTAINER -->
-
-    <div class="container">
-
-      <!-- CARD TOP -->
-
-      <div class="card top-card">
-
-        <h1 class="top-card--primary-heading">Join our community</h1>
-
-        <h2 class="heading top-card--secondary-heading">30-day, hassle-free money back guarantee</h2>
-
-        <p class="top-card--text">
-          Gain access to our full library of tutorials along with expert code reviews.
-          Perfect for any developers who are serious about honing their skills.
-        </p>
-
-      </div>
-
-      <!-- CARD LEFT -->
-
-      <div class="card  left-card">
-
-        <h2 class="heading">Monthly Subscription</h2>
-
-        <div class="left-card--currency-wrapper">
-
-          <p class="currency">&dollar;29</p>
-
-          <small>per month</small>
-
+          <p class="top-card--text">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
         </div>
 
-        <p class="left-card--text"> Full access for less than &dollar;1 a day</p>
+        <!-- CARD LEFT -->
 
-        <button> Sign Up</button>
+        <div class="card left-card">
+          <h2 class="heading">Monthly Subscription</h2>
 
+          <div class="left-card--currency-wrapper">
+            <p class="currency">&dollar;29</p>
+
+            <small>per month</small>
+          </div>
+
+          <p class="left-card--text">
+            Full access for less than &dollar;1 a day
+          </p>
+
+          <button>Sign Up</button>
+        </div>
+
+        <!-- CARD RIGHT -->
+
+        <div class="card right-card">
+          <h2 class="heading">Why Us</h2>
+
+          <p class="right-card--text">
+            Tutorials by industry experts Peer &amp; expert code review
+            <span>Coding exercises</span>
+            Access to our GitHub repos
+            <span>Community forum</span>
+            <span>Flashcard decks</span>
+            New videos every week
+          </p>
+        </div>
       </div>
+    </main>
 
-      <!-- CARD RIGHT -->
+    <!-- FOOTER -->
 
-      <div class="card right-card">
-
-        <h2 class="heading"> Why Us </h2>
-
-        <p class="right-card--text">
-          Tutorials by industry experts
-          Peer &amp; expert code review
-          <span>Coding exercises</span>
-          Access to our GitHub repos
-          <span>Community forum</span>
-          <span>Flashcard decks</span>
-          New videos every week
-        </p>
-
-      </div>
-
-    </div>
-
-  </main>
-
-  <!-- FOOTER -->
-
-  <footer>
-    Challenge by
-    <a class="footer-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-    <a class="footer-link" href="https://github.com/mesutcifci">Mesut Çifci</a>.
-  </footer>
-</body>
-
+    <footer>
+      Challenge by
+      <a
+        class="footer-link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="footer-link" href="https://github.com/mesutcifci"
+        >Mesut Çiftçi</a
+      >.
+    </footer>
+  </body>
 </html>

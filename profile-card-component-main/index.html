@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css">
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
 
-  <title>Frontend Mentor | Profile card component</title>
-</head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="background-area"></div>
+        <div class="profile">
+          <img
+            class="profile-photo"
+            src="./images/image-victor.jpg"
+            alt="Profile Photos"
+          />
+          <p class="name-and-age">Victor Crest <span id="age">26</span></p>
+          <div class="country">London</div>
+        </div>
 
-<body>
-  <main>
-    <div class="card">
-      <div class="background-area"></div>
-      <div class="profile">
-        <img class="profile-photo" src="./images/image-victor.jpg" alt="Profile Photos">
-        <p class="name-and-age">Victor Crest <span id="age">26</span></p>
-        <div class="country">London</div>
+        <div class="social-media-statics">
+          <div class="followers">
+            <p class="statics">80K</p>
+            <p class="label">Followers</p>
+          </div>
+
+          <div class="likes">
+            <p class="statics">803K</p>
+            <p class="label">Likes</p>
+          </div>
+
+          <div class="photos">
+            <p class="statics">1.4K</p>
+            <p class="label">Photos</p>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <div class="social-media-statics">
-        <div class="followers">
-          <p class="statics">80K</p>
-          <p class="label">Followers</p>
-        </div>
-
-        <div class="likes">
-          <p class="statics">803K</p>
-          <p class="label">Likes</p>
-        </div>
-
-        <div class="photos">
-          <p class="statics"> 1.4K</p>
-          <p class="label">Photos</p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    Challenge by
-    <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-      class="link" href="https://github.com/mesutcifci">Mesut Çifci</a>.
-  </footer>
-</body>
-
+    <footer>
+      Challenge by
+      <a
+        class="link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="link" href="https://github.com/mesutcifci">Mesut Çiftçi</a>.
+    </footer>
+  </body>
 </html>
