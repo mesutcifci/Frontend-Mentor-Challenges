@@ -178,14 +178,14 @@ button, select {
 /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
-button, [type="button"], [type="reset"], [type="submit"] {
+button, [type=button], [type=reset], [type=submit] {
   -webkit-appearance: button;
 }
 
 /**
    * Remove the inner border and padding in Firefox.
    */
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -193,7 +193,7 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 /**
    * Restore the focus styles unset by the previous rule.
    */
-button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -244,7 +244,7 @@ textarea {
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
-[type="checkbox"], [type="radio"] {
+[type=checkbox], [type=radio] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
@@ -255,7 +255,7 @@ textarea {
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -263,7 +263,7 @@ textarea {
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -273,7 +273,7 @@ textarea {
 /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -329,8 +329,8 @@ template {
 }
 
 html, body {
-  background: #e5eff5;
-  font-family: 'Karla', sans-serif;
+  background: hsl(204deg, 43%, 93%);
+  font-family: "Karla", sans-serif;
   font-size: 10px;
   max-width: 1440px;
   min-height: 100vh;
@@ -412,30 +412,26 @@ main {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
 .top-card--primary-heading {
-  color: #2ab2af;
+  color: hsl(179deg, 62%, 43%);
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-
 .top-card--secondary-heading {
-  color: #c0df34;
+  color: hsl(71deg, 73%, 54%);
 }
-
 .top-card--text {
-  color: #98a6bd;
+  color: hsl(218deg, 22%, 67%);
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 20px;
 }
 
 .left-card {
-  background: #2ab2af;
+  background: hsl(179deg, 62%, 43%);
   height: 200px;
 }
-
 .left-card--currency-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,28 +441,24 @@ main {
   align-items: center;
   margin-bottom: 8px;
 }
-
 .left-card--currency-wrapper .currency {
   color: #ffffff;
   font-size: 2.7rem;
   font-weight: 700;
   margin-right: 8px;
 }
-
 .left-card--currency-wrapper small {
-  color: #82e0e3;
+  color: hsl(182deg, 64%, 70%);
   font-size: 1.3rem;
   font-weight: 400;
 }
-
 .left-card--text {
-  color: #e5eff5;
+  color: hsl(204deg, 43%, 93%);
   font-size: 1.4rem;
   margin-bottom: 20px;
 }
-
 .left-card button {
-  background: #c0df34;
+  background: hsl(71deg, 73%, 54%);
   border: 0px;
   border-radius: 5px;
   color: #ffffff;
@@ -477,7 +469,6 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-
 .left-card button:active {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -487,20 +478,19 @@ main {
 }
 
 .right-card {
-  background: #4bbebc;
+  background: hsl(179deg, 47%, 52%);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
 .right-card--text {
-  color: #e5eff5;
+  color: hsl(204deg, 43%, 93%);
   font-size: 1.4rem;
   line-height: 20px;
   width: 160px;
 }
 
 footer {
-  background-color: #0000002a;
+  background-color: rgba(0, 0, 0, 0.1647058824);
   color: #312c29;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,7 +524,7 @@ footer {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 180  1fr;
+    grid-template-rows: 180 1fr;
   }
   .card {
     max-width: initial;
@@ -543,7 +533,7 @@ footer {
   .top-card {
     height: 190px;
     width: 630px;
-    grid-column: 1 / 3;
+    grid-column: 1/3;
   }
   .top-card--secondary-heading {
     margin-bottom: 10px;
